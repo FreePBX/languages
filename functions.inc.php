@@ -167,7 +167,9 @@ function languages_configprocess() {
 		$extdisplay = $ext;
 	} 
 	if ($action == "add" || $action == "edit") {
-		languages_user_update($extdisplay, $langcode);
+		if (!isset($GLOBALS['abort']) || $GLOBALS['abort'] !== true) {
+			languages_user_update($extdisplay, $langcode);
+		}
 	} elseif ($action == "del") {
 		languages_user_del($extdisplay);
 	}
