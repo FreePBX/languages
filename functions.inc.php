@@ -117,14 +117,14 @@ function languages_configpageinit($pagename) {
 	// On a 'new' user, 'tech_hardware' is set, and there's no extension. Hook into the page.
 	if ($tech_hardware != null || $pagename == 'users') {
 		language_applyhooks();
-		$currentcomponent->addprocessfunc('languages_configprocess', 5);
+		$currentcomponent->addprocessfunc('languages_configprocess', 8);
 	} elseif ($action=="add") {
 		// We don't need to display anything on an 'add', but we do need to handle returned data.
-		$currentcomponent->addprocessfunc('languages_configprocess', 5);
+		$currentcomponent->addprocessfunc('languages_configprocess', 8);
 	} elseif ($extdisplay != '') {
 		// We're now viewing an extension, so we need to display _and_ process.
 		language_applyhooks();
-		$currentcomponent->addprocessfunc('languages_configprocess', 5);
+		$currentcomponent->addprocessfunc('languages_configprocess', 8);
 	}
 }
 
