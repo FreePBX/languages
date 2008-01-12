@@ -14,6 +14,6 @@
 		*2.4.0.1* #2578 use setlanguage to handle changes in Asterisk 1.6
 		*2.4.0* First release of module
 	</changelog>
-	<location>release/2.4/languages-2.4.0.tgz</location>
-	<md5sum>dbf44d5c5afea38ec242e8734f20dc58</md5sum>
+	<location>release/2.4/languages-2.4.0.1.tgz</location>
+	<md5sum>ad0600750834f04688e850ca545149ab</md5sum>
 </module>
