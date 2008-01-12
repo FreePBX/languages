@@ -39,7 +39,7 @@ function languages_get_config($engine) {
 			$ext->addInclude('from-internal-additional', 'app-languages');
 			foreach (languages_list() as $row) {
 					$ext->add('app-languages',$row['language_id'], '', new ext_noop('Changing Channel to language: '.$row['lang_code'].' ('.$row['description'].')'));
-					$ext->add('app-languages',$row['language_id'], '', new ext_setvar('LANGUAGE()',$row['lang_code']));
+					$ext->add('app-languages',$row['language_id'], '', new ext_setlanguage($row['lang_code']));
 					$ext->add('app-languages',$row['language_id'], '', new ext_goto($row['dest']));
 			}
 		break;
