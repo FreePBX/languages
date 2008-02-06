@@ -91,7 +91,7 @@ echo $helptext;
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Language Code")?>:<span><?php echo _("The Asterisk language code you want to change to. For example \"fr\" for French, \"de\" for German")?></span></a></td>
-		<td><input size="1" type="text" name="lang_code" value="<?php echo $lang_code; ?>" /></td> </tr>
+		<td><input size="14" type="text" name="lang_code" value="<?php echo $lang_code; ?>" /></td> </tr>
 	<tr><td colspan="2"><br><h5><?php echo _("Destination")?>:<hr></h5></td></tr>
 
 <?php 
