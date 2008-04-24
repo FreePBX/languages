@@ -186,13 +186,8 @@ function languages_user_get($xtn) {
 
 function languages_user_update($ext, $langcode) {
 	global $astman;
-	
-	if ($ena === 'disabled') {
-		languages_user_del($ext);
-	} else {
-		// Update the settings in ASTDB
-		$astman->database_put("AMPUSER",$ext."/language",$langcode);
-	}
+	// Update the settings in ASTDB
+	$astman->database_put("AMPUSER",$ext."/language",$langcode);
 }
 
 function languages_user_del($ext) {
