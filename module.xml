@@ -20,6 +20,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.4/languages-2.4.0.3.tgz</location>
-	<md5sum>c0fa54b914c09c0832a7a1fc1006ed84</md5sum>
+	<location>release/2.5/languages-2.5.0.tgz</location>
+	<md5sum>7e9da317d88fb0e925cd2d4941433de1</md5sum>
 </module>
