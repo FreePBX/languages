@@ -1,7 +1,7 @@
 <module>
 	<rawname>languages</rawname>
 	<name>Languages</name>
-	<version>2.5.0.1</version>
+	<version>2.5.0.2</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>
@@ -11,6 +11,7 @@
 		<languages>Languages</languages>
 	</menuitems>
 	<changelog>
+		*2.5.0.2* fix depends to 2.5.0alpha1
 		*2.5.0.1* r6123 inject macro-user-callerid with required language setting (was hardcoded)
 		*2.5.0* #2845 tabindex
 		*2.4.0.3* #2843 Russian Translation, removal of un-needed code
@@ -19,7 +20,7 @@
 		*2.4.0* First release of module
 	</changelog>
 	<depends>
-		<version>2.5.0alpha1.1</version>
+		<version>2.5.0alpha1</version>
 	</depends>
 	<location>release/2.5/languages-2.5.0.1.tgz</location>
 	<md5sum>d7da1414759ea5354038a1da35ea5564</md5sum>
