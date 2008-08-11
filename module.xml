@@ -1,7 +1,7 @@
 <module>
 	<rawname>languages</rawname>
 	<name>Languages</name>
-	<version>2.5.0.2</version>
+	<version>2.5.0.3</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>
@@ -11,6 +11,7 @@
 		<languages>Languages</languages>
 	</menuitems>
 	<changelog>
+		*2.5.0.3* #2530 typo _GLOBALS should be GLOBALS
 		*2.5.0.2* fix depends to 2.5.0alpha1
 		*2.5.0.1* r6123 inject macro-user-callerid with required language setting (was hardcoded)
 		*2.5.0* #2845 tabindex
@@ -22,6 +23,6 @@
 	<depends>
 		<version>2.5.0alpha1</version>
 	</depends>
-	<location>release/2.5/languages-2.5.0.2.tgz</location>
-	<md5sum>33f3de4da9917dd600d17d3afaffe3e8</md5sum>
+	<location>release/2.5/languages-2.5.0.3.tgz</location>
+	<md5sum>9ac4e2aca6b2e38fa783e522353b834f</md5sum>
 </module>
