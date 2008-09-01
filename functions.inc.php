@@ -82,7 +82,7 @@ function languages_list() {
 
 function languages_get($language_id) {
 	global $db;
-	$sql = "SELECT language_id, description, lang_code, dest FROM languages WHERE language_id = ".addslashes($language_id);
+	$sql = "SELECT language_id, description, lang_code, dest FROM languages WHERE language_id = ".$db->escapeSimple($language_id);
 	$row = $db->getRow($sql, DB_FETCHMODE_ASSOC);
 	if(DB::IsError($row)) {
 		die_freepbx($row->getMessage()."<br><br>Error selecting row from languages");	
@@ -94,9 +94,9 @@ function languages_get($language_id) {
 function languages_add($description, $lang_code, $dest) {
 	global $db;
 	$sql = "INSERT INTO languages (description, lang_code, dest) VALUES (".
-		"'".addslashes($description)."', ".
-		"'".addslashes($lang_code)."', ".
-		"'".addslashes($dest)."')";
+		"'".$db->escapeSimple($description)."', ".
+		"'".$db->escapeSimple($lang_code)."', ".
+		"'".$db->escapeSimple($dest)."')";
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
@@ -105,7 +105,7 @@ function languages_add($description, $lang_code, $dest) {
 
 function languages_delete($language_id) {
 	global $db;
-	$sql = "DELETE FROM languages WHERE language_id = ".addslashes($language_id);
+	$sql = "DELETE FROM languages WHERE language_id = ".$db->escapeSimple($language_id);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
@@ -115,10 +115,10 @@ function languages_delete($language_id) {
 function languages_edit($language_id, $description, $lang_code, $dest) { 
 	global $db;
 	$sql = "UPDATE languages SET ".
-		"description = '".addslashes($description)."', ".
-		"lang_code = '".addslashes($lang_code)."', ".
-		"dest = '".addslashes($dest)."' ".
-		"WHERE language_id = ".addslashes($language_id);
+		"description = '".$db->escapeSimple($description)."', ".
+		"lang_code = '".$db->escapeSimple($lang_code)."', ".
+		"dest = '".$db->escapeSimple($dest)."' ".
+		"WHERE language_id = ".$db->escapeSimple($language_id);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
