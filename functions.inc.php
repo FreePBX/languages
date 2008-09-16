@@ -172,7 +172,7 @@ function languages_configpageload() {
 
 		$section = _('Language');
 		$msgInvalidLanguage = _('Please enter a valid Language Code');
-		$currentcomponent->addguielem($section, new gui_textbox('langcode', $langcode, _('Language Code'), _('The language code for this user. This will result in messages such as voiclangcode prompts to use the selected language if installed.'), "!isFilename()", $msgInvalidLanguage, true));
+		$currentcomponent->addguielem($section, new gui_textbox('langcode', $langcode, _('Language Code'), _('This will cause all messages and voice prompts to use the selected language if installed.'), "!isFilename()", $msgInvalidLanguage, true));
 	}
 }
 
