@@ -1,7 +1,7 @@
 <module>
 	<rawname>languages</rawname>
 	<name>Languages</name>
-	<version>2.5.0.4</version>
+	<version>2.5.0.5</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>
@@ -11,6 +11,7 @@
 		<languages>Languages</languages>
 	</menuitems>
 	<changelog>
+		*2.5.0.5* #3174 fix validation code
 		*2.5.0.4* #3110, #3138
 		*2.5.0.3* #2530 typo _GLOBALS should be GLOBALS
 		*2.5.0.2* fix depends to 2.5.0alpha1
@@ -24,6 +25,6 @@
 	<depends>
 		<version>2.5.0alpha1</version>
 	</depends>
-	<location>release/2.5/languages-2.5.0.4.tgz</location>
-	<md5sum>264b5bc7886b75d65f99c8c6e67a625a</md5sum>
+	<location>release/2.5/languages-2.5.0.5.tgz</location>
+	<md5sum>b605cc4ecd69cb22bd09085b3089083d</md5sum>
 </module>
