@@ -78,6 +78,12 @@ msgstr "Назначение"
 msgid "Delete"
 msgstr "Удалить"
 
+#: functions.inc.php:175
+msgid ""
+"This will cause all messages and voice prompts to use the selected language if installed."
+msgstr ""
+"Все голосовые сообщения и напоминания будут на указанном языке, если он инсталлирован."
+
 msgid "Languages"
 msgstr "Языки"
 
