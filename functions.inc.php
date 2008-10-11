@@ -30,7 +30,7 @@ function languages_getdestinfo($dest) {
 			return array();
 		} else {
 			$type = isset($active_modules['languages']['type'])?$active_modules['languages']['type']:'setup';
-			return array('description' => 'Language : '.$thisexten['description'],
+			return array('description' => sprintf(_("Language: %s"),$thisexten['description']),
 			             'edit_url' => 'config.php?display=languages&type='.$type.'&extdisplay='.urlencode($exten),
 								  );
 		}
@@ -239,7 +239,7 @@ function languages_check_destinations($dest=true) {
 		$thisid   = $result['language_id'];
 		$destlist[] = array(
 			'dest' => $thisdest,
-			'description' => 'Language Change: '.$result['description'],
+			'description' => sprintf(_("Language Change: %s"),$result['description']),
 			'edit_url' => 'config.php?display=languages&type='.$type.'&extdisplay='.urlencode($thisid),
 		);
 	}

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX languages\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-16 15:40+0200\n"
-"PO-Revision-Date: 2008-09-16 18:42+0100\n"
+"POT-Creation-Date: 2008-10-05 23:52+0200\n"
+"PO-Revision-Date: 2008-10-11 18:20+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
+
+#: functions.inc.php:33
+#, php-format
+msgid "Language: %s"
+msgstr "Språk: %s"
 
 #: functions.inc.php:173
 msgid "Language"
@@ -33,6 +38,11 @@ msgstr "Språkkod"
 #: functions.inc.php:175
 msgid "This will cause all messages and voice prompts to use the selected language if installed."
 msgstr "Alla meddelanden och röster kommer att använda det valda språket om det är installerat."
+
+#: functions.inc.php:242
+#, php-format
+msgid "Language Change: %s"
+msgstr "Språkbyte: %s"
 
 #: page.languages.php:52
 #: page.languages.php:75
@@ -83,7 +93,7 @@ msgstr "Ta bort"
 msgid "Invalid description specified"
 msgstr "Ogiltig beskrivning"
 
-#: module.xml
+#: modules.xml
 msgid "Languages"
 msgstr "Språk"
 
