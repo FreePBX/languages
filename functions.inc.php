@@ -12,7 +12,7 @@ function languages_destinations() {
 	foreach (languages_list() as $row) {
 		$extens[] = array('destination' => 'app-languages,' . $row['language_id'] . ',1', 'description' => $row['description']);
 	}
-	return $extens;
+	return isset($extens)?$extens:null;
 }
 
 function languages_getdest($exten) {
