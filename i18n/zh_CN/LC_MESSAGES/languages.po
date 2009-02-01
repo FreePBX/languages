@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-05 23:52+0200\n"
+"PO-Revision-Date: 2009-01-31 12:37+0800\n"
+"Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
+"Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: CHINA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: functions.inc.php:33
+#, php-format
+msgid "Language: %s"
+msgstr "语言：%s"
+
+#: functions.inc.php:173
+msgid "Language"
+msgstr "语言"
+
+#: functions.inc.php:174
+msgid "Please enter a valid Language Code"
+msgstr "请输入有效的语言代码"
+
+#: functions.inc.php:175
+#: page.languages.php:93
+msgid "Language Code"
+msgstr "语言代码"
+
+#: functions.inc.php:175
+msgid "This will cause all messages and voice prompts to use the selected language if installed."
+msgstr "如果安装好了所选择的语言，这会使所有的消息和语音提示都使用这种语言。"
+
+#: functions.inc.php:242
+#, php-format
+msgid "Language Change: %s"
+msgstr "改变语言：%s"
+
+#: page.languages.php:52
+#: page.languages.php:75
+msgid "Add Language"
+msgstr "添加语言"
+
+#: page.languages.php:73
+msgid "Edit: "
+msgstr "编辑："
+
+#: page.languages.php:78
+msgid "Languages allow you to change the language of the call flow and then continue on to the desired destination. For example, you may have an IVR option that says \"For French Press 5 now\". You would then create a French language instance and point it's destination at a French IVR. The language of the call's channel will now be in French. This will result in French sounds being chosen if installed."
+msgstr "语言设置可以让你改变呼叫流的语言，然后把呼叫转移到所希望的目的地去。比如，你可能有一个IVR选项，它对用户播放“中文请按5”。然后你可以创建一套中文的IVR，并把呼叫引导到此中文IVR。现在呼叫的频道就变成了中文。今后所有的声音都是中文（如果安装了中文声音的话）。"
+
+#: page.languages.php:87
+msgid "Edit Language Instance"
+msgstr "编辑一种语言"
+
+#: page.languages.php:87
+msgid "Add Language Instance"
+msgstr "添加一种语言"
+
+#: page.languages.php:89
+msgid "Description"
+msgstr "描述"
+
+#: page.languages.php:89
+msgid "The descriptive name of this language instance. For example \"French Main IVR\""
+msgstr "为这种语言设定一个描述性的名字，比如，“中文主IVR”"
+
+#: page.languages.php:93
+msgid "The Asterisk language code you want to change to. For example \"fr\" for French, \"de\" for German"
+msgstr "设定你希望切换到的Asterisk的语言代码。比如，法语是“fr”，德语是“de”"
+
+#: page.languages.php:95
+msgid "Destination"
+msgstr "目的地"
+
+#: page.languages.php:103
+msgid "Submit Changes"
+msgstr "提交更改"
+
+#: page.languages.php:104
+msgid "Delete"
+msgstr "删除"
+
+#: page.languages.php:127
+msgid "Invalid description specified"
+msgstr "指定了无效的描述"
+
+#: modules.xml
+msgid "Languages"
+msgstr "语言"
+
