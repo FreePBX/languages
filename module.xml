@@ -1,7 +1,9 @@
 <module>
 	<rawname>languages</rawname>
 	<name>Languages</name>
-	<version>2.5.0.7</version>
+	<version>2.6.0.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>
@@ -11,7 +13,7 @@
 		<languages>Languages</languages>
 	</menuitems>
 	<changelog>
-		*2.5.0.7* localization string enclosures
+		*2.6.0.0* localizations, misc
 		*2.5.0.6* localization, Swedish
 		*2.5.0.5* #3174 fix validation code
 		*2.5.0.4* #3110, #3138
