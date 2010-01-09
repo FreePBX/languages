@@ -219,6 +219,45 @@ function languages_user_del($ext) {
 	$astman->database_deltree("AMPUSER/$ext/language");
 }
 
+	//inbound route langauge settings
+function languages_hook_core($viewing_itemid, $target_menuid){
+	dbug($_REQUEST);
+	//if were editing, get save parms
+	if(!isset($_REQUEST['$extension']) && !isset($_REQUEST['$cidnum'])){//set $extension,$cidnum if we dont already have them
+		$opts=explode('/', $_REQUEST['extdisplay']);$extension=$opts['0'];$cidnum=$opts['1'];
+	}else{
+		$extension=$_REQUEST['$extension'];$cidnum=$_REQUEST['$cidnum'];
+	}
+	if ((isset($_REQUEST['action']) && $_REQUEST['action'] == 'edtIncoming') || ( isset($extension) || isset($cidnum )) && isset($_REQUEST['language']) ){
+		laguages_incoming_update($language=$_REQUEST['language'],$extension,$cidnum);
+	}
+	$html = '';
+	if ($target_menuid == 'did'){
+		$html.='<tr><td colspan="2"><h5>'._("Language").'<hr></h5></td></tr>';
+		$html.='<tr><td><a href="#" class="info">'._('Langauge').'<span>'._("Allowes you to set the language for this DID.").'</span></a>:</td>';
+		$html.='<td><input type="text" name="language" value="'.lanugage_incoming_get($extension,$cidnum).'"></td></tr>';
+	}
+	return $html;
+}
+
+function lanugage_incoming_get($extension=null,$cidnum=null){
+	global $db;
+	$sql='SELECT language FROM language_incoming WHERE extension = ? AND cidnum = ?';
+	$lang=$db->getOne($sql, array($extension, $cidnum));
+	dbug($lang);		
+	return $lang;
+}
+
+function laguages_incoming_update($language=null,$extension=null,$cidnum=null){
+	global $db;
+	$sql='DELETE FROM language_incoming WHERE extension = ? AND cidnum = ?';
+	$foo=$db->query($sql,array($extension,$cidnum));
+	dbug($foo);
+	$sql='INSERT INTO language_incoming (extension,cidnum,language) VALUES (?, ?, ?)';
+	$foo=$db->query($sql,array($extension,$cidnum,$language));
+	dbug($foo);
+}
+
 function languages_check_destinations($dest=true) {
 	global $active_modules;
 

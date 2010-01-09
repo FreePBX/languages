@@ -10,6 +10,12 @@ $sql = "CREATE TABLE IF NOT EXISTS languages (
 	dest VARCHAR( 255 )
 )";
 
+$sql='CREATE TABLE IF NOT EXISTS language_incoming (
+	extension varchar(50),
+	cidnum varchar(50),
+	language varchar(10)
+	);';
+	
 $check = $db->query($sql);
 if(DB::IsError($check)) {
 	die_freepbx("Can not create languages table\n");
