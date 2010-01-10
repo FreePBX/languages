@@ -49,30 +49,7 @@ function languages_get_config($engine) {
 					$ext->add('app-languages',$row['language_id'], '', new ext_setlanguage($row['lang_code']));
 					$ext->add('app-languages',$row['language_id'], '', new ext_goto($row['dest']));
 			}
-			
-			$engine_info = engine_getinfo();
-			$version = $engine_info['version'];			
-			$routes=lanugage_incoming_get();
-			foreach($routes as $current => $route){
-				if($route['extension']&&!$route['cidnum']){
-					$extension='_.';
-					$context='ext-did-catchall';
-				}elseif($route['cidnum']){
-					$context='ext-did-0001';
-					if(!$route['extension']){$route['extension']='_.';}
-					$extension=$route['extension'].'/'.$route['cidnum'];
-				}elseif($route['extension']&&!$route['cidnum']){
-					$context='ext-did-0002';
-					$extension=$route['extension'];
-				}else{//catchall
-					$context='ext-did-catchall';
-				}
-				if (version_compare($version, "1.4", "ge")) { 
-					$ext->splice($context, $extension, '2', new ext_setvar('CHANNEL(language)',$routes['language']));
-				}else{
-					$ext->splice($context, $extension, '2', new ext_setvar('LANGUAGE',$routes['language']));
-				}
-		}
+		
 		break;
 	}
 }
@@ -88,7 +65,34 @@ function languages_hookGet_config($engine) {
 			} else {
 				$ext->splice('macro-user-callerid', 's', $priority,new ext_execif('$["${DB(AMPUSER/${AMPUSER}/language)}" != ""]', 'Set', 'LANGUAGE()=${DB(AMPUSER/${AMPUSER}/language)}'));
 			}
-
+			
+			$engine_info = engine_getinfo();
+			$version = $engine_info['version'];			
+			$routes=lanugage_incoming_get();
+			dbug($routes);
+			foreach($routes as $current => $route){
+				if($route['extension']&&!$route['cidnum']){
+					$extension='_.';
+					$context='ext-did-catchall';
+				}elseif($route['cidnum']){
+					$context='ext-did-0001';
+					if(!$route['extension']){$route['extension']='_.';}
+					$extension=$route['extension'].'/'.$route['cidnum'];
+				}elseif($route['extension']&&!$route['cidnum']){
+					$context='ext-did-0002';
+					$extension=$route['extension'];
+				}else{//catchall
+					$context='ext-did-0001';
+					$extension='s';
+				}
+				if (version_compare($version, "1.4", "ge")){ 
+					dbug($context.' '.$extension);
+					$ext->splice($context, $extension, 1, new ext_setvar('CHANNEL(language)',$route['language']));
+				}else{
+					dbug('foo');
+					$ext->splice($context, $extension, 1, new ext_setvar('LANGUAGE',$route['language']));
+				}
+		}
 		break;
 	}
 }
@@ -260,14 +264,14 @@ function languages_hook_core($viewing_itemid, $target_menuid){
 	if ($target_menuid == 'did'){
 		$html.='<tr><td colspan="2"><h5>'._("Language").'<hr></h5></td></tr>';
 		$html.='<tr><td><a href="#" class="info">'._('Langauge').'<span>'._("Allowes you to set the language for this DID.").'</span></a>:</td>';
-		$html.='<td><input type="text" name="language" value="'.lanugage_incoming_get($extension,$cidnum).'"></td></tr>';
+		$html.='<td><input type="text" name="language" value="'.lanugage_incoming_get($extension,$cidnum,$_REQUEST['extdisplay']).'"></td></tr>';
 	}
 	return $html;
 }
 
-function lanugage_incoming_get($extension=null,$cidnum=null){
+function lanugage_incoming_get($extension=null,$cidnum=null,$extdisplay=null){
 	global $db;
-	if($extension || $cidnum){
+	if($extension || $cidnum || $extdisplay=='/'){
 		$sql='SELECT language FROM language_incoming WHERE extension = ? AND cidnum = ?';
 		$lang=$db->getOne($sql, array($extension, $cidnum));
 	}else{
