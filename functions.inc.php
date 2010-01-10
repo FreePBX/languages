@@ -49,6 +49,30 @@ function languages_get_config($engine) {
 					$ext->add('app-languages',$row['language_id'], '', new ext_setlanguage($row['lang_code']));
 					$ext->add('app-languages',$row['language_id'], '', new ext_goto($row['dest']));
 			}
+			
+			$engine_info = engine_getinfo();
+			$version = $engine_info['version'];			
+			$routes=lanugage_incoming_get();
+			foreach($routes as $current => $route){
+				if($route['extension']&&!$route['cidnum']){
+					$extension='_.';
+					$context='ext-did-catchall';
+				}elseif($route['cidnum']){
+					$context='ext-did-0001';
+					if(!$route['extension']){$route['extension']='_.';}
+					$extension=$route['extension'].'/'.$route['cidnum'];
+				}elseif($route['extension']&&!$route['cidnum']){
+					$context='ext-did-0002';
+					$extension=$route['extension'];
+				}else{//catchall
+					$context='ext-did-catchall';
+				}
+				if (version_compare($version, "1.4", "ge")) { 
+					$ext->splice($context, $extension, '2', new ext_setvar('CHANNEL(language)',$routes['language']));
+				}else{
+					$ext->splice($context, $extension, '2', new ext_setvar('LANGUAGE',$routes['language']));
+				}
+		}
 		break;
 	}
 }
@@ -64,6 +88,7 @@ function languages_hookGet_config($engine) {
 			} else {
 				$ext->splice('macro-user-callerid', 's', $priority,new ext_execif('$["${DB(AMPUSER/${AMPUSER}/language)}" != ""]', 'Set', 'LANGUAGE()=${DB(AMPUSER/${AMPUSER}/language)}'));
 			}
+
 		break;
 	}
 }
@@ -242,9 +267,13 @@ function languages_hook_core($viewing_itemid, $target_menuid){
 
 function lanugage_incoming_get($extension=null,$cidnum=null){
 	global $db;
-	$sql='SELECT language FROM language_incoming WHERE extension = ? AND cidnum = ?';
-	$lang=$db->getOne($sql, array($extension, $cidnum));
-	dbug($lang);		
+	if($extension || $cidnum){
+		$sql='SELECT language FROM language_incoming WHERE extension = ? AND cidnum = ?';
+		$lang=$db->getOne($sql, array($extension, $cidnum));
+	}else{
+		$sql="SELECT * FROM language_incoming";
+		$lang=$db->getAll($sql, DB_FETCHMODE_ASSOC);
+	}		
 	return $lang;
 }
 
@@ -252,10 +281,8 @@ function laguages_incoming_update($language=null,$extension=null,$cidnum=null){
 	global $db;
 	$sql='DELETE FROM language_incoming WHERE extension = ? AND cidnum = ?';
 	$foo=$db->query($sql,array($extension,$cidnum));
-	dbug($foo);
 	$sql='INSERT INTO language_incoming (extension,cidnum,language) VALUES (?, ?, ?)';
 	$foo=$db->query($sql,array($extension,$cidnum,$language));
-	dbug($foo);
 }
 
 function languages_check_destinations($dest=true) {
