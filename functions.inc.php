@@ -69,27 +69,21 @@ function languages_hookGet_config($engine) {
 			$engine_info = engine_getinfo();
 			$version = $engine_info['version'];			
 			$routes=lanugage_incoming_get();
-			dbug($routes);
 			foreach($routes as $current => $route){
-				if($route['extension']&&!$route['cidnum']){
-					$extension='_.';
-					$context='ext-did-catchall';
-				}elseif($route['cidnum']){
-					$context='ext-did-0001';
-					if(!$route['extension']){$route['extension']='_.';}
-					$extension=$route['extension'].'/'.$route['cidnum'];
-				}elseif($route['extension']&&!$route['cidnum']){
-					$context='ext-did-0002';
-					$extension=$route['extension'];
-				}else{//catchall
-					$context='ext-did-0001';
-					$extension='s';
+				if($route['extension']=='' && $route['cidnum']){//callerID only
+					$extension='s/'.$route['cidnum'];
+					$context=$route['pricid']?'ext-did-0001':'ext-did-0002';
+				}else{
+					if(($route['extension'] && $route['cidnum'])||($route['extension']=='' && $route['cidnum']=='')){//callerid+did / any/any
+						$context='ext-did-0001';
+					}else{//did only
+						$context='ext-did-0002';
+					}
+					$extension=($route['extension']!=''?$route['extension']:'s').($route['cidnum']==''?'':'/'.$route['cidnum']);
 				}
-				if (version_compare($version, "1.4", "ge")){ 
-					dbug($context.' '.$extension);
+				if(version_compare($version, "1.4", "ge")){ 
 					$ext->splice($context, $extension, 1, new ext_setvar('CHANNEL(language)',$route['language']));
 				}else{
-					dbug('foo');
 					$ext->splice($context, $extension, 1, new ext_setvar('LANGUAGE',$route['language']));
 				}
 		}
@@ -250,43 +244,54 @@ function languages_user_del($ext) {
 
 	//inbound route langauge settings
 function languages_hook_core($viewing_itemid, $target_menuid){
-	dbug($_REQUEST);
 	//if were editing, get save parms
-	if(!isset($_REQUEST['$extension']) && !isset($_REQUEST['$cidnum'])){//set $extension,$cidnum if we dont already have them
+	if(isset($_REQUEST['pricid']) && $_REQUEST['pricid'] == 'CHECKED'){$pricid=true;}else{$pricid=false;}
+	if(!isset($_REQUEST['extension']) && !isset($_REQUEST['cidnum'])){//set $extension,$cidnum if we dont already have them
 		$opts=explode('/', $_REQUEST['extdisplay']);$extension=$opts['0'];$cidnum=$opts['1'];
 	}else{
-		$extension=$_REQUEST['$extension'];$cidnum=$_REQUEST['$cidnum'];
+		$extension=$_REQUEST['extension'];$cidnum=$_REQUEST['cidnum'];
 	}
-	if ((isset($_REQUEST['action']) && $_REQUEST['action'] == 'edtIncoming') || ( isset($extension) || isset($cidnum )) && isset($_REQUEST['language']) ){
-		laguages_incoming_update($language=$_REQUEST['language'],$extension,$cidnum);
+	if((isset($_REQUEST['action']) && $_REQUEST['action'] == 'edtIncoming') || ( isset($extension) || isset($cidnum )) && isset($_REQUEST['language']) ){
+		laguages_incoming_update($language=$_REQUEST['language'],$extension,$cidnum,$pricid);
+	}
+	if(isset($_REQUEST['action']) && $_REQUEST['action']=='delIncoming'){
+		laguages_incoming_delete($extension,$cidnum);
 	}
 	$html = '';
 	if ($target_menuid == 'did'){
 		$html.='<tr><td colspan="2"><h5>'._("Language").'<hr></h5></td></tr>';
 		$html.='<tr><td><a href="#" class="info">'._('Langauge').'<span>'._("Allowes you to set the language for this DID.").'</span></a>:</td>';
-		$html.='<td><input type="text" name="language" value="'.lanugage_incoming_get($extension,$cidnum,$_REQUEST['extdisplay']).'"></td></tr>';
+		$html.='<td><input type="text" name="language" value="'.lanugage_incoming_get($extension,$cidnum).'"></td></tr>';
 	}
 	return $html;
 }
 
-function lanugage_incoming_get($extension=null,$cidnum=null,$extdisplay=null){
+function lanugage_incoming_get($extension=null,$cidnum=null){
 	global $db;
-	if($extension || $cidnum || $extdisplay=='/'){
+	if($extension || $cidnum || $_REQUEST['extdisplay']=='/' || $_REQUEST['display']=='did'){
 		$sql='SELECT language FROM language_incoming WHERE extension = ? AND cidnum = ?';
 		$lang=$db->getOne($sql, array($extension, $cidnum));
 	}else{
 		$sql="SELECT * FROM language_incoming";
 		$lang=$db->getAll($sql, DB_FETCHMODE_ASSOC);
-	}		
+	}
 	return $lang;
 }
 
-function laguages_incoming_update($language=null,$extension=null,$cidnum=null){
+function laguages_incoming_update($language=null,$extension=null,$cidnum=null,$pricid){
+	global $db;
+	$sql='DELETE FROM language_incoming WHERE extension = ? AND cidnum = ?';
+	$db->query($sql,array($extension,$cidnum));
+	if(isset($language) && $language!=''){//no need to keep a record if were not setting the language
+		$sql='INSERT INTO language_incoming (extension,cidnum,language,pricid) VALUES (?, ?, ?, ?)';
+		$db->query($sql,array($extension,$cidnum,$language,$pricid));
+	}
+}
+
+function laguages_incoming_delete($extension=null,$cidnum=null){
 	global $db;
 	$sql='DELETE FROM language_incoming WHERE extension = ? AND cidnum = ?';
 	$foo=$db->query($sql,array($extension,$cidnum));
-	$sql='INSERT INTO language_incoming (extension,cidnum,language) VALUES (?, ?, ?)';
-	$foo=$db->query($sql,array($extension,$cidnum,$language));
 }
 
 function languages_check_destinations($dest=true) {
