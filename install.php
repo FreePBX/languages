@@ -12,7 +12,6 @@ $sql[]="CREATE TABLE IF NOT EXISTS languages (
 $sql[]='CREATE TABLE IF NOT EXISTS language_incoming (
 			extension varchar(50),
 			cidnum varchar(50),
-			pricid varchar(25),
 			language varchar(10)
 			);';
 

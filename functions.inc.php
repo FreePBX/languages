@@ -272,7 +272,7 @@ function lanugage_incoming_get($extension=null,$cidnum=null){
 		$sql='SELECT language FROM language_incoming WHERE extension = ? AND cidnum = ?';
 		$lang=$db->getOne($sql, array($extension, $cidnum));
 	}else{
-		$sql="SELECT * FROM language_incoming";
+		$sql='SELECT language_incoming.*,incoming.pricid FROM language_incoming, incoming WHERE language_incoming.cidnum=incoming.cidnum and language_incoming.extension=incoming.extension;';
 		$lang=$db->getAll($sql, DB_FETCHMODE_ASSOC);
 	}
 	return $lang;
