@@ -1,7 +1,7 @@
 <module>
 	<rawname>languages</rawname>
 	<name>Languages</name>
-	<version>2.6.0.1</version>
+	<version>2.7.0.0</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<type>setup</type>
@@ -13,7 +13,7 @@
 		<languages>Languages</languages>
 	</menuitems>
 	<changelog>
-		*2.6.0.1* #4004 inbound routes should have option to set language
+		*2.7.0.0* #4004 add language option to inbound routes
 		*2.6.0.0* localizations, misc
 		*2.5.0.6* localization, Swedish
 		*2.5.0.5* #3174 fix validation code
@@ -30,6 +30,6 @@
 	<depends>
 		<version>2.5.0alpha1</version>
 	</depends>
-	<location>release/2.6/languages-2.6.0.0.tgz</location>
-	<md5sum>4b4487ddc31fb9f5bffbb137ca19c6b8</md5sum>
+	<location>release/2.7/languages-2.7.0.0.tgz</location>
+	<md5sum>fc3e40f4a8182fa00cd7948bee4e9ce5</md5sum>
 </module>
