@@ -244,17 +244,23 @@ function languages_user_del($ext) {
 
 	//inbound route langauge settings
 function languages_hook_core($viewing_itemid, $target_menuid){
-	//if were editing, get save parms
-	if(isset($_REQUEST['pricid']) && $_REQUEST['pricid'] == 'CHECKED'){$pricid=true;}else{$pricid=false;}
-	if(!isset($_REQUEST['extension']) && !isset($_REQUEST['cidnum'])){//set $extension,$cidnum if we dont already have them
-		$opts=explode('/', $_REQUEST['extdisplay']);$extension=$opts['0'];$cidnum=$opts['1'];
+$extension=isset($_REQUEST['extension'])?$_REQUEST['extension']:'';
+$cidnum=isset($_REQUEST['cidnum'])?$_REQUEST['cidnum']:'';
+$extdisplay=isset($_REQUEST['extdisplay'])?$_REQUEST['extdisplay']:'';
+$action=isset($_REQUEST['action'])?$_REQUEST['action']:'';
+$language=isset($_REQUEST['language'])?$_REQUEST['language']:'';
+
+	//set $extension,$cidnum if we dont already have them
+	if(!isset($extension) && !isset($cidnum)){
+		$opts=explode('/', $extdisplay);$extension=$opts['0'];$cidnum=$opts['1'];
 	}else{
-		$extension=$_REQUEST['extension'];$cidnum=$_REQUEST['cidnum'];
+		$extension=$extension;$cidnum=$cidnum;
 	}
-	if((isset($_REQUEST['action']) && $_REQUEST['action'] == 'edtIncoming') || ( isset($extension) || isset($cidnum )) && isset($_REQUEST['language']) ){
-		laguages_incoming_update($language=$_REQUEST['language'],$extension,$cidnum,$pricid);
+	//update if we have enough info
+	if($action == 'edtIncoming' || ( $extension!='' || $cidnum!='') && $language!=''){
+		laguages_incoming_update($language=$language,$extension,$cidnum);
 	}
-	if(isset($_REQUEST['action']) && $_REQUEST['action']=='delIncoming'){
+	if($action=='delIncoming'){
 		laguages_incoming_delete($extension,$cidnum);
 	}
 	$html = '';
@@ -278,14 +284,14 @@ function lanugage_incoming_get($extension=null,$cidnum=null){
 	return $lang;
 }
 
-function laguages_incoming_update($language=null,$extension=null,$cidnum=null,$pricid){
+function laguages_incoming_update($language=null,$extension=null,$cidnum=null){
 	global $db;
 	$sql='DELETE FROM language_incoming WHERE extension = ? AND cidnum = ?';
 	$db->query($sql,array($extension,$cidnum));
 	if(isset($language) && $language!=''){//no need to keep a record if were not setting the language
-		$sql='INSERT INTO language_incoming (extension,cidnum,language,pricid) VALUES (?, ?, ?, ?)';
-		$db->query($sql,array($extension,$cidnum,$language,$pricid));
-	}
+		$sql='INSERT INTO language_incoming (extension,cidnum,language) VALUES (?, ?, ?)';
+		$db->query($sql,array($extension,$cidnum,$language));
+	}dbug(get_defined_vars());
 }
 
 function laguages_incoming_delete($extension=null,$cidnum=null){
