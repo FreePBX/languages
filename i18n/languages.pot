@@ -52,11 +52,11 @@ msgid ""
 msgstr ""
 
 #: languages/functions.inc.php:263
-msgid "Langauge"
+msgid "Language"
 msgstr ""
 
 #: languages/functions.inc.php:263
-msgid "Allowes you to set the language for this DID."
+msgid "Allows you to set the language for this DID."
 msgstr ""
 
 #: languages/functions.inc.php:317
@@ -95,7 +95,7 @@ msgid ""
 "continue on to the desired destination. For example, you may have an IVR "
 "option that says \"For French Press 5 now\". You would then create a French "
 "language instance and point it's destination at a French IVR. The language "
-"of the call's channel will now be in French. This will result in French "
+"of the call channel will now be in French. This will result in French "
 "sounds being chosen if installed."
 msgstr ""
 
