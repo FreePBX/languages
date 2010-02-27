@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 13:45+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,68 +28,54 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: languages/functions.inc.php:33
 #, php-format
 msgid "Language: %s"
 msgstr ""
 
-#: languages/functions.inc.php:196 languages/functions.inc.php:268
 msgid "Language"
 msgstr ""
 
-#: languages/functions.inc.php:197
 msgid "Please enter a valid Language Code"
 msgstr ""
 
-#: languages/functions.inc.php:198 languages/page.languages.php:93
 msgid "Language Code"
 msgstr ""
 
-#: languages/functions.inc.php:198
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed."
 msgstr ""
 
-#: languages/functions.inc.php:269
 msgid "Langauge"
 msgstr ""
 
-#: languages/functions.inc.php:269
 msgid "Allowes you to set the language for this DID."
 msgstr ""
 
-#: languages/functions.inc.php:323
 #, php-format
 msgid "Language Change: %s"
 msgstr ""
 
-#: languages/languages.i18n.php:5 languages/languages.i18n.php:13
 msgid "Languages"
 msgstr ""
 
-#: languages/languages.i18n.php:7
 msgid ""
 "Internal Options \n"
 "&\n"
 " Configuration"
 msgstr ""
 
-#: languages/languages.i18n.php:11
 msgid ""
 "Adds the ability to changes the language within a call flow and add language "
 "attribute to users."
 msgstr ""
 
-#: languages/page.languages.php:52 languages/page.languages.php:75
 msgid "Add Language"
 msgstr ""
 
-#: languages/page.languages.php:73
 msgid "Edit: "
 msgstr ""
 
-#: languages/page.languages.php:78
 msgid ""
 "Languages allow you to change the language of the call flow and then "
 "continue on to the desired destination. For example, you may have an IVR "
@@ -99,42 +85,33 @@ msgid ""
 "sounds being chosen if installed."
 msgstr ""
 
-#: languages/page.languages.php:87
 msgid "Edit Language Instance"
 msgstr ""
 
-#: languages/page.languages.php:87
 msgid "Add Language Instance"
 msgstr ""
 
-#: languages/page.languages.php:89
 msgid "Description"
 msgstr ""
 
-#: languages/page.languages.php:89
 msgid ""
 "The descriptive name of this language instance. For example \"French Main IVR"
 "\""
 msgstr ""
 
-#: languages/page.languages.php:93
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
 msgstr ""
 
-#: languages/page.languages.php:95
 msgid "Destination"
 msgstr ""
 
-#: languages/page.languages.php:103
 msgid "Submit Changes"
 msgstr ""
 
-#: languages/page.languages.php:104
 msgid "Delete"
 msgstr ""
 
-#: languages/page.languages.php:127
 msgid "Invalid description specified"
 msgstr ""
