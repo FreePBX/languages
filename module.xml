@@ -1,7 +1,7 @@
 <module>
 	<rawname>languages</rawname>
 	<name>Languages</name>
-	<version>2.7.0.1</version>
+	<version>2.7.0.2</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<type>setup</type>
@@ -13,6 +13,7 @@
 		<languages>Languages</languages>
 	</menuitems>
 	<changelog>
+	  *2.7.0.2* localizations
 	  *2.7.0.1* re #4004
 		*2.7.0.0* #4004 add language option to inbound routes
 		*2.6.0.0* localizations, misc
@@ -31,6 +32,6 @@
 	<depends>
 		<version>2.5.0alpha1</version>
 	</depends>
-	<location>release/2.7/languages-2.7.0.1.tgz</location>
-	<md5sum>7d852515f0174dbfc01fa0cc91801fa1</md5sum>
+	<location>release/2.7/languages-2.7.0.2.tgz</location>
+	<md5sum>c0cf520546e0a341fca7f8b8b78e78a3</md5sum>
 </module>
