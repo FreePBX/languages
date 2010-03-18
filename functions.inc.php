@@ -291,7 +291,7 @@ function laguages_incoming_update($language=null,$extension=null,$cidnum=null){
 	if(isset($language) && $language!=''){//no need to keep a record if were not setting the language
 		$sql='INSERT INTO language_incoming (extension,cidnum,language) VALUES (?, ?, ?)';
 		$db->query($sql,array($extension,$cidnum,$language));
-	}dbug(get_defined_vars());
+	};
 }
 
 function laguages_incoming_delete($extension=null,$cidnum=null){
