@@ -242,7 +242,7 @@ function languages_user_del($ext) {
 	$astman->database_deltree("AMPUSER/$ext/language");
 }
 
-	//inbound route langauge settings
+	//inbound route language settings
 function languages_hook_core($viewing_itemid, $target_menuid){
 $extension=isset($_REQUEST['extension'])?$_REQUEST['extension']:'';
 $cidnum=isset($_REQUEST['cidnum'])?$_REQUEST['cidnum']:'';
@@ -266,7 +266,7 @@ $language=isset($_REQUEST['language'])?$_REQUEST['language']:'';
 	$html = '';
 	if ($target_menuid == 'did'){
 		$html.='<tr><td colspan="2"><h5>'._("Language").'<hr></h5></td></tr>';
-		$html.='<tr><td><a href="#" class="info">'._('Langauge').'<span>'._("Allowes you to set the language for this DID.").'</span></a>:</td>';
+		$html.='<tr><td><a href="#" class="info">'._('Language').'<span>'._("Allowes you to set the language for this DID.").'</span></a>:</td>';
 		$html.='<td><input type="text" name="language" value="'.lanugage_incoming_get($extension,$cidnum).'"></td></tr>';
 	}
 	return $html;
