@@ -68,7 +68,7 @@ function languages_hookGet_config($engine) {
 			
 			$engine_info = engine_getinfo();
 			$version = $engine_info['version'];			
-			$routes=lanugage_incoming_get();
+			$routes=languages_incoming_get();
 			foreach($routes as $current => $route){
 				if($route['extension']=='' && $route['cidnum']){//callerID only
 					$extension='s/'.$route['cidnum'];
@@ -258,21 +258,21 @@ $language=isset($_REQUEST['language'])?$_REQUEST['language']:'';
 	}
 	//update if we have enough info
 	if($action == 'edtIncoming' || ( $extension!='' || $cidnum!='') && $language!=''){
-		laguages_incoming_update($language=$language,$extension,$cidnum);
+		languages_incoming_update($language=$language,$extension,$cidnum);
 	}
 	if($action=='delIncoming'){
-		laguages_incoming_delete($extension,$cidnum);
+		languages_incoming_delete($extension,$cidnum);
 	}
 	$html = '';
 	if ($target_menuid == 'did'){
 		$html.='<tr><td colspan="2"><h5>'._("Language").'<hr></h5></td></tr>';
-		$html.='<tr><td><a href="#" class="info">'._('Language').'<span>'._("Allowes you to set the language for this DID.").'</span></a>:</td>';
-		$html.='<td><input type="text" name="language" value="'.lanugage_incoming_get($extension,$cidnum).'"></td></tr>';
+		$html.='<tr><td><a href="#" class="info">'._('Language').'<span>'._("Allows you to set the language for this DID.").'</span></a>:</td>';
+		$html.='<td><input type="text" name="language" value="'.languages_incoming_get($extension,$cidnum).'"></td></tr>';
 	}
 	return $html;
 }
 
-function lanugage_incoming_get($extension=null,$cidnum=null){
+function languages_incoming_get($extension=null,$cidnum=null){
 	global $db;
 	if($extension || $cidnum || $_REQUEST['extdisplay']=='/' || $_REQUEST['display']=='did'){
 		$sql='SELECT language FROM language_incoming WHERE extension = ? AND cidnum = ?';
@@ -284,7 +284,7 @@ function lanugage_incoming_get($extension=null,$cidnum=null){
 	return $lang;
 }
 
-function laguages_incoming_update($language=null,$extension=null,$cidnum=null){
+function languages_incoming_update($language=null,$extension=null,$cidnum=null){
 	global $db;
 	$sql='DELETE FROM language_incoming WHERE extension = ? AND cidnum = ?';
 	$db->query($sql,array($extension,$cidnum));
@@ -294,7 +294,7 @@ function laguages_incoming_update($language=null,$extension=null,$cidnum=null){
 	};
 }
 
-function laguages_incoming_delete($extension=null,$cidnum=null){
+function languages_incoming_delete($extension=null,$cidnum=null){
 	global $db;
 	$sql='DELETE FROM language_incoming WHERE extension = ? AND cidnum = ?';
 	$foo=$db->query($sql,array($extension,$cidnum));

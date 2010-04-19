@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX languages\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-05 23:52+0200\n"
+"POT-Creation-Date: 2010-04-19 00:00+0100\n"
 "PO-Revision-Date: 2008-10-11 18:20+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -17,83 +17,100 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: functions.inc.php:33
 #, php-format
 msgid "Language: %s"
 msgstr "Språk: %s"
 
-#: functions.inc.php:173
 msgid "Language"
 msgstr "Språk"
 
-#: functions.inc.php:174
 msgid "Please enter a valid Language Code"
 msgstr "Skriv in en giltig språkkod"
 
-#: functions.inc.php:175
-#: page.languages.php:93
 msgid "Language Code"
 msgstr "Språkkod"
 
-#: functions.inc.php:175
-msgid "This will cause all messages and voice prompts to use the selected language if installed."
-msgstr "Alla meddelanden och röster kommer att använda det valda språket om det är installerat."
+msgid ""
+"This will cause all messages and voice prompts to use the selected language "
+"if installed."
+msgstr ""
+"Alla meddelanden och röster kommer att använda det valda språket om det är "
+"installerat."
 
-#: functions.inc.php:242
+msgid "Langauge"
+msgstr "Språk"
+
+msgid "Allows you to set the language for this DID."
+msgstr "Ger dig möjlighet att sätta språket för detta direktnummer"
+
 #, php-format
 msgid "Language Change: %s"
 msgstr "Språkbyte: %s"
 
-#: page.languages.php:52
-#: page.languages.php:75
-msgid "Add Language"
-msgstr "Lägg till språk"
-
-#: page.languages.php:73
-msgid "Edit: "
-msgstr "Redigera:"
-
-#: page.languages.php:78
-msgid "Languages allow you to change the language of the call flow and then continue on to the desired destination. For example, you may have an IVR option that says \"For French Press 5 now\". You would then create a French language instance and point it's destination at a French IVR. The language of the call's channel will now be in French. This will result in French sounds being chosen if installed."
-msgstr "Modulen Språk ger en möjlighet att ändra det språk som används i Asterisk. T.ex. du kan ha en IVR med ett val som säger \"For French press 5 now\". Du kan då skapa en Fransk språkinstans och peka destinationen till en Fransk IVR. Språket kommer nu att vara på franska om detta språk är installerat."
-
-#: page.languages.php:87
-msgid "Edit Language Instance"
-msgstr "Redigera språkinstans"
-
-#: page.languages.php:87
-msgid "Add Language Instance"
-msgstr "Lägg till språkinstans"
-
-#: page.languages.php:89
-msgid "Description"
-msgstr "Beskrivning"
-
-#: page.languages.php:89
-msgid "The descriptive name of this language instance. For example \"French Main IVR\""
-msgstr "Skriv in en kortfattad beskrivning för denna instans. T.ex. \"Fransk meny i IVR\""
-
-#: page.languages.php:93
-msgid "The Asterisk language code you want to change to. For example \"fr\" for French, \"de\" for German"
-msgstr "Den kod i Asterisk som du vill ändra till. T.ex. \"fr\" för franska, \"de\" för tyska etc."
-
-#: page.languages.php:95
-msgid "Destination"
-msgstr "Destinationer"
-
-#: page.languages.php:103
-msgid "Submit Changes"
-msgstr "Spara ändringar"
-
-#: page.languages.php:104
-msgid "Delete"
-msgstr "Ta bort"
-
-#: page.languages.php:127
-msgid "Invalid description specified"
-msgstr "Ogiltig beskrivning"
-
-#: modules.xml
 msgid "Languages"
 msgstr "Språk"
 
+msgid ""
+"Internal Options \n"
+"&\n"
+" Configuration"
+msgstr ""
+
+msgid ""
+"Adds the ability to changes the language within a call flow and add language "
+"attribute to users."
+msgstr "Ger möjlighet att ändra språket inom ett samtalsflöde och sätter språkattribut för användaren"
+
+msgid "Add Language"
+msgstr "Lägg till språk"
+
+msgid "Edit: "
+msgstr "Redigera:"
+
+msgid ""
+"Languages allow you to change the language of the call flow and then "
+"continue on to the desired destination. For example, you may have an IVR "
+"option that says \"For French Press 5 now\". You would then create a French "
+"language instance and point it's destination at a French IVR. The language "
+"of the call's channel will now be in French. This will result in French "
+"sounds being chosen if installed."
+msgstr ""
+"Modulen Språk ger en möjlighet att ändra det språk som används i Asterisk. T."
+"ex. du kan ha en IVR med ett val som säger \"For French press 5 now\". Du "
+"kan då skapa en Fransk språkinstans och peka destinationen till en Fransk "
+"IVR. Språket kommer nu att vara på franska om detta språk är installerat."
+
+msgid "Edit Language Instance"
+msgstr "Redigera språkinstans"
+
+msgid "Add Language Instance"
+msgstr "Lägg till språkinstans"
+
+msgid "Description"
+msgstr "Beskrivning"
+
+msgid ""
+"The descriptive name of this language instance. For example \"French Main IVR"
+"\""
+msgstr ""
+"Skriv in en kortfattad beskrivning för denna instans. T.ex. \"Fransk meny i "
+"IVR\""
+
+msgid ""
+"The Asterisk language code you want to change to. For example \"fr\" for "
+"French, \"de\" for German"
+msgstr ""
+"Den kod i Asterisk som du vill ändra till. T.ex. \"fr\" för franska, \"de\" "
+"för tyska etc."
+
+msgid "Destination"
+msgstr "Destinationer"
+
+msgid "Submit Changes"
+msgstr "Spara ändringar"
+
+msgid "Delete"
+msgstr "Ta bort"
+
+msgid "Invalid description specified"
+msgstr "Ogiltig beskrivning"
