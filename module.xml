@@ -33,6 +33,6 @@
 	<depends>
 		<version>2.5.0alpha1</version>
 	</depends>
-	<location>release/2.7/languages-2.7.0.3.tgz</location>
-	<md5sum>5352fb4c98fa41d853b1665e1388fb39</md5sum>
+	<location>release/2.8/languages-2.8.0.0.tgz</location>
+	<md5sum>88426304340c5b9474168b9ec5d020bf</md5sum>
 </module>
