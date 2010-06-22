@@ -274,7 +274,7 @@ $language=isset($_REQUEST['language'])?$_REQUEST['language']:'';
 
 function languages_incoming_get($extension=null,$cidnum=null){
 	global $db;
-	if($extension || $cidnum || $_REQUEST['extdisplay']=='/' || $_REQUEST['display']=='did'){
+	if($extension || $cidnum || (isset($_REQUEST['extdisplay']) && $_REQUEST['extdisplay']=='/') || $_REQUEST['display']=='did'){
 		$sql='SELECT language FROM language_incoming WHERE extension = ? AND cidnum = ?';
 		$lang=$db->getOne($sql, array($extension, $cidnum));
 	}else{
