@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-19 00:00+0100\n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
 "PO-Revision-Date: 2008-11-06 14:51+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -36,9 +36,6 @@ msgid ""
 msgstr ""
 "Il codice lingua utilizzato da questo utente. I messaggi saranno riprodotti "
 "nella lingua impostata se nel sistema sono installati i file audio specifici."
-
-msgid "Langauge"
-msgstr ""
 
 msgid "Allows you to set the language for this DID."
 msgstr ""
@@ -114,57 +111,3 @@ msgstr "Elimina"
 
 msgid "Invalid description specified"
 msgstr "Descrizione specificata non valida"
-
-#~ msgid "Day Night Mode"
-#~ msgstr "Servizio Giorno/Notte"
-
-#~ msgid "Terminate Call"
-#~ msgstr "Termina chiamata"
-
-#~ msgid "Extensions"
-#~ msgstr "Interni"
-
-#~ msgid "Voicemail"
-#~ msgstr "Casella Vocale"
-
-#~ msgid "Core"
-#~ msgstr "Sistema"
-
-#~ msgid "Conferences"
-#~ msgstr "Conferenze"
-
-#~ msgid "Phonebook Directory"
-#~ msgstr "Elenco Telefonico"
-
-#~ msgid "Queues"
-#~ msgstr "Code"
-
-#~ msgid "Ring Groups"
-#~ msgstr "Gruppi di chiamata"
-
-#~ msgid "Speed dial functions"
-#~ msgstr "Selezione breve"
-
-#~ msgid "Time Conditions"
-#~ msgstr "Condizioni Temporali"
-
-#~ msgid "Custom Contexts"
-#~ msgstr "Contesti Personalizzati"
-
-#~ msgid "Extended Routing"
-#~ msgstr "Rotte specifiche"
-
-#~ msgid "Misc Destinations"
-#~ msgstr "Destinazioni Varie"
-
-#~ msgid "Custom Applications"
-#~ msgstr "Applicazioni Personalizzate"
-
-#~ msgid "VoiceMail Blasting"
-#~ msgstr "Gruppi di Caselle Vocali"
-
-#~ msgid "Announcements"
-#~ msgstr "Annunci"
-
-#~ msgid "Used as Destination by %s %s"
-#~ msgstr "Usato come Destinazione da %s %s"

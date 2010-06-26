@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-19 00:00+0100\n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
 "PO-Revision-Date: 2008-01-16 16:38+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
@@ -36,9 +36,6 @@ msgid ""
 msgstr ""
 "Все голосовые сообщения и напоминания будут на указанном языке, если он "
 "инсталлирован."
-
-msgid "Langauge"
-msgstr ""
 
 msgid "Allows you to set the language for this DID."
 msgstr ""
@@ -114,45 +111,3 @@ msgstr "Удалить"
 
 msgid "Invalid description specified"
 msgstr ""
-
-#~ msgid "IVR"
-#~ msgstr "Интерактивное меню"
-
-#~ msgid "Misc Destinations"
-#~ msgstr "Различные направления"
-
-#~ msgid "Voicemail"
-#~ msgstr "Голосовая почта"
-
-#~ msgid "Extensions"
-#~ msgstr "Внутренний номер"
-
-#~ msgid "Day Night Mode"
-#~ msgstr "Дневной/ночной режим"
-
-#~ msgid "Terminate Call"
-#~ msgstr "Терминировать звонок"
-
-#~ msgid "Conferences"
-#~ msgstr "Конференции"
-
-#~ msgid "Phonebook Directory"
-#~ msgstr "Телефонная книга"
-
-#~ msgid "Queues"
-#~ msgstr "Очереди"
-
-#~ msgid "Ring Groups"
-#~ msgstr "Группы вызова"
-
-#~ msgid "Speed dial functions"
-#~ msgstr "Функции быстрого набора"
-
-#~ msgid "Time Conditions"
-#~ msgstr "Правила по времени"
-
-#~ msgid "Custom Applications"
-#~ msgstr "Специальное приложение"
-
-#~ msgid "Extended Routing"
-#~ msgstr "Расширенная маршрутизация"

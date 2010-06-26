@@ -1,13 +1,25 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is part of FreePBX.
 #
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX Swedish language languages
+# Copyright (C) 2009, 2010 Mikael Carlsson
 msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX languages\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-19 00:00+0100\n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
 "PO-Revision-Date: 2008-10-11 18:20+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -37,9 +49,6 @@ msgstr ""
 "Alla meddelanden och röster kommer att använda det valda språket om det är "
 "installerat."
 
-msgid "Langauge"
-msgstr "Språk"
-
 msgid "Allows you to set the language for this DID."
 msgstr "Ger dig möjlighet att sätta språket för detta direktnummer"
 
@@ -59,7 +68,9 @@ msgstr ""
 msgid ""
 "Adds the ability to changes the language within a call flow and add language "
 "attribute to users."
-msgstr "Ger möjlighet att ändra språket inom ett samtalsflöde och sätter språkattribut för användaren"
+msgstr ""
+"Ger möjlighet att ändra språket inom ett samtalsflöde och sätter "
+"språkattribut för användaren"
 
 msgid "Add Language"
 msgstr "Lägg till språk"
