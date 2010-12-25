@@ -244,20 +244,23 @@ function languages_user_del($ext) {
 
 	//inbound route language settings
 function languages_hook_core($viewing_itemid, $target_menuid){
-$extension=isset($_REQUEST['extension'])?$_REQUEST['extension']:'';
-$cidnum=isset($_REQUEST['cidnum'])?$_REQUEST['cidnum']:'';
-$extdisplay=isset($_REQUEST['extdisplay'])?$_REQUEST['extdisplay']:'';
-$action=isset($_REQUEST['action'])?$_REQUEST['action']:'';
-$language=isset($_REQUEST['language'])?$_REQUEST['language']:'';
-
+	$extension	= isset($_REQUEST['extension'])		? $_REQUEST['extension']	:'';
+	$cidnum		= isset($_REQUEST['cidnum'])		? $_REQUEST['cidnum']		:'';
+	$extdisplay	= isset($_REQUEST['extdisplay'])	? $_REQUEST['extdisplay']	:'';
+	$action		= isset($_REQUEST['action'])		? $_REQUEST['action']		:'';
+	$language	= isset($_REQUEST['language'])		? $_REQUEST['language']		:'';
 	//set $extension,$cidnum if we dont already have them
-	if(!isset($extension) && !isset($cidnum)){
-		$opts=explode('/', $extdisplay);$extension=$opts['0'];$cidnum=$opts['1'];
+	if(!$extension && !$cidnum){
+		$opts		= explode('/', $extdisplay);
+		$extension	= $opts['0'];
+		$cidnum		= $opts['1'];
 	}else{
-		$extension=$extension;$cidnum=$cidnum;
+		$extension 	= $extension;
+		$cidnum		= $cidnum;
 	}
+	
 	//update if we have enough info
-	if($action == 'edtIncoming' || ( $extension!='' || $cidnum!='') && $language!=''){
+	if($action == 'edtIncoming' || ( $extension != '' || $cidnum != '') && $language != ''){
 		languages_incoming_update($language=$language,$extension,$cidnum);
 	}
 	if($action=='delIncoming'){
@@ -274,11 +277,13 @@ $language=isset($_REQUEST['language'])?$_REQUEST['language']:'';
 
 function languages_incoming_get($extension=null,$cidnum=null){
 	global $db;
+	$foo = func_get_args();
+	dbug('languages_hook_core',$foo);
 	if($extension || $cidnum || (isset($_REQUEST['extdisplay']) && $_REQUEST['extdisplay']=='/') || $_REQUEST['display']=='did'){
 		$sql='SELECT language FROM language_incoming WHERE extension = ? AND cidnum = ?';
 		$lang=$db->getOne($sql, array($extension, $cidnum));
 	}else{
-		$sql='SELECT language_incoming.*,incoming.pricid FROM language_incoming, incoming WHERE language_incoming.cidnum=incoming.cidnum and language_incoming.extension=incoming.extension;';
+		$sql='SELECT language_incoming.*,incoming.pricid FROM language_incoming, incoming WHERE language_incoming.cidnum=incoming.cidnum and language_incoming.extension=incoming.extension';
 		$lang=$db->getAll($sql, DB_FETCHMODE_ASSOC);
 	}
 	return $lang;
