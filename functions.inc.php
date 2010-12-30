@@ -253,7 +253,7 @@ function languages_hook_core($viewing_itemid, $target_menuid){
 	if(!$extension && !$cidnum){
 		$opts		= explode('/', $extdisplay);
 		$extension	= $opts['0'];
-		$cidnum		= $opts['1'];
+		$cidnum		= isset($opts['1']) ? $opts['1'] : '';
 	}else{
 		$extension 	= $extension;
 		$cidnum		= $cidnum;
