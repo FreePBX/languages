@@ -66,8 +66,6 @@ function languages_hookGet_config($engine) {
 				$ext->splice('macro-user-callerid', 's', $priority,new ext_execif('$["${DB(AMPUSER/${AMPUSER}/language)}" != ""]', 'Set', 'LANGUAGE()=${DB(AMPUSER/${AMPUSER}/language)}'));
 			}
 			
-			$engine_info = engine_getinfo();
-			$version = $engine_info['version'];			
 			$routes=languages_incoming_get();
 			foreach($routes as $current => $route){
 				if($route['extension']=='' && $route['cidnum']){//callerID only
