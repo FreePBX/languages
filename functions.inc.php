@@ -275,9 +275,7 @@ function languages_hook_core($viewing_itemid, $target_menuid){
 
 function languages_incoming_get($extension=null,$cidnum=null){
 	global $db;
-	$foo = func_get_args();
-	dbug('languages_hook_core',$foo);
-	if($extension || $cidnum || (isset($_REQUEST['extdisplay']) && $_REQUEST['extdisplay']=='/') || $_REQUEST['display']=='did'){
+	if($extension || $cidnum || (isset($_REQUEST['extdisplay']) && $_REQUEST['extdisplay']=='/') || (isset($_REQUEST['display']) && $_REQUEST['display']=='did')){
 		$sql='SELECT language FROM language_incoming WHERE extension = ? AND cidnum = ?';
 		$lang=$db->getOne($sql, array($extension, $cidnum));
 	}else{
@@ -300,7 +298,6 @@ function languages_incoming_update($language=null,$extension=null,$cidnum=null){
 function languages_incoming_delete($extension=null,$cidnum=null){
 	global $db;
 	$sql='DELETE FROM language_incoming WHERE extension = ? AND cidnum = ?';
-	$foo=$db->query($sql,array($extension,$cidnum));
 }
 
 function languages_check_destinations($dest=true) {
