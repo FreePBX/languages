@@ -2,7 +2,7 @@
 	<rawname>languages</rawname>
 	<repo>extended</repo>
 	<name>Languages</name>
-	<version>2.9.0.1</version>
+	<version>2.9.0.2</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<type>setup</type>
@@ -14,6 +14,7 @@
 		<languages>Languages</languages>
 	</menuitems>
 	<changelog>
+	  *2.9.0.2* #4914
 	  *2.9.0.1* set repository
 	  *2.9.0.0* #4657, #4655
 	  *2.8.0.2* localization updates
@@ -38,6 +39,6 @@
 	<depends>
 		<version>2.5.0alpha1</version>
 	</depends>
-	<location>release/2.9/languages-2.9.0.1.tgz</location>
-	<md5sum>7a402e4043d0572a97c2a8358b6c1ec0</md5sum>
+	<location>release/2.9/languages-2.9.0.2.tgz</location>
+	<md5sum>cd9cd09e7ffee1b040cfb30746bc7913</md5sum>
 </module>
