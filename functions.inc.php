@@ -43,7 +43,6 @@ function languages_get_config($engine) {
 	global $ext;
 	switch ($engine) {
 		case 'asterisk':
-			$ext->addInclude('from-internal-additional', 'app-languages');
 			foreach (languages_list() as $row) {
 					$ext->add('app-languages',$row['language_id'], '', new ext_noop('Changing Channel to language: '.$row['lang_code'].' ('.$row['description'].')'));
 					$ext->add('app-languages',$row['language_id'], '', new ext_setlanguage($row['lang_code']));
@@ -298,6 +297,7 @@ function languages_incoming_update($language=null,$extension=null,$cidnum=null){
 function languages_incoming_delete($extension=null,$cidnum=null){
 	global $db;
 	$sql='DELETE FROM language_incoming WHERE extension = ? AND cidnum = ?';
+	$db->query($sql,array($extension,$cidnum));
 }
 
 function languages_check_destinations($dest=true) {
