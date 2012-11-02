@@ -113,7 +113,7 @@ function languages_get($language_id) {
 }
 
 function languages_add($description, $lang_code, $dest) {
-	global $db;
+	global $db, $amp_conf;
 	$sql = "INSERT INTO languages (description, lang_code, dest) VALUES (".
 		"'".$db->escapeSimple($description)."', ".
 		"'".$db->escapeSimple($lang_code)."', ".
@@ -122,6 +122,8 @@ function languages_add($description, $lang_code, $dest) {
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
 	}
+  $id = $amp_conf["AMPDBENGINE"] == "sqlite3" ? sqlite_last_insert_rowid($db->connection) : mysql_insert_id($db->connection);
+	return($id);
 }
 
 function languages_delete($language_id) {

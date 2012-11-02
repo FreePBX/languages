@@ -28,9 +28,9 @@ if (isset($_REQUEST['goto0']) && $_REQUEST['goto0']) {
 
 switch ($action) {
 	case 'add':
-		languages_add($description, $lang_code, $dest);
+		$_REQUEST['extdisplay'] = languages_add($description, $lang_code, $dest);
 		needreload();
-		redirect_standard();
+		redirect_standard('extdisplay');
 	break;
 	case 'edit':
 		languages_edit($language_id, $description, $lang_code, $dest);
