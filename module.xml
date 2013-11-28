@@ -24,4 +24,4 @@
 	</depends>
 	<location>release/2.10/languages-2.10.0.0.tgz</location>
 	<md5sum>7b8f546ae3d5ca552a003fb1f0468aac</md5sum>
-</module>
+<supported><version>2.10</version></supported></module>
