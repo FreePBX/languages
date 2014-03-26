@@ -3,8 +3,8 @@
 # This file is distributed under the same license as the freePBX package.
 # Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2010.
 #
-# ёбЯЮЫмЧЮТРвм iconv language.pot -f UTF-8 -t ISO-8859-5 -o language.po
-# fuzzy
+# РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ iconv language.pot -f UTF-8 -t ISO-8859-5 -o language.po
+
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
@@ -14,54 +14,54 @@ msgstr ""
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-5\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #, php-format
 msgid "Language: %s"
-msgstr "ПЧлЪ: %s"
+msgstr "РЇР·С‹Рє: %s"
 
 msgid "Language"
-msgstr "ПЧлЪ"
+msgstr "РЇР·С‹Рє"
 
 msgid "Please enter a valid Language Code"
-msgstr "ІТХФШвХ аРЧаХисЭЭлЩ ЪЮФ пЧлЪР"
+msgstr "Р’РІРµРґРёС‚Рµ СЂР°Р·СЂРµС€С‘РЅРЅС‹Р№ РєРѕРґ СЏР·С‹РєР°"
 
 msgid "Language Code"
-msgstr "єЮФ пЧлЪР"
+msgstr "РљРѕРґ СЏР·С‹РєР°"
 
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed."
 msgstr ""
-"ІбХ УЮЫЮбЮТлХ бЮЮСйХЭШп Ш ЭРЯЮЬШЭРЭШп СгФгв ЭР гЪРЧРЭЭЮЬ пЧлЪХ, ХбЫШ ЮЭ "
-"ШЭбвРЫЫШаЮТРЭ."
+"Р’СЃРµ РіРѕР»РѕСЃРѕРІС‹Рµ СЃРѕРѕР±С‰РµРЅРёСЏ Рё РЅР°РїРѕРјРёРЅР°РЅРёСЏ Р±СѓРґСѓС‚ РЅР° СѓРєР°Р·Р°РЅРЅРѕРј СЏР·С‹РєРµ, РµСЃР»Рё РѕРЅ "
+"РёРЅСЃС‚Р°Р»Р»РёСЂРѕРІР°РЅ."
 
 msgid "Allows you to set the language for this DID."
-msgstr "ГбвРЭРТШвм ЧЭРзХЭШп пЧлЪР ФЫп нвЮУЮ DID."
+msgstr "РЈСЃС‚Р°РЅР°РІРёС‚СЊ Р·РЅР°С‡РµРЅРёСЏ СЏР·С‹РєР° РґР»СЏ СЌС‚РѕРіРѕ DID."
 
 #, php-format
 msgid "Language Change: %s"
-msgstr "ПЧлЪ ШЧЬХЭсЭ: %s"
+msgstr "РЇР·С‹Рє РёР·РјРµРЅС‘РЅ: %s"
 
 msgid "Languages"
-msgstr "ПЧлЪШ"
+msgstr "РЇР·С‹РєРё"
 
 msgid "Applications"
-msgstr ""
+msgstr "РџСЂРёР»РѕР¶РµРЅРёСЏ"
 
 msgid ""
 "Adds the ability to changes the language within a call flow and add language "
 "attribute to users."
 msgstr ""
-"ґЮСРТЫпХв ТЮЧЬЮЦЭЮбвм ШЧЬХЭпвм пЧлЪ Т ЯаЮжХббХ гбвРЭЮТЫХЭШп бЮХФШЭХЭШп Ш "
-"ФЮСРТШвм РваШСгвл ТлСЮаР пЧлЪР ЯЮЫмЧЮТРвХЫпЬ."
+"Р”РѕР±Р°РІР»СЏРµС‚ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РёР·РјРµРЅСЏС‚СЊ СЏР·С‹Рє РІ РїСЂРѕС†РµСЃСЃРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅРёСЏ СЃРѕРµРґРёРЅРµРЅРёСЏ Рё "
+"РґРѕР±Р°РІРёС‚СЊ Р°С‚СЂРёР±СѓС‚С‹ РІС‹Р±РѕСЂР° СЏР·С‹РєР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЏРј."
 
 msgid "Add Language"
-msgstr "ґЮСРТШвм пЧлЪ"
+msgstr "Р”РѕР±Р°РІРёС‚СЊ СЏР·С‹Рє"
 
 msgid "Edit: "
-msgstr "ёЧЬХЭШвм:"
+msgstr "РР·РјРµРЅРёС‚СЊ:"
 
 msgid ""
 "Languages allow you to change the language of the call flow and then "
@@ -71,51 +71,51 @@ msgid ""
 "of the call's channel will now be in French. This will result in French "
 "sounds being chosen if installed."
 msgstr ""
-"НвЮв ЬЮФгЫм ЯЮЧТЮЫпХв ТлСаРвм пЧлЪ ЮСйХЭШп ЯаШ ТеЮФпйШе ЧТЮЭЪРе, звЮСл "
-"ЯХаХЭРЯаРТШвм ЯЮ бЮЮвТХвбвТХЭЭЮЬг ЭРЧЭРзХЭШо. ЅРЯаШЬХа, ЬЮЦЭЮ ШЬХвм ЮЯжШо "
-"ТлСЮаР пЧлЪР Т ёЭвХаРЪвШТЭЮЬ ЬХЭо - \"For French Press 2 now\". ґЫп нвЮУЮ "
-"ЭгЦЭЮ бЮЧФРвм ЯЮФЬХЭо ЭР даРЭжгЧбЪЮЬ пЧлЪХ, ЭР ЪЮвЮаЮХ СгФХв ЭРЯаРТЫХЭ нвЮв "
-"ЧТЮЭЮЪ ЯЮ ЭРЦРвШо 2. ґЫп нвЮУЮ ЭгЦЭЮ гбвРЭЮТШвм ЭХЮСеЮФШЬлХ даРЭжгЧбЪШХ "
-"ЧТгЪЮТлХ дРЩЫл."
+"Р­С‚РѕС‚ РјРѕРґСѓР»СЊ РїРѕР·РІРѕР»СЏРµС‚ РІС‹Р±СЂР°С‚СЊ СЏР·С‹Рє РѕР±С‰РµРЅРёСЏ РїСЂРё РІС…РѕРґСЏС‰РёС… Р·РІРѕРЅРєР°С…, С‡С‚РѕР±С‹ "
+"РїРµСЂРµРЅР°РїСЂР°РІРёС‚СЊ РїРѕ СЃРѕРѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕРјСѓ РЅР°Р·РЅР°С‡РµРЅРёСЋ. РќР°РїСЂРёРјРµСЂ, РјРѕР¶РЅРѕ РёРјРµС‚СЊ РѕРїС†РёСЋ "
+"РІС‹Р±РѕСЂР° СЏР·С‹РєР° РІ РРЅС‚РµСЂР°РєС‚РёРІРЅРѕРј РјРµРЅСЋ - \"For French Press 2 now\". Р”Р»СЏ СЌС‚РѕРіРѕ "
+"РЅСѓР¶РЅРѕ СЃРѕР·РґР°С‚СЊ РїРѕРґРјРµРЅСЋ РЅР° С„СЂР°РЅС†СѓР·СЃРєРѕРј СЏР·С‹РєРµ, РЅР° РєРѕС‚РѕСЂРѕРµ Р±СѓРґРµС‚ РЅР°РїСЂР°РІР»РµРЅ СЌС‚РѕС‚ "
+"Р·РІРѕРЅРѕРє РїРѕ РЅР°Р¶Р°С‚РёСЋ 2. Р”Р»СЏ СЌС‚РѕРіРѕ РЅСѓР¶РЅРѕ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РЅРµРѕР±С…РѕРґРёРјС‹Рµ С„СЂР°РЅС†СѓР·СЃРєРёРµ "
+"Р·РІСѓРєРѕРІС‹Рµ С„Р°Р№Р»С‹."
 
 msgid "Edit Language Instance"
-msgstr "АХФРЪвШаЮТРвм ЯЮФЬХЭо пЧлЪР"
+msgstr "Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ РїРѕРґРјРµРЅСЋ СЏР·С‹РєР°"
 
 msgid "Add Language Instance"
-msgstr "ґЮСРТШвм ЯЮФЬХЭо пЧлЪР"
+msgstr "Р”РѕР±Р°РІРёС‚СЊ РїРѕРґРјРµРЅСЋ СЏР·С‹РєР°"
 
 msgid "Description"
-msgstr "ѕЯШбРЭШХ"
+msgstr "РћРїРёСЃР°РЅРёРµ"
 
 msgid ""
 "The descriptive name of this language instance. For example \"French Main IVR"
 "\""
-msgstr "єЮаЮвЪЮХ ЮЯШбРЭШХ нвЮУЮ ЯЮФЬХЭо. ЅРЯаШЬХа - \"French Main IVR\""
+msgstr "РљРѕСЂРѕС‚РєРѕРµ РѕРїРёСЃР°РЅРёРµ СЌС‚РѕРіРѕ РїРѕРґРјРµРЅСЋ. РќР°РїСЂРёРјРµСЂ - \"French Main IVR\""
 
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
 msgstr ""
-"єЮФ пЧлЪР ФЫп °бвХаШбЪР, ЭР ЪЮвЮалЩ СгФХЬ ЬХЭпвм. ЅРЯаШЬХа, \"fr\" ФЫп "
-"даРЭжгЧбЪЮУЮ, \"de\" ФЫп ЭХЬХжЪЮУЮ"
+"РљРѕРґ СЏР·С‹РєР° РґР»СЏ РђСЃС‚РµСЂРёСЃРєР°, РЅР° РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµРј РјРµРЅСЏС‚СЊ. РќР°РїСЂРёРјРµСЂ, \"fr\" РґР»СЏ "
+"С„СЂР°РЅС†СѓР·СЃРєРѕРіРѕ, \"de\" РґР»СЏ РЅРµРјРµС†РєРѕРіРѕ"
 
 msgid "Destination"
-msgstr "ЅРЧЭРзХЭШХ"
+msgstr "РќР°Р·РЅР°С‡РµРЅРёРµ"
 
 msgid "Submit Changes"
-msgstr "їЮФвТХаФШвм ШЧЬХЭХЭШп"
+msgstr "РџРѕРґС‚РІРµСЂРґРёС‚СЊ РёР·РјРµРЅРµРЅРёСЏ"
 
 msgid "Delete"
-msgstr "ГФРЫШвм"
+msgstr "РЈРґР°Р»РёС‚СЊ"
 
 msgid "Invalid description specified"
-msgstr "ЅХТХаЭЮ ТлСаРЭЮ ЮЯШбРЭШХ"
+msgstr "РќРµРІРµСЂРЅРѕ РІС‹Р±СЂР°РЅРѕ РѕРїРёСЃР°РЅРёРµ"
 
 #~ msgid ""
 #~ "Internal Options \n"
 #~ "&\n"
 #~ " Configuration"
 #~ msgstr ""
-#~ "ІЭгваХЭЭШХ ЮЯжШШ \n"
+#~ "Р’РЅСѓС‚СЂРµРЅРЅРёРµ РѕРїС†РёРё \n"
 #~ "&\n"
-#~ " єЮЭдШУгаРжШп"
+#~ " РљРѕРЅС„РёРіСѓСЂР°С†РёСЏ"
