@@ -1,9 +1,9 @@
-<?php 
+<?php
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
 $type = isset($_REQUEST['type']) ? $_REQUEST['type'] : 'setup';
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] :  '';
-if (isset($_REQUEST['delete'])) $action = 'delete'; 
+if (isset($_REQUEST['delete'])) $action = 'delete';
 
 $language_id = isset($_REQUEST['language_id']) ? $_REQUEST['language_id'] :  false;
 $description = isset($_REQUEST['description']) ? $_REQUEST['description'] :  '';
@@ -32,10 +32,10 @@ switch ($action) {
 	break;
 }
 
-?> 
+?>
 
 <div class="rnav"><ul>
-<?php 
+<?php
 
 echo '<li><a href="config.php?display=languages&amp;type='.$type.'">'._('Add Language').'</a></li>';
 
@@ -51,7 +51,7 @@ foreach (languages_list() as $row) {
 if ($extdisplay) {
 	// load
 	$row = languages_get($extdisplay);
-	
+
 	$description = $row['description'];
 	$lang_code   = $row['lang_code'];
 	$dest        = $row['dest'];
@@ -65,7 +65,7 @@ $helptext = _("Languages allow you to change the language of the call flow and t
 echo $helptext;
 ?>
 
-<form name="editLanguage" action="<?php  $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkLanguage(editLanguage);">
+<form name="editLanguage" action="" method="post" onsubmit="return checkLanguage(editLanguage);">
 	<input type="hidden" name="extdisplay" value="<?php echo $extdisplay; ?>">
 	<input type="hidden" name="language_id" value="<?php echo $extdisplay; ?>">
 	<input type="hidden" name="action" value="<?php echo ($extdisplay ? 'edit' : 'add'); ?>">
@@ -80,15 +80,15 @@ echo $helptext;
 		<td><input size="14" type="text" name="lang_code" value="<?php echo $lang_code; ?>"  tabindex="<?php echo ++$tabindex;?>"/></td> </tr>
 	<tr><td colspan="2"><br><h5><?php echo _("Destination")?>:<hr></h5></td></tr>
 
-<?php 
+<?php
 //draw goto selects
 echo drawselects($dest,0);
 ?>
-			
+
 	<tr>
 		<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>">
 			<?php if ($extdisplay) { echo '&nbsp;<input name="delete" type="submit" value="'._("Delete").'">'; } ?>
-		</td>		
+		</td>
 
 		<?php
 		if ($extdisplay) {
@@ -116,7 +116,7 @@ function checkLanguage(theForm) {
 	setDestinations(theForm, '_post_dest');
 
 	// form validation
-	defaultEmptyOK = false;	
+	defaultEmptyOK = false;
 	if (isEmpty(theForm.description.value))
 		return warnInvalid(theForm.description, msgInvalidDescription);
 
