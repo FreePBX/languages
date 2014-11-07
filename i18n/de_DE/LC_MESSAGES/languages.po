@@ -1,0 +1,130 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for languages
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"PO-Revision-Date: 2014-10-07 17:16+0200\n"
+"Last-Translator: Dieter <dieter.finkbeiner@finkbeinernet.de>\n"
+"Language-Team: German "
+"<http://git.freepbx.org/projects/freepbx/languages/de_DE/>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 1.10-dev\n"
+
+#, php-format
+msgid "Language: %s"
+msgstr "Sprache: %s"
+
+msgid "Language"
+msgstr "Sprache"
+
+msgid "Please enter a valid Language Code"
+msgstr "Bitte geben Sie einen gültiges Sprachk&uml;rzel ein"
+
+msgid "Language Code"
+msgstr "Sprachk&uuml;rzel"
+
+msgid ""
+"This will cause all messages and voice prompts to use the selected language "
+"if installed."
+msgstr ""
+"Dies bedeutet, dass alle Nachrichten und Ansagen die ausgewählte Sprache "
+"nutzen, sofern diese installiert sind."
+
+msgid "Allows you to set the language for this DID."
+msgstr "Erlaubt Ihnen die Sprache für diese Durchwahl (DID) zu setzen."
+
+#, php-format
+msgid "Language Change: %s"
+msgstr "Sprach&auml;nderung: %s"
+
+msgid "Languages"
+msgstr "Sprachen"
+
+msgid "Applications"
+msgstr "Anwendungen"
+
+msgid ""
+"Adds the ability to changes the language within a call flow and add language "
+"attribute to users."
+msgstr ""
+"Fügt die M&ouml;glichkeit hinzu, die Sprache während einer Anrufverarbeitung "
+"(call flow) zu &auml;ndern und ein Sprachattribut den Benutzern hinzu."
+
+msgid "Add Language"
+msgstr "Sprache hinzuf&uuml;gen"
+
+msgid "Edit: "
+msgstr "Bearbeiten: "
+
+msgid ""
+"Languages allow you to change the language of the call flow and then "
+"continue on to the desired destination. For example, you may have an IVR "
+"option that says \"For French Press 5 now\". You would then create a French "
+"language instance and point it's destination at a French IVR. The language "
+"of the call's channel will now be in French. This will result in French "
+"sounds being chosen if installed."
+msgstr ""
+"Sprachen erlauben es Ihnen die Sprache des Anrufs zu &auml;ndern um dann zu "
+"der gew&uuml;nschten Rufnummer zu kommen. Zum Beispiel, Sie haben eine IVR "
+"Option die ansagt \"Für franz&ouml;sisch dr&uuml;cken Sie bitte jetzt die 5\""
+". Es würde dann eine franz&ouml;sische Sprachinstanz erzeugt und der Anruf "
+"auf einen franz&ouml;sischen IVR umgeleitet. Die Sprache des Anrufkanals "
+"wäre nun in franz&ouml;sisch. D.h. die Ansagen würden in franz&ouml;sisch "
+"ausgew&auml;hlt, sofern diese installiert sind."
+
+msgid "Edit Language Instance"
+msgstr "Sprachinstanz bearbeiten"
+
+msgid "Add Language Instance"
+msgstr "Sprachinstanz hinzf&uuml;gen"
+
+msgid "Description"
+msgstr "Beschreibung"
+
+msgid ""
+"The descriptive name of this language instance. For example \"French Main IVR"
+"\""
+msgstr ""
+"Beschreibung oder Name für diese Sprachinstanz. Zum Beispiel \"franz&ouml;"
+"sischer Haupt IVR\""
+
+msgid ""
+"The Asterisk language code you want to change to. For example \"fr\" for "
+"French, \"de\" for German"
+msgstr ""
+"Das Asterisk Sprachkürzel zu dem Sie wechseln wollen. Zum Beispiel \"fr\" "
+"f&uuml;r franz&ouml;sisch oder \"de\" für deutsch"
+
+msgid "Destination"
+msgstr "Ziel"
+
+msgid "Submit Changes"
+msgstr "&Auml;nderungen speichern"
+
+msgid "Delete"
+msgstr "L&ouml;schen"
+
+msgid "Invalid description specified"
+msgstr "Ung&uuml;ltige Beschreibung angegeben"
