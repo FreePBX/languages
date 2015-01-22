@@ -51,7 +51,7 @@ function languages_get_config($engine) {
 					$ext->add('app-languages',$row['language_id'], '', new ext_setlanguage($row['lang_code']));
 					$ext->add('app-languages',$row['language_id'], '', new ext_goto($row['dest']));
 			}
-
+		
 		break;
 	}
 }
@@ -62,12 +62,12 @@ function languages_hookGet_config($engine) {
 	switch($engine) {
 		case "asterisk":
 			$priority = 'report';
-			if (version_compare($version, "1.4", "ge")) {
+			if (version_compare($version, "1.4", "ge")) { 
 				$ext->splice('macro-user-callerid', 's', $priority,new ext_execif('$["${DB(AMPUSER/${AMPUSER}/language)}" != ""]', 'Set', 'CHANNEL(language)=${DB(AMPUSER/${AMPUSER}/language)}'));
 			} else {
 				$ext->splice('macro-user-callerid', 's', $priority,new ext_execif('$["${DB(AMPUSER/${AMPUSER}/language)}" != ""]', 'Set', 'LANGUAGE()=${DB(AMPUSER/${AMPUSER}/language)}'));
 			}
-
+			
 			$routes=languages_incoming_get();
 			foreach($routes as $current => $route){
 				if($route['extension']=='' && $route['cidnum']){//callerID only
@@ -81,7 +81,7 @@ function languages_hookGet_config($engine) {
 					}
 					$extension=($route['extension']!=''?$route['extension']:'s').($route['cidnum']==''?'':'/'.$route['cidnum']);
 				}
-				if(version_compare($version, "1.4", "ge")){
+				if(version_compare($version, "1.4", "ge")){ 
 					$ext->splice($context, $extension, 1, new ext_setvar('CHANNEL(language)',$route['language']));
 				}else{
 					$ext->splice($context, $extension, 1, new ext_setvar('LANGUAGE',$route['language']));
@@ -98,7 +98,7 @@ function languages_list() {
 	$sql = "SELECT language_id, description, lang_code, dest FROM languages ORDER BY description ";
 	$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
 	if(DB::IsError($results)) {
-		die_freepbx($results->getMessage()."<br><br>Error selecting from languages");
+		die_freepbx($results->getMessage()."<br><br>Error selecting from languages");	
 	}
 	return $results;
 }
@@ -108,9 +108,9 @@ function languages_get($language_id) {
 	$sql = "SELECT language_id, description, lang_code, dest FROM languages WHERE language_id = ".$db->escapeSimple($language_id);
 	$row = $db->getRow($sql, DB_FETCHMODE_ASSOC);
 	if(DB::IsError($row)) {
-		die_freepbx($row->getMessage()."<br><br>Error selecting row from languages");
+		die_freepbx($row->getMessage()."<br><br>Error selecting row from languages");	
 	}
-
+	
 	return $row;
 }
 
@@ -141,7 +141,7 @@ function languages_delete($language_id) {
 	}
 }
 
-function languages_edit($language_id, $description, $lang_code, $dest) {
+function languages_edit($language_id, $description, $lang_code, $dest) { 
 	global $db;
 	$sql = "UPDATE languages SET ".
 		"description = '".$db->escapeSimple($description)."', ".
@@ -163,7 +163,7 @@ function languages_configpageinit($pagename) {
 	$tech_hardware = isset($_REQUEST['tech_hardware'])?$_REQUEST['tech_hardware']:null;
 
 	// We only want to hook 'users' or 'extensions' pages.
-	if ($pagename != 'users' && $pagename != 'extensions')
+	if ($pagename != 'users' && $pagename != 'extensions') 
 		return true;
 	// On a 'new' user, 'tech_hardware' is set, and there's no extension. Hook into the page.
 	if ($tech_hardware != null || $pagename == 'users') {
@@ -182,7 +182,7 @@ function languages_configpageinit($pagename) {
 function language_applyhooks() {
 	global $currentcomponent;
 
-	// Add the 'process' function - this gets called when the page is loaded, to hook into
+	// Add the 'process' function - this gets called when the page is loaded, to hook into 
 	// displaying stuff on the page.
 	$currentcomponent->addguifunc('languages_configpageload');
 }
@@ -194,15 +194,14 @@ function languages_configpageload() {
 	// Init vars from $_REQUEST[]
 	$action = isset($_REQUEST['action'])?$_REQUEST['action']:null;
 	$extdisplay = isset($_REQUEST['extdisplay'])?$_REQUEST['extdisplay']:null;
-
+	
 	// Don't display this stuff it it's on a 'This xtn has been deleted' page.
 	if ($action != 'del') {
 		$langcode = languages_user_get($extdisplay);
 
 		$section = _('Language');
 		$msgInvalidLanguage = _('Please enter a valid Language Code');
-		$category = "advanced";
-		$currentcomponent->addguielem($section, new gui_textbox('langcode', $langcode, _('Language Code'), _('This will cause all messages and voice prompts to use the selected language if installed.'), "!isFilename()", $msgInvalidLanguage, true),$category);
+		$currentcomponent->addguielem($section, new gui_textbox('langcode', $langcode, _('Language Code'), _('This will cause all messages and voice prompts to use the selected language if installed.'), "!isFilename()", $msgInvalidLanguage, true));
 	}
 }
 
@@ -213,11 +212,11 @@ function languages_configprocess() {
 	$extn = isset($_REQUEST['extension'])?$_REQUEST['extension']:null;
 	$langcode = isset($_REQUEST['langcode'])?$_REQUEST['langcode']:null;
 
-	if ($ext==='') {
-		$extdisplay = $extn;
+	if ($ext==='') { 
+		$extdisplay = $extn; 
 	} else {
 		$extdisplay = $ext;
-	}
+	} 
 	if ($action == "add" || $action == "edit") {
 		if (!isset($GLOBALS['abort']) || $GLOBALS['abort'] !== true) {
 			languages_user_update($extdisplay, $langcode);
@@ -251,11 +250,12 @@ function languages_user_del($ext) {
 
 	//inbound route language settings
 function languages_hook_core($viewing_itemid, $target_menuid){
-	$extension	= isset($_REQUEST['extension'])		? $_REQUEST['extension']	:'';
-	$cidnum		= isset($_REQUEST['cidnum'])		? $_REQUEST['cidnum']		:'';
-	$extdisplay	= isset($_REQUEST['extdisplay'])	? $_REQUEST['extdisplay']	:'';
-	$action		= isset($_REQUEST['action'])		? $_REQUEST['action']		:'';
-	$language	= isset($_REQUEST['language'])		? $_REQUEST['language']		:'';
+	$request = $_REQUEST;
+	$extension	= isset($request['extension'])	? $request['extension']	:'';
+	$cidnum		= isset($request['cidnum'])		? $request['cidnum']		:'';
+	$extdisplay	= isset($request['extdisplay'])	? $request['extdisplay']	:'';
+	$action		= isset($request['action'])		? $request['action']		:'';
+	$language	= isset($request['language'])	? $request['language']		:'';
 	//set $extension,$cidnum if we dont already have them
 	if(!$extension && !$cidnum){
 		$opts		= explode('/', $extdisplay);
@@ -265,7 +265,7 @@ function languages_hook_core($viewing_itemid, $target_menuid){
 		$extension 	= $extension;
 		$cidnum		= $cidnum;
 	}
-
+	
 	//update if we have enough info
 	if($action == 'edtIncoming' || ( $extension != '' || $cidnum != '') && $language != ''){
 		languages_incoming_update($language=$language,$extension,$cidnum);
@@ -275,9 +275,32 @@ function languages_hook_core($viewing_itemid, $target_menuid){
 	}
 	$html = '';
 	if ($target_menuid == 'did'){
-		$html.='<tr><td colspan="2"><h5>'._("Language").'<hr></h5></td></tr>';
-		$html.='<tr><td><a href="#" class="info">'._('Language').'<span>'._("Allows you to set the language for this DID.").'</span></a>:</td>';
-		$html.='<td><input type="text" name="language" value="'.languages_incoming_get($extension,$cidnum).'"></td></tr>';
+		$html .= '
+			<!--Language-->
+			<div class="element-container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="form-group">
+								<div class="col-md-3">
+									<label class="control-label" for="language">'._("Language").'</label>
+									<i class="fa fa-question-circle fpbx-help-icon" data-for="language"></i>
+								</div>
+								<div class="col-md-9">
+									<input type="text" class="form-control" id="language" name="language" value="'.languages_incoming_get($extension,$cidnum).'">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<span id="language-help" class="help-block fpbx-help-block">'._("Allows you to set the language for this DID.").'</span>
+					</div>
+				</div>
+			</div>
+			<!--END Language-->
+		';
 	}
 	return $html;
 }
