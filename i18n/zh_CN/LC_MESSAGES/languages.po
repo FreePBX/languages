@@ -7,59 +7,90 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-20 19:38-0500\n"
 "PO-Revision-Date: 2009-01-31 12:37+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Chinese\n"
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#, php-format
-msgid "Language: %s"
-msgstr "语言：%s"
-
-msgid "Language"
-msgstr "语言"
-
-msgid "Please enter a valid Language Code"
-msgstr "请输入有效的语言代码"
-
-msgid "Language Code"
-msgstr "语言代码"
-
-msgid ""
-"This will cause all messages and voice prompts to use the selected language "
-"if installed."
-msgstr "如果安装好了所选择的语言，这会使所有的消息和语音提示都使用这种语言。"
-
-msgid "Allows you to set the language for this DID."
+#: views/grid.php:21
+msgid "Actions"
 msgstr ""
 
-#, php-format
-msgid "Language Change: %s"
-msgstr "改变语言：%s"
+#: views/bootnav.php:2
+msgid "Add Language"
+msgstr "添加语言"
 
-msgid "Languages"
-msgstr "语言"
+#: page.languages.php:12
+msgid "Add Language Instance"
+msgstr "添加一种语言"
 
-msgid "Applications"
-msgstr ""
-
+#: languages.i18n.php:5
 msgid ""
 "Adds the ability to changes the language within a call flow and add language "
 "attribute to users."
 msgstr ""
 
-msgid "Add Language"
-msgstr "添加语言"
+#: functions.inc.php:298
+msgid "Allows you to set the language for this DID."
+msgstr ""
 
+#: languages.i18n.php:4
+msgid "Applications"
+msgstr ""
+
+#: Languages.class.php:77
+msgid "Delete"
+msgstr "删除"
+
+#: views/form.php:40
+msgid "Description"
+msgstr "描述"
+
+#: views/form.php:88
+msgid "Destination"
+msgstr "目的地"
+
+#: page.languages.php:10
+msgid "Edit Language Instance"
+msgstr "编辑一种语言"
+
+#: views/form.php:13
 msgid "Edit: "
 msgstr "编辑："
 
+#: assets/js/languages.js:2
+msgid "Invalid description specified"
+msgstr "指定了无效的描述"
+
+#: functions.inc.php:202 functions.inc.php:286 views/grid.php:20
+msgid "Language"
+msgstr "语言"
+
+#: functions.inc.php:356
+#, php-format
+msgid "Language Change: %s"
+msgstr "改变语言：%s"
+
+#: functions.inc.php:204 views/form.php:64
+msgid "Language Code"
+msgstr "语言代码"
+
+#: functions.inc.php:36
+#, php-format
+msgid "Language: %s"
+msgstr "语言：%s"
+
+#: languages.i18n.php:3 languages.i18n.php:6 page.languages.php:5
+msgid "Languages"
+msgstr "语言"
+
+#: page.languages.php:4
 msgid ""
 "Languages allow you to change the language of the call flow and then "
 "continue on to the desired destination. For example, you may have an IVR "
@@ -73,33 +104,43 @@ msgstr ""
 "呼叫引导到此中文IVR。现在呼叫的频道就变成了中文。今后所有的声音都是中文（如果"
 "安装了中文声音的话）。"
 
-msgid "Edit Language Instance"
-msgstr "编辑一种语言"
+#: views/bootnav.php:1
+msgid "List Languagess"
+msgstr ""
 
-msgid "Add Language Instance"
-msgstr "添加一种语言"
+#: functions.inc.php:203
+msgid "Please enter a valid Language Code"
+msgstr "请输入有效的语言代码"
 
-msgid "Description"
-msgstr "描述"
+#: Languages.class.php:72
+msgid "Reset"
+msgstr ""
 
-msgid ""
-"The descriptive name of this language instance. For example \"French Main IVR"
-"\""
-msgstr "为这种语言设定一个描述性的名字，比如，“中文主IVR”"
+#: Languages.class.php:67
+msgid "Submit"
+msgstr ""
 
+#: views/form.php:76
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
 msgstr "设定你希望切换到的Asterisk的语言代码。比如，法语是“fr”，德语是“de”"
 
-msgid "Destination"
-msgstr "目的地"
+#: views/form.php:52
+msgid ""
+"The descriptive name of this language instance. For example \"French Main IVR"
+"\""
+msgstr "为这种语言设定一个描述性的名字，比如，“中文主IVR”"
 
-msgid "Submit Changes"
-msgstr "提交更改"
+#: functions.inc.php:204
+msgid ""
+"This will cause all messages and voice prompts to use the selected language "
+"if installed."
+msgstr "如果安装好了所选择的语言，这会使所有的消息和语音提示都使用这种语言。"
 
-msgid "Delete"
-msgstr "删除"
+#: views/form.php:100
+msgid "Where to send the caller after setting the language."
+msgstr ""
 
-msgid "Invalid description specified"
-msgstr "指定了无效的描述"
+#~ msgid "Submit Changes"
+#~ msgstr "提交更改"

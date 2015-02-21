@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX languages\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-20 19:38-0500\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -29,39 +29,19 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#, php-format
-msgid "Language: %s"
-msgstr "Språk: %s"
-
-msgid "Language"
-msgstr "Språk"
-
-msgid "Please enter a valid Language Code"
-msgstr "Skriv in en giltig språkkod"
-
-msgid "Language Code"
-msgstr "Språkkod"
-
-msgid ""
-"This will cause all messages and voice prompts to use the selected language "
-"if installed."
-msgstr ""
-"Alla meddelanden och röster kommer att använda det valda språket om det är "
-"installerat."
-
-msgid "Allows you to set the language for this DID."
-msgstr "Ger dig möjlighet att sätta språket för detta direktnummer"
-
-#, php-format
-msgid "Language Change: %s"
-msgstr "Språkbyte: %s"
-
-msgid "Languages"
-msgstr "Språk"
-
-msgid "Applications"
+#: views/grid.php:21
+msgid "Actions"
 msgstr ""
 
+#: views/bootnav.php:2
+msgid "Add Language"
+msgstr "Lägg till språk"
+
+#: page.languages.php:12
+msgid "Add Language Instance"
+msgstr "Lägg till språkinstans"
+
+#: languages.i18n.php:5
 msgid ""
 "Adds the ability to changes the language within a call flow and add language "
 "attribute to users."
@@ -69,12 +49,61 @@ msgstr ""
 "Ger möjlighet att ändra språket inom ett samtalsflöde och sätter "
 "språkattribut för användaren"
 
-msgid "Add Language"
-msgstr "Lägg till språk"
+#: functions.inc.php:298
+msgid "Allows you to set the language for this DID."
+msgstr "Ger dig möjlighet att sätta språket för detta direktnummer"
 
+#: languages.i18n.php:4
+msgid "Applications"
+msgstr ""
+
+#: Languages.class.php:77
+msgid "Delete"
+msgstr "Ta bort"
+
+#: views/form.php:40
+msgid "Description"
+msgstr "Beskrivning"
+
+#: views/form.php:88
+msgid "Destination"
+msgstr "Destinationer"
+
+#: page.languages.php:10
+msgid "Edit Language Instance"
+msgstr "Redigera språkinstans"
+
+#: views/form.php:13
 msgid "Edit: "
 msgstr "Redigera:"
 
+#: assets/js/languages.js:2
+msgid "Invalid description specified"
+msgstr "Ogiltig beskrivning"
+
+#: functions.inc.php:202 functions.inc.php:286 views/grid.php:20
+msgid "Language"
+msgstr "Språk"
+
+#: functions.inc.php:356
+#, php-format
+msgid "Language Change: %s"
+msgstr "Språkbyte: %s"
+
+#: functions.inc.php:204 views/form.php:64
+msgid "Language Code"
+msgstr "Språkkod"
+
+#: functions.inc.php:36
+#, php-format
+msgid "Language: %s"
+msgstr "Språk: %s"
+
+#: languages.i18n.php:3 languages.i18n.php:6 page.languages.php:5
+msgid "Languages"
+msgstr "Språk"
+
+#: page.languages.php:4
 msgid ""
 "Languages allow you to change the language of the call flow and then "
 "continue on to the desired destination. For example, you may have an IVR "
@@ -88,22 +117,23 @@ msgstr ""
 "kan då skapa en Fransk språkinstans och peka destinationen till en Fransk "
 "IVR. Språket kommer nu att vara på franska om detta språk är installerat."
 
-msgid "Edit Language Instance"
-msgstr "Redigera språkinstans"
-
-msgid "Add Language Instance"
-msgstr "Lägg till språkinstans"
-
-msgid "Description"
-msgstr "Beskrivning"
-
-msgid ""
-"The descriptive name of this language instance. For example \"French Main IVR"
-"\""
+#: views/bootnav.php:1
+msgid "List Languagess"
 msgstr ""
-"Skriv in en kortfattad beskrivning för denna instans. T.ex. \"Fransk meny i "
-"IVR\""
 
+#: functions.inc.php:203
+msgid "Please enter a valid Language Code"
+msgstr "Skriv in en giltig språkkod"
+
+#: Languages.class.php:72
+msgid "Reset"
+msgstr ""
+
+#: Languages.class.php:67
+msgid "Submit"
+msgstr ""
+
+#: views/form.php:76
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
@@ -111,17 +141,28 @@ msgstr ""
 "Den kod i Asterisk som du vill ändra till. T.ex. \"fr\" för franska, \"de\" "
 "för tyska etc."
 
-msgid "Destination"
-msgstr "Destinationer"
+#: views/form.php:52
+msgid ""
+"The descriptive name of this language instance. For example \"French Main IVR"
+"\""
+msgstr ""
+"Skriv in en kortfattad beskrivning för denna instans. T.ex. \"Fransk meny i "
+"IVR\""
 
-msgid "Submit Changes"
-msgstr "Spara ändringar"
+#: functions.inc.php:204
+msgid ""
+"This will cause all messages and voice prompts to use the selected language "
+"if installed."
+msgstr ""
+"Alla meddelanden och röster kommer att använda det valda språket om det är "
+"installerat."
 
-msgid "Delete"
-msgstr "Ta bort"
+#: views/form.php:100
+msgid "Where to send the caller after setting the language."
+msgstr ""
 
-msgid "Invalid description specified"
-msgstr "Ogiltig beskrivning"
+#~ msgid "Submit Changes"
+#~ msgstr "Spara ändringar"
 
 #~ msgid "Internal Options & Configuration"
 #~ msgstr "Interna val och konfigurationer"

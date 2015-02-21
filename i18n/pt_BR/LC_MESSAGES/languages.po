@@ -20,62 +20,91 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-20 19:38-0500\n"
 "PO-Revision-Date: 2014-07-25 23:56+0200\n"
 "Last-Translator: Rafael <rafael@ibinetwork.com.br>\n"
-"Language-Team: Portuguese (Brazil) "
-"<http://git.freepbx.org/projects/freepbx/languages/pt_BR/>\n"
-"Language: pt_BR\n"
+"Language-Team: Portuguese (Brazil) <http://git.freepbx.org/projects/freepbx/"
+"languages/pt_BR/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 1.10-dev\n"
 
-#, php-format
-msgid "Language: %s"
-msgstr "Idioma: %s"
-
-msgid "Language"
-msgstr "Idioma"
-
-msgid "Please enter a valid Language Code"
-msgstr "Por favor entre com um Código de Idioma valido"
-
-msgid "Language Code"
-msgstr "Código do Idioma"
-
-msgid ""
-"This will cause all messages and voice prompts to use the selected language "
-"if installed."
+#: views/grid.php:21
+msgid "Actions"
 msgstr ""
-"Todas as mensagens e prompts de voz serão usado pelo idioma selecionado se "
-"instalado."
 
-msgid "Allows you to set the language for this DID."
-msgstr "Autorizar setar este idioma para esse DID."
+#: views/bootnav.php:2
+msgid "Add Language"
+msgstr "Adicionar Idioma"
 
-#, php-format
-msgid "Language Change: %s"
-msgstr "Alterar Idioma: %s"
+#: page.languages.php:12
+msgid "Add Language Instance"
+msgstr ""
 
-msgid "Languages"
-msgstr "Idiomas"
-
-msgid "Applications"
-msgstr "Aplicações"
-
+#: languages.i18n.php:5
 msgid ""
 "Adds the ability to changes the language within a call flow and add language "
 "attribute to users."
 msgstr ""
 
-msgid "Add Language"
-msgstr "Adicionar Idioma"
+#: functions.inc.php:298
+msgid "Allows you to set the language for this DID."
+msgstr "Autorizar setar este idioma para esse DID."
 
+#: languages.i18n.php:4
+msgid "Applications"
+msgstr "Aplicações"
+
+#: Languages.class.php:77
+msgid "Delete"
+msgstr "Apagar"
+
+#: views/form.php:40
+msgid "Description"
+msgstr "Descrição"
+
+#: views/form.php:88
+msgid "Destination"
+msgstr "Destino"
+
+#: page.languages.php:10
+msgid "Edit Language Instance"
+msgstr ""
+
+#: views/form.php:13
 msgid "Edit: "
 msgstr "Editar: "
 
+#: assets/js/languages.js:2
+msgid "Invalid description specified"
+msgstr "Descrição especificada invalida"
+
+#: functions.inc.php:202 functions.inc.php:286 views/grid.php:20
+msgid "Language"
+msgstr "Idioma"
+
+#: functions.inc.php:356
+#, php-format
+msgid "Language Change: %s"
+msgstr "Alterar Idioma: %s"
+
+#: functions.inc.php:204 views/form.php:64
+msgid "Language Code"
+msgstr "Código do Idioma"
+
+#: functions.inc.php:36
+#, php-format
+msgid "Language: %s"
+msgstr "Idioma: %s"
+
+#: languages.i18n.php:3 languages.i18n.php:6 page.languages.php:5
+msgid "Languages"
+msgstr "Idiomas"
+
+#: page.languages.php:4
 msgid ""
 "Languages allow you to change the language of the call flow and then "
 "continue on to the desired destination. For example, you may have an IVR "
@@ -85,33 +114,45 @@ msgid ""
 "sounds being chosen if installed."
 msgstr ""
 
-msgid "Edit Language Instance"
+#: views/bootnav.php:1
+msgid "List Languagess"
 msgstr ""
 
-msgid "Add Language Instance"
+#: functions.inc.php:203
+msgid "Please enter a valid Language Code"
+msgstr "Por favor entre com um Código de Idioma valido"
+
+#: Languages.class.php:72
+msgid "Reset"
 msgstr ""
 
-msgid "Description"
-msgstr "Descrição"
-
-msgid ""
-"The descriptive name of this language instance. For example \"French Main IVR"
-"\""
+#: Languages.class.php:67
+msgid "Submit"
 msgstr ""
 
+#: views/form.php:76
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
 msgstr ""
 
-msgid "Destination"
-msgstr "Destino"
+#: views/form.php:52
+msgid ""
+"The descriptive name of this language instance. For example \"French Main IVR"
+"\""
+msgstr ""
 
-msgid "Submit Changes"
-msgstr "Enviar Alterações"
+#: functions.inc.php:204
+msgid ""
+"This will cause all messages and voice prompts to use the selected language "
+"if installed."
+msgstr ""
+"Todas as mensagens e prompts de voz serão usado pelo idioma selecionado se "
+"instalado."
 
-msgid "Delete"
-msgstr "Apagar"
+#: views/form.php:100
+msgid "Where to send the caller after setting the language."
+msgstr ""
 
-msgid "Invalid description specified"
-msgstr "Descrição especificada invalida"
+#~ msgid "Submit Changes"
+#~ msgstr "Enviar Alterações"
