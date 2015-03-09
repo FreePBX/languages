@@ -2,7 +2,7 @@
   <rawname>languages</rawname>
   <repo>extended</repo>
   <name>Languages</name>
-  <version>2.11.0.2</version>
+  <version>13.0.1alpha1</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -19,6 +19,7 @@
     </languages>
   </popovers>
   <changelog>
+		*13.0.1alpha1* Visual Changes
   		*2.11.0.2* Include license file
 		*2.11.0.1* Database abstraction fixes
 		*2.11.0.0* #6051
@@ -35,6 +36,6 @@
   <location>release/2.11/languages-2.11.0.0.tgz</location>
   <md5sum>b587ea591f4dbf4ee8c1de52bcfb464c</md5sum>
   <supported>
-    <version>2.10</version>
+    <version>13.0</version>
   </supported>
 </module>

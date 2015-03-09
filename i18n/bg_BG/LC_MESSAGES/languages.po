@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:38-0500\n"
+"POT-Creation-Date: 2015-03-09 12:49-0400\n"
 "PO-Revision-Date: 2009-02-14 17:25+0200\n"
 "Last-Translator: \n"
 "Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
@@ -30,7 +30,7 @@ msgstr "Добави Език"
 msgid "Add Language Instance"
 msgstr "Добави Въвеждане на Език"
 
-#: languages.i18n.php:5
+#: languages.i18n.php:8
 msgid ""
 "Adds the ability to changes the language within a call flow and add language "
 "attribute to users."
@@ -40,7 +40,7 @@ msgstr ""
 msgid "Allows you to set the language for this DID."
 msgstr ""
 
-#: languages.i18n.php:4
+#: languages.i18n.php:6 languages.i18n.php:12
 msgid "Applications"
 msgstr ""
 
@@ -86,7 +86,7 @@ msgstr "Означение на Език"
 msgid "Language: %s"
 msgstr "Език: %s"
 
-#: languages.i18n.php:3 languages.i18n.php:6 page.languages.php:5
+#: languages.i18n.php:4 languages.i18n.php:10 page.languages.php:5
 msgid "Languages"
 msgstr "Езици"
 
