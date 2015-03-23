@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo languages module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:38-0500\n"
-"PO-Revision-Date: 2015-03-23 00:55+0200\n"
+"PO-Revision-Date: 2015-03-23 01:08+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/languages/es_ES/>\n"
@@ -63,7 +63,7 @@ msgstr "Editar instancia de idioma"
 
 #: views/form.php:13
 msgid "Edit: "
-msgstr "Editar:"
+msgstr "Editar: "
 
 #: assets/js/languages.js:2
 msgid "Invalid description specified"
@@ -129,7 +129,7 @@ msgid ""
 "French, \"de\" for German"
 msgstr ""
 "El código del idioma de Asterisk al que desea cambiar. Por ejemplo, \"fr\" "
-"para francés, o \"de\" para alemán."
+"para francés, o \"de\" para alemán"
 
 #: views/form.php:52
 msgid ""
@@ -137,7 +137,7 @@ msgid ""
 "\""
 msgstr ""
 "Un nombre descriptivo para esta instancia de idioma. Por ejemplo, \"IVR "
-"principal en francés\"."
+"principal en francés\""
 
 #: functions.inc.php:204
 msgid ""
