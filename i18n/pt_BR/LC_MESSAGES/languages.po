@@ -21,20 +21,20 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:38-0500\n"
-"PO-Revision-Date: 2014-07-25 23:56+0200\n"
-"Last-Translator: Rafael <rafael@ibinetwork.com.br>\n"
-"Language-Team: Portuguese (Brazil) <http://git.freepbx.org/projects/freepbx/"
-"languages/pt_BR/>\n"
+"PO-Revision-Date: 2015-04-28 06:23+0200\n"
+"Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
+"Language-Team: Portuguese (Brazil) "
+"<http://weblate.freepbx.org/projects/freepbx/languages/pt_BR/>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 1.10-dev\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: views/grid.php:21
 msgid "Actions"
-msgstr ""
+msgstr "Ações"
 
 #: views/bootnav.php:2
 msgid "Add Language"
@@ -42,17 +42,19 @@ msgstr "Adicionar Idioma"
 
 #: page.languages.php:12
 msgid "Add Language Instance"
-msgstr ""
+msgstr "Adicionar Instância de Idioma"
 
 #: languages.i18n.php:5
 msgid ""
 "Adds the ability to changes the language within a call flow and add language "
 "attribute to users."
 msgstr ""
+"Adiciona a capacidade de mudar o idioma durante um fluxo de chamada e "
+"adicionar atributo de idioma para usuários."
 
 #: functions.inc.php:298
 msgid "Allows you to set the language for this DID."
-msgstr "Autorizar setar este idioma para esse DID."
+msgstr "Permite configurar o idioma para este DID."
 
 #: languages.i18n.php:4
 msgid "Applications"
@@ -72,7 +74,7 @@ msgstr "Destino"
 
 #: page.languages.php:10
 msgid "Edit Language Instance"
-msgstr ""
+msgstr "Editar Instância de Idioma"
 
 #: views/form.php:13
 msgid "Edit: "
@@ -80,7 +82,7 @@ msgstr "Editar: "
 
 #: assets/js/languages.js:2
 msgid "Invalid description specified"
-msgstr "Descrição especificada invalida"
+msgstr "Descrição especificada inválida"
 
 #: functions.inc.php:202 functions.inc.php:286 views/grid.php:20
 msgid "Language"
@@ -89,7 +91,7 @@ msgstr "Idioma"
 #: functions.inc.php:356
 #, php-format
 msgid "Language Change: %s"
-msgstr "Alterar Idioma: %s"
+msgstr "Mudar Idioma: %s"
 
 #: functions.inc.php:204 views/form.php:64
 msgid "Language Code"
@@ -113,34 +115,44 @@ msgid ""
 "of the call's channel will now be in French. This will result in French "
 "sounds being chosen if installed."
 msgstr ""
+"Idiomas permite você mudar o idioma do fluxo de chamada e então continuar ao "
+"destino desejado. Por exemplo, você pode ter uma opção na URA que diz \"Para "
+"Francês pressione 5 agora\". Você então criaria uma instância de idioma "
+"Francês e apontaria seu destino para uma URA Francês. O idioma do canal de "
+"chamada será agora em Francês. Isto resultará em sons em Francês serem "
+"escolhidos caso instalados."
 
 #: views/bootnav.php:1
 msgid "List Languagess"
-msgstr ""
+msgstr "Lista de Idiomas"
 
 #: functions.inc.php:203
 msgid "Please enter a valid Language Code"
-msgstr "Por favor entre com um Código de Idioma valido"
+msgstr "Por favor entre com um Código de Idioma válido"
 
 #: Languages.class.php:72
 msgid "Reset"
-msgstr ""
+msgstr "Redefinir"
 
 #: Languages.class.php:67
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: views/form.php:76
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
 msgstr ""
+"O código de idioma do Asterisk para o qual você deseja mudar. Por exemplo \""
+"fr\" para Francês, \"de\" para Alemão"
 
 #: views/form.php:52
 msgid ""
 "The descriptive name of this language instance. For example \"French Main IVR"
 "\""
 msgstr ""
+"O nome descritivo desta instância de idioma. Por exemplo \"URA Principal "
+"Francês\""
 
 #: functions.inc.php:204
 msgid ""
@@ -152,7 +164,7 @@ msgstr ""
 
 #: views/form.php:100
 msgid "Where to send the caller after setting the language."
-msgstr ""
+msgstr "Para onde enviar o chamador após configurar o idioma."
 
 #~ msgid "Submit Changes"
 #~ msgstr "Enviar Alterações"
