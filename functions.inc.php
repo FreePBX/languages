@@ -201,7 +201,26 @@ function languages_configpageload() {
 
 		$section = _('Language');
 		$msgInvalidLanguage = _('Please enter a valid Language Code');
-		$currentcomponent->addguielem($section, new gui_textbox('langcode', $langcode, _('Language Code'), _('This will cause all messages and voice prompts to use the selected language if installed.'), "!isFilename()", $msgInvalidLanguage, true));
+		if (FreePBX::Modules()->moduleHasMethod('Soundlang', 'getLanguages')) {
+			$langlist = array(
+				array(
+					'value' => '',
+					'text' => _('Default'),
+				)
+			);
+			$languages = FreePBX::Soundlang()->getLanguages();
+			if (!empty($languages)) {
+				foreach ($languages as $key => $val) {
+					$langlist[] = array(
+						'value' => $key,
+						'text' => $val
+					);
+				}
+			}
+			$currentcomponent->addguielem($section, new gui_selectbox('langcode', $langlist, $langcode, _("Language Code"), _("This will cause all messages and voice prompts to use the selected language if installed.  Languages can be added or removed in the Sound Languages module"), false));
+		} else {
+			$currentcomponent->addguielem($section, new gui_textbox('langcode', $langcode, _('Language Code'), _('This will cause all messages and voice prompts to use the selected language if installed.'), "!isFilename()", $msgInvalidLanguage, true));
+		}
 	}
 }
 
@@ -287,7 +306,22 @@ function languages_hook_core($viewing_itemid, $target_menuid){
 									<i class="fa fa-question-circle fpbx-help-icon" data-for="language"></i>
 								</div>
 								<div class="col-md-9">
-									<input type="text" class="form-control" id="language" name="language" value="'.languages_incoming_get($extension,$cidnum).'">
+		';
+
+		$language = languages_incoming_get($extension,$cidnum);
+		if (FreePBX::Modules()->moduleHasMethod('Soundlang', 'getLanguages')) {
+			$languages = FreePBX::Soundlang()->getLanguages();
+			$html.= '<select class="form-control" id="language" name="language">';
+			$html.= '<option value=""' . ($language == "" ? "SELECTED" : "") . '>' . _("Default") . '</option>';
+
+			foreach ($languages as $key => $val) {
+				$html.= '<option value="' . $key . '"' . ($language == $key ? "SELECTED" : "") . '>' . $val . '</option>';
+			}
+			$html.= '</select>';
+		} else {
+			$html.= '<input type="text" class="form-control" id="language" name="language" value="'.$language.'">';
+		}
+		$html.= '
 								</div>
 							</div>
 						</div>

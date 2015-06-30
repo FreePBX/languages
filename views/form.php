@@ -65,7 +65,26 @@ if ($extdisplay) {
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="lang_code"></i>
 					</div>
 					<div class="col-md-9">
+<?php
+					if (FreePBX::Modules()->moduleHasMethod('Soundlang', 'getLanguages')) {
+						$languages = FreePBX::Soundlang()->getLanguages();
+?>
+						<select class="form-control" id="lang_code" name="lang_code">
+<?php
+						foreach ($languages as $key => $val) {
+?>
+							<option value="<?php echo $key;?>"><?php echo $val;?></option>
+<?php
+						}
+?>
+						</select>
+<?php
+					} else {
+?>
 						<input type="text" class="form-control" id="lang_code" name="lang_code" value="<?php echo $lang_code; ?>">
+<?php
+					}
+?>
 					</div>
 				</div>
 			</div>
