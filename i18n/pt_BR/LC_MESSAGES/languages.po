@@ -20,10 +20,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-09 12:49-0400\n"
+"POT-Creation-Date: 2015-06-30 11:58-0500\n"
 "PO-Revision-Date: 2014-07-25 23:56+0200\n"
 "Last-Translator: Rafael <rafael@ibinetwork.com.br>\n"
-"Language-Team: Portuguese (Brazil) <http://git.freepbx.org/projects/freepbx/languages/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <http://git.freepbx.org/projects/freepbx/"
+"languages/pt_BR/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,29 +32,25 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 1.10-dev\n"
 
-#: views/grid.php:21
+#: views/grid.php:25
 msgid "Actions"
 msgstr "Ações"
 
-#: views/bootnav.php:2
+#: views/bootnav.php:2 views/grid.php:20
 msgid "Add Language"
 msgstr "Adicionar Idioma"
 
-#: page.languages.php:12
+#: page.languages.php:13
 msgid "Add Language Instance"
 msgstr "Adicionar Instância de Idioma"
 
-#: languages.i18n.php:5
-msgid "Adds the ability to changes the language within a call flow and add language attribute to users."
-msgstr "Adiciona a capacidade de mudar o idioma durante um fluxo de chamada e adicionar atributo de idioma para usuários."
-
-#: functions.inc.php:298
+#: functions.inc.php:332
 msgid "Allows you to set the language for this DID."
 msgstr "Permite configurar o idioma para este DID."
 
-#: languages.i18n.php:6 languages.i18n.php:12
-msgid "Applications"
-msgstr "Aplicações"
+#: functions.inc.php:208 functions.inc.php:315
+msgid "Default"
+msgstr ""
 
 #: Languages.class.php:77
 msgid "Delete"
@@ -63,11 +60,11 @@ msgstr "Apagar"
 msgid "Description"
 msgstr "Descrição"
 
-#: views/form.php:88
+#: views/form.php:107
 msgid "Destination"
 msgstr "Destino"
 
-#: page.languages.php:10
+#: page.languages.php:11
 msgid "Edit Language Instance"
 msgstr "Editar Instância de Idioma"
 
@@ -79,16 +76,16 @@ msgstr "Editar: "
 msgid "Invalid description specified"
 msgstr "Descrição especificada inválida"
 
-#: functions.inc.php:202 functions.inc.php:286 views/grid.php:20
+#: functions.inc.php:202 functions.inc.php:305 views/grid.php:24
 msgid "Language"
 msgstr "Idioma"
 
-#: functions.inc.php:356
+#: functions.inc.php:390
 #, php-format
 msgid "Language Change: %s"
 msgstr "Mudar Idioma: %s"
 
-#: functions.inc.php:204 views/form.php:64
+#: functions.inc.php:220 functions.inc.php:222 views/form.php:64
 msgid "Language Code"
 msgstr "Código do Idioma"
 
@@ -97,13 +94,25 @@ msgstr "Código do Idioma"
 msgid "Language: %s"
 msgstr "Idioma: %s"
 
-#: languages.i18n.php:4 languages.i18n.php:10 page.languages.php:5
+#: page.languages.php:5
 msgid "Languages"
 msgstr "Idiomas"
 
 #: page.languages.php:4
-msgid "Languages allow you to change the language of the call flow and then continue on to the desired destination. For example, you may have an IVR option that says \"For French Press 5 now\". You would then create a French language instance and point it's destination at a French IVR. The language of the call's channel will now be in French. This will result in French sounds being chosen if installed."
-msgstr "Idiomas permite você mudar o idioma do fluxo de chamada e então continuar ao destino desejado. Por exemplo, você pode ter uma opção na URA que diz \"Para Francês pressione 5 agora\". Você então criaria uma instância de idioma Francês e apontaria seu destino para uma URA Francês. O idioma do canal de chamada será agora em Francês. Isto resultará em sons em Francês serem escolhidos caso instalados."
+msgid ""
+"Languages allow you to change the language of the call flow and then "
+"continue on to the desired destination. For example, you may have an IVR "
+"option that says \"For French Press 5 now\". You would then create a French "
+"language instance and point it's destination at a French IVR. The language "
+"of the call's channel will now be in French. This will result in French "
+"sounds being chosen if installed."
+msgstr ""
+"Idiomas permite você mudar o idioma do fluxo de chamada e então continuar ao "
+"destino desejado. Por exemplo, você pode ter uma opção na URA que diz \"Para "
+"Francês pressione 5 agora\". Você então criaria uma instância de idioma "
+"Francês e apontaria seu destino para uma URA Francês. O idioma do canal de "
+"chamada será agora em Francês. Isto resultará em sons em Francês serem "
+"escolhidos caso instalados."
 
 #: views/bootnav.php:1
 msgid "List Languagess"
@@ -121,21 +130,50 @@ msgstr "Redefinir"
 msgid "Submit"
 msgstr "Enviar"
 
-#: views/form.php:76
-msgid "The Asterisk language code you want to change to. For example \"fr\" for French, \"de\" for German"
-msgstr "O código de idioma do Asterisk para o qual você deseja mudar. Por exemplo \"fr\" para Francês, \"de\" para Alemão"
+#: views/form.php:95
+msgid ""
+"The Asterisk language code you want to change to. For example \"fr\" for "
+"French, \"de\" for German"
+msgstr ""
+"O código de idioma do Asterisk para o qual você deseja mudar. Por exemplo "
+"\"fr\" para Francês, \"de\" para Alemão"
 
 #: views/form.php:52
-msgid "The descriptive name of this language instance. For example \"French Main IVR\""
-msgstr "O nome descritivo desta instância de idioma. Por exemplo \"URA Principal Francês\""
+msgid ""
+"The descriptive name of this language instance. For example \"French Main IVR"
+"\""
+msgstr ""
+"O nome descritivo desta instância de idioma. Por exemplo \"URA Principal "
+"Francês\""
 
-#: functions.inc.php:204
-msgid "This will cause all messages and voice prompts to use the selected language if installed."
-msgstr "Todas as mensagens e prompts de voz serão usado pelo idioma selecionado se instalado."
+#: functions.inc.php:222
+msgid ""
+"This will cause all messages and voice prompts to use the selected language "
+"if installed."
+msgstr ""
+"Todas as mensagens e prompts de voz serão usado pelo idioma selecionado se "
+"instalado."
 
-#: views/form.php:100
+#: functions.inc.php:220
+msgid ""
+"This will cause all messages and voice prompts to use the selected language "
+"if installed.  Languages can be added or removed in the Sound Languages "
+"module"
+msgstr ""
+
+#: views/form.php:119
 msgid "Where to send the caller after setting the language."
 msgstr "Para onde enviar o chamador após configurar o idioma."
+
+#~ msgid ""
+#~ "Adds the ability to changes the language within a call flow and add "
+#~ "language attribute to users."
+#~ msgstr ""
+#~ "Adiciona a capacidade de mudar o idioma durante um fluxo de chamada e "
+#~ "adicionar atributo de idioma para usuários."
+
+#~ msgid "Applications"
+#~ msgstr "Aplicações"
 
 #~ msgid "Submit Changes"
 #~ msgstr "Enviar Alterações"

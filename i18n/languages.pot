@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-09 12:49-0400\n"
+"POT-Creation-Date: 2015-06-30 11:58-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,31 +17,26 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: views/grid.php:21
+#: views/grid.php:25
 msgid "Actions"
 msgstr ""
 
 #: views/bootnav.php:2
+#: views/grid.php:20
 msgid "Add Language"
 msgstr ""
 
-#: page.languages.php:12
+#: page.languages.php:13
 msgid "Add Language Instance"
 msgstr ""
 
-#: languages.i18n.php:8
-msgid ""
-"Adds the ability to changes the language within a call flow and add language "
-"attribute to users."
-msgstr ""
-
-#: functions.inc.php:298
+#: functions.inc.php:332
 msgid "Allows you to set the language for this DID."
 msgstr ""
 
-#: languages.i18n.php:6
-#: languages.i18n.php:12
-msgid "Applications"
+#: functions.inc.php:208
+#: functions.inc.php:315
+msgid "Default"
 msgstr ""
 
 #: Languages.class.php:77
@@ -52,11 +47,11 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: views/form.php:88
+#: views/form.php:107
 msgid "Destination"
 msgstr ""
 
-#: page.languages.php:10
+#: page.languages.php:11
 msgid "Edit Language Instance"
 msgstr ""
 
@@ -69,17 +64,18 @@ msgid "Invalid description specified"
 msgstr ""
 
 #: functions.inc.php:202
-#: functions.inc.php:286
-#: views/grid.php:20
+#: functions.inc.php:305
+#: views/grid.php:24
 msgid "Language"
 msgstr ""
 
-#: functions.inc.php:356
+#: functions.inc.php:390
 #, php-format
 msgid "Language Change: %s"
 msgstr ""
 
-#: functions.inc.php:204
+#: functions.inc.php:220
+#: functions.inc.php:222
 #: views/form.php:64
 msgid "Language Code"
 msgstr ""
@@ -89,8 +85,6 @@ msgstr ""
 msgid "Language: %s"
 msgstr ""
 
-#: languages.i18n.php:4
-#: languages.i18n.php:10
 #: page.languages.php:5
 msgid "Languages"
 msgstr ""
@@ -121,7 +115,7 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:76
+#: views/form.php:95
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
@@ -133,12 +127,19 @@ msgid ""
 "\""
 msgstr ""
 
-#: functions.inc.php:204
+#: functions.inc.php:222
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed."
 msgstr ""
 
-#: views/form.php:100
+#: functions.inc.php:220
+msgid ""
+"This will cause all messages and voice prompts to use the selected language "
+"if installed.  Languages can be added or removed in the Sound Languages "
+"module"
+msgstr ""
+
+#: views/form.php:119
 msgid "Where to send the caller after setting the language."
 msgstr ""
