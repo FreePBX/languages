@@ -18,7 +18,7 @@ msgstr ""
 
 #: views/grid.php:21
 msgid "Actions"
-msgstr ""
+msgstr "Действия"
 
 #: views/bootnav.php:2
 msgid "Add Language"
@@ -29,12 +29,8 @@ msgid "Add Language Instance"
 msgstr "Добавить подменю языка"
 
 #: languages.i18n.php:8
-msgid ""
-"Adds the ability to changes the language within a call flow and add language "
-"attribute to users."
-msgstr ""
-"Добавляет возможность изменять язык в процессе установления соединения и "
-"добавить атрибуты выбора языка пользователям."
+msgid "Adds the ability to changes the language within a call flow and add language attribute to users."
+msgstr "Добавляет возможность изменять язык в процессе установления соединения и добавить атрибуты выбора языка пользователям."
 
 #: functions.inc.php:298
 msgid "Allows you to set the language for this DID."
@@ -91,24 +87,12 @@ msgid "Languages"
 msgstr "Языки"
 
 #: page.languages.php:4
-msgid ""
-"Languages allow you to change the language of the call flow and then "
-"continue on to the desired destination. For example, you may have an IVR "
-"option that says \"For French Press 5 now\". You would then create a French "
-"language instance and point it's destination at a French IVR. The language "
-"of the call's channel will now be in French. This will result in French "
-"sounds being chosen if installed."
-msgstr ""
-"Этот модуль позволяет выбрать язык общения при входящих звонках, чтобы "
-"перенаправить по соответственному назначению. Например, можно иметь опцию "
-"выбора языка в Интерактивном меню - \"For French Press 2 now\". Для этого "
-"нужно создать подменю на французском языке, на которое будет направлен этот "
-"звонок по нажатию 2. Для этого нужно установить необходимые французские "
-"звуковые файлы."
+msgid "Languages allow you to change the language of the call flow and then continue on to the desired destination. For example, you may have an IVR option that says \"For French Press 5 now\". You would then create a French language instance and point it's destination at a French IVR. The language of the call's channel will now be in French. This will result in French sounds being chosen if installed."
+msgstr "Этот модуль позволяет выбрать язык общения при входящих звонках, чтобы перенаправить по соответственному назначению. Например, можно иметь опцию выбора языка в Интерактивном меню - \"For French Press 2 now\". Для этого нужно создать подменю на французском языке, на которое будет направлен этот звонок по нажатию 2. Для этого нужно установить необходимые французские звуковые файлы."
 
 #: views/bootnav.php:1
 msgid "List Languagess"
-msgstr ""
+msgstr "Список языков"
 
 #: functions.inc.php:203
 msgid "Please enter a valid Language Code"
@@ -116,40 +100,27 @@ msgstr "Введите разрешённый код языка"
 
 #: Languages.class.php:72
 msgid "Reset"
-msgstr ""
+msgstr "Сброс"
 
 #: Languages.class.php:67
 msgid "Submit"
-msgstr ""
+msgstr "Сохранить"
 
 #: views/form.php:76
-msgid ""
-"The Asterisk language code you want to change to. For example \"fr\" for "
-"French, \"de\" for German"
-msgstr ""
-"Код языка для Астериска, на который будем менять. Например, \"fr\" для "
-"французского, \"de\" для немецкого"
+msgid "The Asterisk language code you want to change to. For example \"fr\" for French, \"de\" for German"
+msgstr "Код языка для Астериска, на который будем менять. Например, \"fr\" для французского, \"de\" для немецкого"
 
 #: views/form.php:52
-msgid ""
-"The descriptive name of this language instance. For example \"French Main IVR"
-"\""
+msgid "The descriptive name of this language instance. For example \"French Main IVR\""
 msgstr "Короткое описание этого подменю. Например - \"French Main IVR\""
 
 #: functions.inc.php:204
-msgid ""
-"This will cause all messages and voice prompts to use the selected language "
-"if installed."
-msgstr ""
-"Все голосовые сообщения и напоминания будут на указанном языке, если он "
-"инсталлирован."
+msgid "This will cause all messages and voice prompts to use the selected language if installed."
+msgstr "Все голосовые сообщения и напоминания будут на указанном языке, если он инсталлирован."
 
 #: views/form.php:100
 msgid "Where to send the caller after setting the language."
-msgstr ""
-
-#~ msgid "Submit Changes"
-#~ msgstr "Подтвердить изменения"
+msgstr "Куда направить абонента после установки языка."
 
 #~ msgid ""
 #~ "Internal Options \n"
@@ -159,3 +130,6 @@ msgstr ""
 #~ "Внутренние опции \n"
 #~ "&\n"
 #~ " Конфигурация"
+
+#~ msgid "Submit Changes"
+#~ msgstr "Подтвердить изменения"
