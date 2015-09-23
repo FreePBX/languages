@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-30 11:58-0500\n"
+"POT-Creation-Date: 2015-09-23 11:37-0700\n"
 "PO-Revision-Date: 2009-02-14 17:25+0200\n"
 "Last-Translator: \n"
 "Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
@@ -30,23 +30,23 @@ msgstr "Добави Език"
 msgid "Add Language Instance"
 msgstr "Добави Въвеждане на Език"
 
-#: functions.inc.php:332
+#: functions.inc.php:331
 msgid "Allows you to set the language for this DID."
 msgstr ""
 
-#: functions.inc.php:208 functions.inc.php:315
+#: functions.inc.php:207 functions.inc.php:314
 msgid "Default"
 msgstr ""
 
-#: Languages.class.php:77
+#: Languages.class.php:74
 msgid "Delete"
 msgstr "Изтрий"
 
-#: views/form.php:40
+#: views/form.php:43
 msgid "Description"
 msgstr "Описание"
 
-#: views/form.php:107
+#: views/form.php:110
 msgid "Destination"
 msgstr "Направление"
 
@@ -62,16 +62,16 @@ msgstr "Редактирай:"
 msgid "Invalid description specified"
 msgstr "Неправилно въведено описание"
 
-#: functions.inc.php:202 functions.inc.php:305 views/grid.php:24
+#: functions.inc.php:201 functions.inc.php:304 views/grid.php:24
 msgid "Language"
 msgstr "Език"
 
-#: functions.inc.php:390
+#: functions.inc.php:389
 #, php-format
 msgid "Language Change: %s"
 msgstr "Промяна на Език: %s"
 
-#: functions.inc.php:220 functions.inc.php:222 views/form.php:64
+#: functions.inc.php:219 functions.inc.php:221 views/form.php:67
 msgid "Language Code"
 msgstr "Означение на Език"
 
@@ -103,19 +103,19 @@ msgstr ""
 msgid "List Languagess"
 msgstr ""
 
-#: functions.inc.php:203
+#: functions.inc.php:202
 msgid "Please enter a valid Language Code"
 msgstr "Моля въведете валидно Означение на Език"
 
-#: Languages.class.php:72
+#: Languages.class.php:69
 msgid "Reset"
 msgstr ""
 
-#: Languages.class.php:67
+#: Languages.class.php:64
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:95
+#: views/form.php:98
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
@@ -123,13 +123,13 @@ msgstr ""
 "Астериск означение на език който искате да смените. Например \"fr\" за "
 "Френски, \"de\" за Немски"
 
-#: views/form.php:52
+#: views/form.php:55
 msgid ""
 "The descriptive name of this language instance. For example \"French Main IVR"
 "\""
 msgstr "Описващо име на това въвеждане на език. Например \"French Main IVR\""
 
-#: functions.inc.php:222
+#: functions.inc.php:221
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed."
@@ -137,14 +137,14 @@ msgstr ""
 "Това ще накара всички съобщения и гласови инструкции да изолзват избрания "
 "език ако е инсталиран."
 
-#: functions.inc.php:220
+#: functions.inc.php:219
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed.  Languages can be added or removed in the Sound Languages "
 "module"
 msgstr ""
 
-#: views/form.php:119
+#: views/form.php:122
 msgid "Where to send the caller after setting the language."
 msgstr ""
 

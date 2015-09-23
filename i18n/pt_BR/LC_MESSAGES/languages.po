@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-30 11:58-0500\n"
+"POT-Creation-Date: 2015-09-23 11:37-0700\n"
 "PO-Revision-Date: 2014-07-25 23:56+0200\n"
 "Last-Translator: Rafael <rafael@ibinetwork.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://git.freepbx.org/projects/freepbx/"
@@ -44,23 +44,23 @@ msgstr "Adicionar Idioma"
 msgid "Add Language Instance"
 msgstr "Adicionar Instância de Idioma"
 
-#: functions.inc.php:332
+#: functions.inc.php:331
 msgid "Allows you to set the language for this DID."
 msgstr "Permite configurar o idioma para este DID."
 
-#: functions.inc.php:208 functions.inc.php:315
+#: functions.inc.php:207 functions.inc.php:314
 msgid "Default"
 msgstr ""
 
-#: Languages.class.php:77
+#: Languages.class.php:74
 msgid "Delete"
 msgstr "Apagar"
 
-#: views/form.php:40
+#: views/form.php:43
 msgid "Description"
 msgstr "Descrição"
 
-#: views/form.php:107
+#: views/form.php:110
 msgid "Destination"
 msgstr "Destino"
 
@@ -76,16 +76,16 @@ msgstr "Editar: "
 msgid "Invalid description specified"
 msgstr "Descrição especificada inválida"
 
-#: functions.inc.php:202 functions.inc.php:305 views/grid.php:24
+#: functions.inc.php:201 functions.inc.php:304 views/grid.php:24
 msgid "Language"
 msgstr "Idioma"
 
-#: functions.inc.php:390
+#: functions.inc.php:389
 #, php-format
 msgid "Language Change: %s"
 msgstr "Mudar Idioma: %s"
 
-#: functions.inc.php:220 functions.inc.php:222 views/form.php:64
+#: functions.inc.php:219 functions.inc.php:221 views/form.php:67
 msgid "Language Code"
 msgstr "Código do Idioma"
 
@@ -118,19 +118,19 @@ msgstr ""
 msgid "List Languagess"
 msgstr "Lista de Idiomas"
 
-#: functions.inc.php:203
+#: functions.inc.php:202
 msgid "Please enter a valid Language Code"
 msgstr "Por favor entre com um Código de Idioma válido"
 
-#: Languages.class.php:72
+#: Languages.class.php:69
 msgid "Reset"
 msgstr "Redefinir"
 
-#: Languages.class.php:67
+#: Languages.class.php:64
 msgid "Submit"
 msgstr "Enviar"
 
-#: views/form.php:95
+#: views/form.php:98
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
@@ -138,7 +138,7 @@ msgstr ""
 "O código de idioma do Asterisk para o qual você deseja mudar. Por exemplo "
 "\"fr\" para Francês, \"de\" para Alemão"
 
-#: views/form.php:52
+#: views/form.php:55
 msgid ""
 "The descriptive name of this language instance. For example \"French Main IVR"
 "\""
@@ -146,7 +146,7 @@ msgstr ""
 "O nome descritivo desta instância de idioma. Por exemplo \"URA Principal "
 "Francês\""
 
-#: functions.inc.php:222
+#: functions.inc.php:221
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed."
@@ -154,14 +154,14 @@ msgstr ""
 "Todas as mensagens e prompts de voz serão usado pelo idioma selecionado se "
 "instalado."
 
-#: functions.inc.php:220
+#: functions.inc.php:219
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed.  Languages can be added or removed in the Sound Languages "
 "module"
 msgstr ""
 
-#: views/form.php:119
+#: views/form.php:122
 msgid "Where to send the caller after setting the language."
 msgstr "Para onde enviar o chamador após configurar o idioma."
 
