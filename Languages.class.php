@@ -16,7 +16,7 @@ class Languages implements \BMO {
 		$request = $_REQUEST;
 		$type = isset($request['type']) ? $request['type'] : 'setup';
 		$action = isset($request['action']) ? $request['action'] :  '';
-		if (isset($request['delete'])) $action = 'delete'; 
+		if (isset($request['delete'])) $action = 'delete';
 
 		$language_id = isset($request['language_id']) ? $request['language_id'] :  false;
 		$description = isset($request['description']) ? $request['description'] :  '';
@@ -31,17 +31,14 @@ class Languages implements \BMO {
 			case 'add':
 				$request['extdisplay'] = languages_add($description, $lang_code, $dest);
 				needreload();
-				redirect_standard('extdisplay', 'view');
 			break;
 			case 'edit':
 				languages_edit($language_id, $description, $lang_code, $dest);
 				needreload();
-				redirect_standard('extdisplay', 'view');
 			break;
 			case 'delete':
 				languages_delete($language_id);
 				needreload();
-				redirect_standard();
 			break;
 		}
 	}

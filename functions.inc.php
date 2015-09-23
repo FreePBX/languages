@@ -110,7 +110,6 @@ function languages_get($language_id) {
 	if(DB::IsError($row)) {
 		die_freepbx($row->getMessage()."<br><br>Error selecting row from languages");
 	}
-
 	return $row;
 }
 

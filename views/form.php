@@ -18,6 +18,10 @@ if ($extdisplay) {
 		$inusehtml .= '<p>'.$usage_list['tooltip'].'</p>';
 		$inusehtml .= '</div>';
 	}
+} else {
+	if (FreePBX::Modules()->moduleHasMethod('Soundlang', 'getLanguage')) {
+		$lang_code = FreePBX::Soundlang()->getLanguage();
+	}
 }
 
 ?>
@@ -25,11 +29,10 @@ if ($extdisplay) {
 <?php echo $subhead ?>
 <?php echo $inusehtml ?>
 <br>
-<form name="editLanguage" action="" class="fpbx-submit" method="post" onsubmit="return checkLanguage(editLanguage);" data-fpbx-delete="<?php echo $deleteurl?>">
+<form name="editLanguage" action="config.php?display=languages" class="fpbx-submit" method="post" onsubmit="return checkLanguage(editLanguage);" data-fpbx-delete="<?php echo $deleteurl?>">
 	<input type="hidden" name="extdisplay" value="<?php echo $extdisplay; ?>">
 	<input type="hidden" name="language_id" value="<?php echo $extdisplay; ?>">
 	<input type="hidden" name="action" value="<?php echo ($extdisplay ? 'edit' : 'add'); ?>">
-	<input type="hidden" name="view" value="form">
 <!--Description-->
 <div class="element-container">
 	<div class="row">
@@ -73,7 +76,7 @@ if ($extdisplay) {
 <?php
 						foreach ($languages as $key => $val) {
 ?>
-							<option value="<?php echo $key;?>"><?php echo $val;?></option>
+							<option value="<?php echo $key;?>" <?php echo $key == $lang_code ? "selected" : ""?>><?php echo $val;?></option>
 <?php
 						}
 ?>

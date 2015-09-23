@@ -2,7 +2,7 @@
   <rawname>languages</rawname>
   <repo>extended</repo>
   <name>Languages</name>
-  <version>13.0.3</version>
+  <version>13.0.4</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -18,7 +18,8 @@
       <display>languages</display>
     </languages>
   </popovers>
-  <changelog>
+	<changelog>
+		*13.0.4* FREEPBX-10320
 		*13.0.3* Use languages from Sound Languages module, if enabled
 		*13.0.2* Version bump Beta
 		*13.0.1alpha1* Visual Changes
