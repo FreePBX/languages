@@ -84,4 +84,45 @@ class Languages implements \BMO {
 			break;
 		}
 	}
+	public function ajaxRequest($req, &$setting) {
+		switch ($req) {
+			case 'getJSON':
+				return true;
+			break;
+			default:
+				return false;
+			break;
+		}
+	}
+	public function ajaxHandler(){
+		switch ($_REQUEST['command']) {
+			case 'getJSON':
+				switch ($_REQUEST['jdata']) {
+					case 'grid':
+						return array_values($this->listLanguages());
+					break;
+
+					default:
+						return false;
+					break;
+				}
+			break;
+
+			default:
+				return false;
+			break;
+		}
+	}
+	public function listLanguages(){
+		$sql = "SELECT language_id, description, lang_code, dest FROM languages ORDER BY description ";
+		$stmt = $this->db->prepare($sql);
+		$stmt->execute();
+		$results = $stmt->fetchall(\PDO::FETCH_ASSOC);
+		return $results;
+	}
+	public function getRightNav($request) {
+	  if(isset($request['view']) && $request['view'] == 'form'){
+	    return load_view(__DIR__."/views/bootnav.php",array());
+	  }
+	}
 }

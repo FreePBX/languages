@@ -25,16 +25,11 @@ switch ($view) {
 	<h1><?php echo $heading?></h1>
 	<?php echo show_help($helptext)?>
 	<div class="row">
-		<div class="col-sm-<?php echo isset($_REQUEST['view'])?'9':'12'?>">
+		<div class="col-sm-12">
 			<div class="fpbx-container">
 				<div class="display <?php echo isset($_REQUEST['view'])?'full':'no'?>-border">
 					<?php echo $content ?>
 				</div>
-			</div>
-		</div>
-		<div class="col-sm-3 hidden-xs bootnav <?php echo isset($_REQUEST['view'])?'':'hidden'?>">
-			<div class="list-group">
-				<?php echo load_view(__DIR__.'/views/bootnav.php', array('request' => $request))?>
 			</div>
 		</div>
 	</div>
