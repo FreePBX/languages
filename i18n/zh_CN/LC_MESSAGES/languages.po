@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-23 11:37-0700\n"
+"POT-Creation-Date: 2015-10-29 18:34-0700\n"
 "PO-Revision-Date: 2009-01-31 12:37+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:2 views/grid.php:20
+#: views/bootnav.php:3 views/grid.php:20
 msgid "Add Language"
 msgstr "添加语言"
 
@@ -62,7 +62,8 @@ msgstr "编辑："
 msgid "Invalid description specified"
 msgstr "指定了无效的描述"
 
-#: functions.inc.php:201 functions.inc.php:304 views/grid.php:24
+#: functions.inc.php:201 functions.inc.php:304 views/bootnav.php:8
+#: views/grid.php:24
 msgid "Language"
 msgstr "语言"
 
@@ -98,7 +99,7 @@ msgstr ""
 "呼叫引导到此中文IVR。现在呼叫的频道就变成了中文。今后所有的声音都是中文（如果"
 "安装了中文声音的话）。"
 
-#: views/bootnav.php:1
+#: views/bootnav.php:2
 msgid "List Languagess"
 msgstr ""
 

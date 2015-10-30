@@ -2,7 +2,7 @@
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:2 views/grid.php:20
+#: views/bootnav.php:3 views/grid.php:20
 msgid "Add Language"
 msgstr ""
 
@@ -42,7 +42,8 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr ""
 
-#: functions.inc.php:201 functions.inc.php:304 views/grid.php:24
+#: functions.inc.php:201 functions.inc.php:304 views/bootnav.php:8
+#: views/grid.php:24
 msgid "Language"
 msgstr ""
 
@@ -74,7 +75,7 @@ msgid ""
 "sounds being chosen if installed."
 msgstr ""
 
-#: views/bootnav.php:1
+#: views/bootnav.php:2
 msgid "List Languagess"
 msgstr ""
 

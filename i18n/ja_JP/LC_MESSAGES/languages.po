@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-23 11:37-0700\n"
+"POT-Creation-Date: 2015-10-29 18:34-0700\n"
 "PO-Revision-Date: 2014-02-20 04:45+0200\n"
 "Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/languages/ja/>\n"
@@ -52,7 +52,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:2 views/grid.php:20
+#: views/bootnav.php:3 views/grid.php:20
 msgid "Add Language"
 msgstr "言語を追加"
 
@@ -92,7 +92,8 @@ msgstr "編集："
 msgid "Invalid description specified"
 msgstr "無効な説明が指定されました"
 
-#: functions.inc.php:201 functions.inc.php:304 views/grid.php:24
+#: functions.inc.php:201 functions.inc.php:304 views/bootnav.php:8
+#: views/grid.php:24
 msgid "Language"
 msgstr "言語"
 
@@ -129,7 +130,7 @@ msgstr ""
 "定します。コールチャネルの言語がフランス語になります。こうすることにより、フ"
 "ランス語の音声がインストールされている場合にはフランス語音声が選択されます。"
 
-#: views/bootnav.php:1
+#: views/bootnav.php:2
 msgid "List Languagess"
 msgstr ""
 

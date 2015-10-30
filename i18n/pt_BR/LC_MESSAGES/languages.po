@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-23 11:37-0700\n"
+"POT-Creation-Date: 2015-10-29 18:34-0700\n"
 "PO-Revision-Date: 2014-07-25 23:56+0200\n"
 "Last-Translator: Rafael <rafael@ibinetwork.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://git.freepbx.org/projects/freepbx/"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "Actions"
 msgstr "Ações"
 
-#: views/bootnav.php:2 views/grid.php:20
+#: views/bootnav.php:3 views/grid.php:20
 msgid "Add Language"
 msgstr "Adicionar Idioma"
 
@@ -76,7 +76,8 @@ msgstr "Editar: "
 msgid "Invalid description specified"
 msgstr "Descrição especificada inválida"
 
-#: functions.inc.php:201 functions.inc.php:304 views/grid.php:24
+#: functions.inc.php:201 functions.inc.php:304 views/bootnav.php:8
+#: views/grid.php:24
 msgid "Language"
 msgstr "Idioma"
 
@@ -114,7 +115,7 @@ msgstr ""
 "chamada será agora em Francês. Isto resultará em sons em Francês serem "
 "escolhidos caso instalados."
 
-#: views/bootnav.php:1
+#: views/bootnav.php:2
 msgid "List Languagess"
 msgstr "Lista de Idiomas"
 

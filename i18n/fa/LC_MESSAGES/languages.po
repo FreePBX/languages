@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-23 11:37-0700\n"
+"POT-Creation-Date: 2015-10-29 18:34-0700\n"
 "PO-Revision-Date: 2015-10-14 13:35+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian "
-"<http://weblate.freepbx.org/projects/freepbx/languages/fa/>\n"
-"Language: fa\n"
+"Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
+"languages/fa/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fa\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
@@ -25,7 +25,7 @@ msgstr ""
 msgid "Actions"
 msgstr "عملیات"
 
-#: views/bootnav.php:2 views/grid.php:20
+#: views/bootnav.php:3 views/grid.php:20
 msgid "Add Language"
 msgstr "افزودن زبان"
 
@@ -65,7 +65,8 @@ msgstr "ویرایش ： "
 msgid "Invalid description specified"
 msgstr "شرح مشخص شده نامعتبر است"
 
-#: functions.inc.php:201 functions.inc.php:304 views/grid.php:24
+#: functions.inc.php:201 functions.inc.php:304 views/bootnav.php:8
+#: views/grid.php:24
 msgid "Language"
 msgstr "زبان"
 
@@ -102,7 +103,7 @@ msgstr ""
 "وصل کنید. زبان کانال تماس فرانسوی میشود. البته باید صدای فرانسوی هم نصب و "
 "انتخاب شده باشد."
 
-#: views/bootnav.php:1
+#: views/bootnav.php:2
 msgid "List Languagess"
 msgstr "فهرست زبان ها"
 

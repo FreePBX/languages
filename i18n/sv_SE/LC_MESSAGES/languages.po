@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX languages\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-23 11:37-0700\n"
+"POT-Creation-Date: 2015-10-29 18:34-0700\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:2 views/grid.php:20
+#: views/bootnav.php:3 views/grid.php:20
 msgid "Add Language"
 msgstr "Lägg till språk"
 
@@ -73,7 +73,8 @@ msgstr "Redigera:"
 msgid "Invalid description specified"
 msgstr "Ogiltig beskrivning"
 
-#: functions.inc.php:201 functions.inc.php:304 views/grid.php:24
+#: functions.inc.php:201 functions.inc.php:304 views/bootnav.php:8
+#: views/grid.php:24
 msgid "Language"
 msgstr "Språk"
 
@@ -109,7 +110,7 @@ msgstr ""
 "kan då skapa en Fransk språkinstans och peka destinationen till en Fransk "
 "IVR. Språket kommer nu att vara på franska om detta språk är installerat."
 
-#: views/bootnav.php:1
+#: views/bootnav.php:2
 msgid "List Languagess"
 msgstr ""
 

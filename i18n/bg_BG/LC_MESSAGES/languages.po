@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-23 11:37-0700\n"
+"POT-Creation-Date: 2015-10-29 18:34-0700\n"
 "PO-Revision-Date: 2009-02-14 17:25+0200\n"
 "Last-Translator: \n"
 "Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:2 views/grid.php:20
+#: views/bootnav.php:3 views/grid.php:20
 msgid "Add Language"
 msgstr "Добави Език"
 
@@ -62,7 +62,8 @@ msgstr "Редактирай:"
 msgid "Invalid description specified"
 msgstr "Неправилно въведено описание"
 
-#: functions.inc.php:201 functions.inc.php:304 views/grid.php:24
+#: functions.inc.php:201 functions.inc.php:304 views/bootnav.php:8
+#: views/grid.php:24
 msgid "Language"
 msgstr "Език"
 
@@ -99,7 +100,7 @@ msgstr ""
 "за Френски език и да насочите направлението към Френски IVR. Това ще доведе "
 "до използване на Френски записи ако са инсталирани."
 
-#: views/bootnav.php:1
+#: views/bootnav.php:2
 msgid "List Languagess"
 msgstr ""
 
