@@ -1,18 +1,32 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-08 23:43+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
+
 #: views/grid.php:25
 msgid "Actions"
-msgstr ""
+msgstr "Acciones"
 
 #: views/bootnav.php:3 views/grid.php:20
 msgid "Add Language"
-msgstr ""
+msgstr "Añadir idioma"
 
 #: page.languages.php:13
 msgid "Add Language Instance"
-msgstr ""
+msgstr "Añadir instancia de idioma"
 
 #: functions.inc.php:331
 msgid "Allows you to set the language for this DID."
-msgstr ""
+msgstr "Le permite asignar el idioma a este DID."
 
 #: functions.inc.php:207 functions.inc.php:314
 msgid "Default"
@@ -20,50 +34,50 @@ msgstr ""
 
 #: Languages.class.php:74
 msgid "Delete"
-msgstr ""
+msgstr "Eliminar"
 
 #: views/form.php:43
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: views/form.php:110
 msgid "Destination"
-msgstr ""
+msgstr "Destino"
 
 #: page.languages.php:11
 msgid "Edit Language Instance"
-msgstr ""
+msgstr "Editar instancia de idioma"
 
 #: views/form.php:13
 msgid "Edit: "
-msgstr ""
+msgstr "Editar: "
 
 #: assets/js/languages.js:2
 msgid "Invalid description specified"
-msgstr ""
+msgstr "La descripción especificada no es válida"
 
 #: functions.inc.php:201 functions.inc.php:304 views/bootnav.php:8
 #: views/grid.php:24
 msgid "Language"
-msgstr ""
+msgstr "Idioma"
 
 #: functions.inc.php:389
 #, php-format
 msgid "Language Change: %s"
-msgstr ""
+msgstr "Cambio de idioma: %s"
 
 #: functions.inc.php:219 functions.inc.php:221 views/form.php:67
 msgid "Language Code"
-msgstr ""
+msgstr "Código de idioma"
 
 #: functions.inc.php:36
 #, php-format
 msgid "Language: %s"
-msgstr ""
+msgstr "Idioma: %s"
 
 #: page.languages.php:5
 msgid "Languages"
-msgstr ""
+msgstr "Idiomas"
 
 #: page.languages.php:4
 msgid ""
@@ -74,40 +88,52 @@ msgid ""
 "of the call's channel will now be in French. This will result in French "
 "sounds being chosen if installed."
 msgstr ""
+"Esta sección le permite cambiar el idioma del flujo de la llamada y "
+"continuar después con el destino seleccionado. Por ejemplo, puede tener una "
+"opción en el IVR que diga \"For French, press 5 now\". Debería crear "
+"entonces una instancia del idioma francés y apuntar como destino a un IVR en "
+"francés. El idioma del canal de la llamada será ahora el francés. Esto hará "
+"que se usen los sonidos y las locuciones en francés si están disponibles."
 
 #: views/bootnav.php:2
 msgid "List Languagess"
-msgstr ""
+msgstr "Lista de Idiomas"
 
 #: functions.inc.php:202
 msgid "Please enter a valid Language Code"
-msgstr ""
+msgstr "Por favor, introduzca un código de idioma válido"
 
 #: Languages.class.php:69
 msgid "Reset"
-msgstr ""
+msgstr "Reiniciar"
 
 #: Languages.class.php:64
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: views/form.php:98
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
 msgstr ""
+"El código del idioma de Asterisk al que desea cambiar. Por ejemplo, \"fr\" "
+"para francés, o \"de\" para alemán"
 
 #: views/form.php:55
 msgid ""
 "The descriptive name of this language instance. For example \"French Main IVR"
 "\""
 msgstr ""
+"Un nombre descriptivo para esta instancia de idioma. Por ejemplo, \"IVR "
+"principal en francés\""
 
 #: functions.inc.php:221
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed."
 msgstr ""
+"Esto hará que todos los mensajes y las locuciones de voz usen el idioma "
+"seleccionado si está instalado."
 
 #: functions.inc.php:219
 msgid ""
@@ -118,4 +144,4 @@ msgstr ""
 
 #: views/form.php:122
 msgid "Where to send the caller after setting the language."
-msgstr ""
+msgstr "Donde enviar al llamante después de asignar el idioma."
