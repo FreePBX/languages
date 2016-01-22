@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:34-0700\n"
-"PO-Revision-Date: 2016-01-16 23:35+0200\n"
+"PO-Revision-Date: 2016-01-22 08:40+0200\n"
 "Last-Translator: Nicolas <forums@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/languages/fr_FR/>\n"
@@ -39,54 +39,54 @@ msgstr ""
 
 #: functions.inc.php:207 functions.inc.php:314
 msgid "Default"
-msgstr ""
+msgstr "Par défaut"
 
 #: Languages.class.php:74
 msgid "Delete"
-msgstr ""
+msgstr "Supprimer"
 
 #: views/form.php:43
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: views/form.php:110
 msgid "Destination"
-msgstr ""
+msgstr "Destination"
 
 #: page.languages.php:11
 msgid "Edit Language Instance"
-msgstr ""
+msgstr "Éditer l'instance de langue"
 
 #: views/form.php:13
 msgid "Edit: "
-msgstr ""
+msgstr "Éditer : "
 
 #: assets/js/languages.js:2
 msgid "Invalid description specified"
-msgstr ""
+msgstr "Description spécifiée invalide"
 
 #: functions.inc.php:201 functions.inc.php:304 views/bootnav.php:8
 #: views/grid.php:24
 msgid "Language"
-msgstr ""
+msgstr "Langue"
 
 #: functions.inc.php:389
 #, php-format
 msgid "Language Change: %s"
-msgstr ""
+msgstr "Changement de langue : %s"
 
 #: functions.inc.php:219 functions.inc.php:221 views/form.php:67
 msgid "Language Code"
-msgstr ""
+msgstr "Code de langue"
 
 #: functions.inc.php:36
 #, php-format
 msgid "Language: %s"
-msgstr ""
+msgstr "Langue : %s"
 
 #: page.languages.php:5
 msgid "Languages"
-msgstr ""
+msgstr "Langues"
 
 #: page.languages.php:4
 msgid ""
