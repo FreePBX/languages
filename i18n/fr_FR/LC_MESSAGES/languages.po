@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:34-0700\n"
-"PO-Revision-Date: 2016-01-22 08:40+0200\n"
+"PO-Revision-Date: 2016-01-24 08:29+0200\n"
 "Last-Translator: Nicolas <forums@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/languages/fr_FR/>\n"
@@ -35,7 +35,7 @@ msgstr "Ajouter une instance de langue"
 
 #: functions.inc.php:331
 msgid "Allows you to set the language for this DID."
-msgstr ""
+msgstr "Permet de choisir la langue de ce DID."
 
 #: functions.inc.php:207 functions.inc.php:314
 msgid "Default"
@@ -104,21 +104,23 @@ msgstr ""
 
 #: functions.inc.php:202
 msgid "Please enter a valid Language Code"
-msgstr ""
+msgstr "S'il vous plait, veuillez choisir un code de langue valide"
 
 #: Languages.class.php:69
 msgid "Reset"
-msgstr ""
+msgstr "Remise à 0"
 
 #: Languages.class.php:64
 msgid "Submit"
-msgstr ""
+msgstr "Soumettre"
 
 #: views/form.php:98
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
 msgstr ""
+"Le code de langue Asterisk que vous désirez utiliser. Par exemple \"fr\" "
+"pour le Français, \"de\" pour l'Allemand"
 
 #: views/form.php:55
 msgid ""
