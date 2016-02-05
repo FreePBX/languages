@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:34-0700\n"
-"PO-Revision-Date: 2016-01-24 08:29+0200\n"
-"Last-Translator: Nicolas <forums@riendeau.org>\n"
+"PO-Revision-Date: 2016-02-04 23:04+0200\n"
+"Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/languages/fr_FR/>\n"
 "Language: fr_FR\n"
@@ -108,7 +108,7 @@ msgstr "S'il vous plait, veuillez choisir un code de langue valide"
 
 #: Languages.class.php:69
 msgid "Reset"
-msgstr "Remise à 0"
+msgstr "Réinitialiser"
 
 #: Languages.class.php:64
 msgid "Submit"
