@@ -199,6 +199,7 @@ function languages_configpageload() {
 		$langcode = languages_user_get($extdisplay);
 
 		$section = _('Language');
+		$category = _("General");
 		$msgInvalidLanguage = _('Please enter a valid Language Code');
 		if (FreePBX::Modules()->moduleHasMethod('Soundlang', 'getLanguages')) {
 			$langlist = array(
@@ -216,9 +217,9 @@ function languages_configpageload() {
 					);
 				}
 			}
-			$currentcomponent->addguielem($section, new gui_selectbox('langcode', $langlist, $langcode, _("Language Code"), _("This will cause all messages and voice prompts to use the selected language if installed.  Languages can be added or removed in the Sound Languages module"), false));
+			$currentcomponent->addguielem($section, new gui_selectbox('langcode', $langlist, $langcode, _("Language Code"), _("This will cause all messages and voice prompts to use the selected language if installed.  Languages can be added or removed in the Sound Languages module"), false), $category);
 		} else {
-			$currentcomponent->addguielem($section, new gui_textbox('langcode', $langcode, _('Language Code'), _('This will cause all messages and voice prompts to use the selected language if installed.'), "!isFilename()", $msgInvalidLanguage, true));
+			$currentcomponent->addguielem($section, new gui_textbox('langcode', $langcode, _('Language Code'), _('This will cause all messages and voice prompts to use the selected language if installed.'), "!isFilename()", $msgInvalidLanguage, true),$category);
 		}
 	}
 }
