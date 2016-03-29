@@ -34,6 +34,13 @@
 		*2.9.0.1* set repository
 		*2.9.0.0* #4657, #4655
 	</changelog>
+	<hooks>
+	<bulkhandler class="Bulkhandler" namespace="FreePBX\modules">
+		<method callingMethod="getHeaders" class="Languages" namespace="FreePBX\modules">bulkhandlerGetHeaders</method>
+		<method callingMethod="export" class="Languages" namespace="FreePBX\modules">bulkhandlerExport</method>
+		<method callingMethod="import" class="Languages" namespace="FreePBX\modules">bulkhandlerImport</method>
+	</bulkhandler>
+</hooks>
 	<depends>
 		<version>13.0.6</version>
 	</depends>

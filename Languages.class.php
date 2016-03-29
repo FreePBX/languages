@@ -125,4 +125,58 @@ class Languages implements \BMO {
 	    return load_view(__DIR__."/views/bootnav.php",array());
 	  }
 	}
+	//Bulk functions
+	public function getAllLanguages() {
+		$au = $this->FreePBX->astman->database_show('AMPUSER');
+		$ret = array();
+		foreach($au as $k => $v){
+			$temp = explode('/',$k);
+			if($temp[3] == 'language'){
+				$ret[$temp[2]] = $v;
+			}
+		}
+		return $ret;
+	}
+	public function setLanguageByExtension($extension, $language){
+		return $this->FreePBX->astman->database_put('AMPUSER/'.$extension,'language',$language);
+	}
+	//Bulkhandler hooks
+	public function bulkhandlerGetHeaders($type) {
+		switch ($type) {
+			case 'extensions':
+				$headers = array(
+					'languages_language' => array(
+						'identifier' => _('Language'),
+						'description' => _('Valid language string'),
+					),
+				);
+				return $headers;
+			break;
+		}
+	}
+	public function bulkhandlerExport($type) {
+		$data = NULL;
+		switch ($type) {
+			case 'extensions':
+			$data = array();
+			$extens = $this->getAllLanguages();
+			foreach ($extens as $key => $value) {
+				$data[$key] = array('languages_language' => $value);
+			}
+			break;
+		}
+		return $data;
+	}
+	public function bulkhandlerImport($type,$rawData, $replaceExisting = true){
+		switch ($type) {
+			case 'extensions':
+				foreach ($rawData as $data) {
+					if(isset($data['languages_language'])) {
+						$curVal = trim($data['languages_language']);
+						$this->setLanguageByExtension($data['extension'], $curVal);
+					}
+				}
+			break;
+		}
+	}
 }
