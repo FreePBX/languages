@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:34-0700\n"
+"POT-Creation-Date: 2016-04-04 17:46-0700\n"
 "PO-Revision-Date: 2008-11-06 14:51+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -29,11 +29,21 @@ msgstr "Aggiungi Lingua"
 msgid "Add Language Instance"
 msgstr "Aggiungi Istanza Lingua"
 
-#: functions.inc.php:331
+#: languages.i18n.php:8
+msgid ""
+"Adds the ability to changes the language within a call flow and add language "
+"attribute to users."
+msgstr ""
+
+#: functions.inc.php:332
 msgid "Allows you to set the language for this DID."
 msgstr ""
 
-#: functions.inc.php:207 functions.inc.php:314
+#: languages.i18n.php:6 languages.i18n.php:12
+msgid "Applications"
+msgstr ""
+
+#: functions.inc.php:208 functions.inc.php:315
 msgid "Default"
 msgstr ""
 
@@ -57,21 +67,25 @@ msgstr "Modifica Istanza Lingua"
 msgid "Edit: "
 msgstr "Modifica: "
 
+#: functions.inc.php:202
+msgid "General"
+msgstr ""
+
 #: assets/js/languages.js:2
 msgid "Invalid description specified"
 msgstr "Descrizione specificata non valida"
 
-#: functions.inc.php:201 functions.inc.php:304 views/bootnav.php:8
-#: views/grid.php:24
+#: Languages.class.php:149 functions.inc.php:201 functions.inc.php:305
+#: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr "Lingua"
 
-#: functions.inc.php:389
+#: functions.inc.php:390
 #, php-format
 msgid "Language Change: %s"
 msgstr "Cambia Lingua: %s"
 
-#: functions.inc.php:219 functions.inc.php:221 views/form.php:67
+#: functions.inc.php:220 functions.inc.php:222 views/form.php:67
 msgid "Language Code"
 msgstr "Codice Lingua"
 
@@ -80,7 +94,7 @@ msgstr "Codice Lingua"
 msgid "Language: %s"
 msgstr "Lingua: %s"
 
-#: page.languages.php:5
+#: languages.i18n.php:4 languages.i18n.php:10 page.languages.php:5
 msgid "Languages"
 msgstr "Lingue"
 
@@ -103,7 +117,7 @@ msgstr ""
 msgid "List Languagess"
 msgstr ""
 
-#: functions.inc.php:202
+#: functions.inc.php:203
 msgid "Please enter a valid Language Code"
 msgstr "Prego immettere un Codice Lingua valido"
 
@@ -130,7 +144,7 @@ msgid ""
 msgstr ""
 "La descrizione per questa istanza. Per esempio \"IVR Principale Francese\""
 
-#: functions.inc.php:221
+#: functions.inc.php:222
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed."
@@ -138,11 +152,15 @@ msgstr ""
 "Il codice lingua utilizzato da questo utente. I messaggi saranno riprodotti "
 "nella lingua impostata se nel sistema sono installati i file audio specifici."
 
-#: functions.inc.php:219
+#: functions.inc.php:220
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed.  Languages can be added or removed in the Sound Languages "
 "module"
+msgstr ""
+
+#: Languages.class.php:150
+msgid "Valid language string"
 msgstr ""
 
 #: views/form.php:122

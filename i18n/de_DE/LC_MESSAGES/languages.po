@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:34-0700\n"
+"POT-Creation-Date: 2016-04-04 17:46-0700\n"
 "PO-Revision-Date: 2014-10-07 17:16+0200\n"
 "Last-Translator: Dieter <dieter.finkbeiner@finkbeinernet.de>\n"
 "Language-Team: German <http://git.freepbx.org/projects/freepbx/languages/"
@@ -44,11 +44,23 @@ msgstr "Sprache hinzuf&uuml;gen"
 msgid "Add Language Instance"
 msgstr "Sprachinstanz hinzf&uuml;gen"
 
-#: functions.inc.php:331
+#: languages.i18n.php:8
+msgid ""
+"Adds the ability to changes the language within a call flow and add language "
+"attribute to users."
+msgstr ""
+"Fügt die M&ouml;glichkeit hinzu, die Sprache während einer Anrufverarbeitung "
+"(call flow) zu &auml;ndern und ein Sprachattribut den Benutzern hinzu."
+
+#: functions.inc.php:332
 msgid "Allows you to set the language for this DID."
 msgstr "Erlaubt Ihnen die Sprache für diese Durchwahl (DID) zu setzen."
 
-#: functions.inc.php:207 functions.inc.php:314
+#: languages.i18n.php:6 languages.i18n.php:12
+msgid "Applications"
+msgstr "Anwendungen"
+
+#: functions.inc.php:208 functions.inc.php:315
 msgid "Default"
 msgstr ""
 
@@ -72,21 +84,25 @@ msgstr "Sprachinstanz bearbeiten"
 msgid "Edit: "
 msgstr "Bearbeiten: "
 
+#: functions.inc.php:202
+msgid "General"
+msgstr ""
+
 #: assets/js/languages.js:2
 msgid "Invalid description specified"
 msgstr "Ung&uuml;ltige Beschreibung angegeben"
 
-#: functions.inc.php:201 functions.inc.php:304 views/bootnav.php:8
-#: views/grid.php:24
+#: Languages.class.php:149 functions.inc.php:201 functions.inc.php:305
+#: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr "Sprache"
 
-#: functions.inc.php:389
+#: functions.inc.php:390
 #, php-format
 msgid "Language Change: %s"
 msgstr "Sprach&auml;nderung: %s"
 
-#: functions.inc.php:219 functions.inc.php:221 views/form.php:67
+#: functions.inc.php:220 functions.inc.php:222 views/form.php:67
 msgid "Language Code"
 msgstr "Sprachk&uuml;rzel"
 
@@ -95,7 +111,7 @@ msgstr "Sprachk&uuml;rzel"
 msgid "Language: %s"
 msgstr "Sprache: %s"
 
-#: page.languages.php:5
+#: languages.i18n.php:4 languages.i18n.php:10 page.languages.php:5
 msgid "Languages"
 msgstr "Sprachen"
 
@@ -120,7 +136,7 @@ msgstr ""
 msgid "List Languagess"
 msgstr ""
 
-#: functions.inc.php:202
+#: functions.inc.php:203
 msgid "Please enter a valid Language Code"
 msgstr "Bitte geben Sie einen gültiges Sprachk&uml;rzel ein"
 
@@ -148,7 +164,7 @@ msgstr ""
 "Beschreibung oder Name für diese Sprachinstanz. Zum Beispiel \"franz&ouml;"
 "sischer Haupt IVR\""
 
-#: functions.inc.php:221
+#: functions.inc.php:222
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed."
@@ -156,27 +172,20 @@ msgstr ""
 "Dies bedeutet, dass alle Nachrichten und Ansagen die ausgewählte Sprache "
 "nutzen, sofern diese installiert sind."
 
-#: functions.inc.php:219
+#: functions.inc.php:220
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed.  Languages can be added or removed in the Sound Languages "
 "module"
 msgstr ""
 
+#: Languages.class.php:150
+msgid "Valid language string"
+msgstr ""
+
 #: views/form.php:122
 msgid "Where to send the caller after setting the language."
 msgstr ""
-
-#~ msgid ""
-#~ "Adds the ability to changes the language within a call flow and add "
-#~ "language attribute to users."
-#~ msgstr ""
-#~ "Fügt die M&ouml;glichkeit hinzu, die Sprache während einer "
-#~ "Anrufverarbeitung (call flow) zu &auml;ndern und ein Sprachattribut den "
-#~ "Benutzern hinzu."
-
-#~ msgid "Applications"
-#~ msgstr "Anwendungen"
 
 #~ msgid "Submit Changes"
 #~ msgstr "&Auml;nderungen speichern"

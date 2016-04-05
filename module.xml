@@ -2,7 +2,7 @@
 	<rawname>languages</rawname>
 	<repo>extended</repo>
 	<name>Languages</name>
-	<version>13.0.5</version>
+	<version>13.0.6</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -19,6 +19,7 @@
 		</languages>
 	</popovers>
 	<changelog>
+		*13.0.6* FREEPBX-11903 Add bulkhandler hook
 		*13.0.5* Slideout menu
 		*13.0.4* FREEPBX-10320
 		*13.0.3* Use languages from Sound Languages module, if enabled
