@@ -58,15 +58,11 @@ function languages_get_config($engine) {
 
 function languages_hookGet_config($engine) {
 	global $ext;
-	global $version;
 	switch($engine) {
 		case "asterisk":
 			$priority = 'report';
-			if (version_compare($version, "1.4", "ge")) {
-				$ext->splice('macro-user-callerid', 's', $priority,new ext_execif('$["${DB(AMPUSER/${AMPUSER}/language)}" != ""]', 'Set', 'CHANNEL(language)=${DB(AMPUSER/${AMPUSER}/language)}'));
-			} else {
-				$ext->splice('macro-user-callerid', 's', $priority,new ext_execif('$["${DB(AMPUSER/${AMPUSER}/language)}" != ""]', 'Set', 'LANGUAGE()=${DB(AMPUSER/${AMPUSER}/language)}'));
-			}
+			$ext->splice('macro-user-callerid', 's', $priority,new ext_execif('$["${DB(AMPUSER/${AMPUSER}/language)}" != ""]', 'Set', 'CHANNEL(language)=${DB(AMPUSER/${AMPUSER}/language)}'));
+
 
 			$routes=languages_incoming_get();
 			foreach($routes as $current => $route){
@@ -81,11 +77,7 @@ function languages_hookGet_config($engine) {
 					}
 					$extension=($route['extension']!=''?$route['extension']:'s').($route['cidnum']==''?'':'/'.$route['cidnum']);
 				}
-				if(version_compare($version, "1.4", "ge")){
-					$ext->splice($context, $extension, 1, new ext_setvar('CHANNEL(language)',$route['language']));
-				}else{
-					$ext->splice($context, $extension, 1, new ext_setvar('LANGUAGE',$route['language']));
-				}
+				$ext->splice($context, $extension, 1, new ext_setvar('CHANNEL(language)',$route['language']));
 		}
 		break;
 	}
