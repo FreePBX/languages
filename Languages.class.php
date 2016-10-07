@@ -29,15 +29,15 @@ class Languages implements \BMO {
 
 		switch ($action) {
 			case 'add':
-				$request['extdisplay'] = languages_add($description, $lang_code, $dest);
+				$request['extdisplay'] = $this->addLanguage($description, $lang_code, $dest);
 				needreload();
 			break;
 			case 'edit':
-				languages_edit($language_id, $description, $lang_code, $dest);
+				$this->editLanguage($language_id, $description, $lang_code, $dest);
 				needreload();
 			break;
 			case 'delete':
-				languages_delete($language_id);
+				$this->delLanguage($language_id);
 				needreload();
 			break;
 		}
@@ -113,6 +113,10 @@ class Languages implements \BMO {
 			break;
 		}
 	}
+	/**
+	 * Returns list of languaged
+	 * @return array Language list
+	 */
 	public function listLanguages(){
 		$sql = "SELECT language_id, description, lang_code, dest FROM languages ORDER BY description ";
 		$stmt = $this->db->prepare($sql);
@@ -120,6 +124,46 @@ class Languages implements \BMO {
 		$results = $stmt->fetchall(\PDO::FETCH_ASSOC);
 		return $results;
 	}
+
+	/**
+	 * Get language by id
+	 * @param  string $language_id The labnguage ID you wish to retrieve
+	 * @return array              An associative array of the language settings
+	 */
+	public function getLanguage($language_id){
+		$sql = "SELECT language_id, description, lang_code, dest FROM languages WHERE language_id = :language_id";
+		$stmt = $this->db->prepare($sql);
+		$stmt->execute(array(':language_id' => $language_id));
+		$row = $stmt->fetch(\PDO::FETCH_ASSOC);
+		return $row;
+	}
+
+	public function addLanguage($description, $lang_code, $dest){
+		$sql = "INSERT INTO languages (description, lang_code, dest) VALUES (:description, :lang_code, :dest)";
+		$stmt = $this->db->prepare($sql);
+		$ret = $stmt->execute(array(':description' => $description, ':lang_code' => $lang_code, ':dest' => $dest ));
+		if($ret){
+			return $this->db->lastInsertId();
+		}
+		return $ret;
+	}
+	public function delLanguage($language_id){
+		$sql = "DELETE FROM languages WHERE language_id = :language_id";
+		$stmt = $this->db->prepare($sql);
+		return $stmt->execute(array(':language_id' => $language_id));
+	}
+	public function editLanguage($language_id, $description, $lang_code, $dest){
+		$sql = "UPDATE languages SET description = :description, lang_code = :lang_code, dest = :dest WHERE language_id = :language_id";
+		$stmt = $this->db->prepare($sql);
+		return $stmt->execute(array(':description' => $description, ':lang_code' => $lang_code, ':dest' => $dest, ':language_id' => $language_id ));
+	}
+
+	public function changeDestination($old_dest, $new_dest){
+		$sql = 'UPDATE languages SET dest = :new_dest WHERE dest = :old_dest';
+		$stmt = $this->db->prepare($sql);
+		return $stmt->execute(array(':old_dest' => $old_dest, ':new_dest' => $new_dest));
+	}
+
 	public function getRightNav($request) {
 	  if(isset($request['view']) && $request['view'] == 'form'){
 	    return load_view(__DIR__."/views/bootnav.php",array());

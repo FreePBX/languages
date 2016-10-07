@@ -86,63 +86,23 @@ function languages_hookGet_config($engine) {
 /**  Get a list of all languages
  */
 function languages_list() {
-	global $db;
-	$sql = "SELECT language_id, description, lang_code, dest FROM languages ORDER BY description ";
-	$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
-	if(DB::IsError($results)) {
-		die_freepbx($results->getMessage()."<br><br>Error selecting from languages");
-	}
-	return $results;
+	return FreePBX::Languages()->listLanguages();
 }
 
 function languages_get($language_id) {
-	global $db;
-	$sql = "SELECT language_id, description, lang_code, dest FROM languages WHERE language_id = ".$db->escapeSimple($language_id);
-	$row = $db->getRow($sql, DB_FETCHMODE_ASSOC);
-	if(DB::IsError($row)) {
-		die_freepbx($row->getMessage()."<br><br>Error selecting row from languages");
-	}
-	return $row;
+	return FreePBX::Languages()->getLanguage($language_id);
 }
 
 function languages_add($description, $lang_code, $dest) {
-	global $db, $amp_conf;
-	$sql = "INSERT INTO languages (description, lang_code, dest) VALUES (".
-		"'".$db->escapeSimple($description)."', ".
-		"'".$db->escapeSimple($lang_code)."', ".
-		"'".$db->escapeSimple($dest)."')";
-	$result = $db->query($sql);
-	if(DB::IsError($result)) {
-		die_freepbx($result->getMessage().$sql);
-	}
-	if(method_exists($db,'insert_id')) {
-		$id = $db->insert_id();
-	} else {
-		$id = $amp_conf["AMPDBENGINE"] == "sqlite3" ? sqlite_last_insert_rowid($db->connection) : mysql_insert_id($db->connection);
-	}
-	return($id);
+	return FreePBX::Languages()->addLanguage($description, $lang_code, $dest);
 }
 
 function languages_delete($language_id) {
-	global $db;
-	$sql = "DELETE FROM languages WHERE language_id = ".$db->escapeSimple($language_id);
-	$result = $db->query($sql);
-	if(DB::IsError($result)) {
-		die_freepbx($result->getMessage().$sql);
-	}
+	return FreePBX::Languages()->delLanguage($language_id);
 }
 
 function languages_edit($language_id, $description, $lang_code, $dest) {
-	global $db;
-	$sql = "UPDATE languages SET ".
-		"description = '".$db->escapeSimple($description)."', ".
-		"lang_code = '".$db->escapeSimple($lang_code)."', ".
-		"dest = '".$db->escapeSimple($dest)."' ".
-		"WHERE language_id = ".$db->escapeSimple($language_id);
-	$result = $db->query($sql);
-	if(DB::IsError($result)) {
-		die_freepbx($result->getMessage().$sql);
-	}
+	return FreePBX::Languages()->editLanguage($language_id, $description, $lang_code, $dest);
 }
 
 function languages_configpageinit($pagename) {
@@ -387,7 +347,6 @@ function languages_check_destinations($dest=true) {
 }
 
 function languages_change_destination($old_dest, $new_dest) {
-	$sql = 'UPDATE languages SET dest = "' . $new_dest . '" WHERE dest = "' . $old_dest . '"';
-	sql($sql, "query");
+	return FreePBX::Languages()->changeDestination($old_dest, $new_dest);
 }
 ?>

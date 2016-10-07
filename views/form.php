@@ -5,7 +5,7 @@
 extract($request);
 if ($extdisplay) {
 	// load
-	$row = languages_get($extdisplay);
+	$row = FreePBX::Languages()->getLanguage($extdisplay);
 	$description = $row['description'];
 	$lang_code   = $row['lang_code'];
 	$dest        = $row['dest'];
