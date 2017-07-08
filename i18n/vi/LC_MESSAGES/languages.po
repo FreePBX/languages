@@ -10,94 +10,99 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-04 17:46-0700\n"
-"PO-Revision-Date: 2016-04-04 17:46-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-07-08 10:57+0200\n"
+"Last-Translator: PETER <ftek@ymail.com>\n"
+"Language-Team: Vietnamese "
+"<http://weblate.freepbx.org/projects/freepbx/languages/vi/>\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/grid.php:25
 msgid "Actions"
-msgstr ""
+msgstr "Các thao tác"
 
 #: views/bootnav.php:3 views/grid.php:20
 msgid "Add Language"
-msgstr ""
+msgstr "Thêm ngôn ngữ"
 
 #: page.languages.php:13
 msgid "Add Language Instance"
-msgstr ""
+msgstr "Thêm đối tượng ngôn ngữ"
 
 #: languages.i18n.php:8
 msgid ""
 "Adds the ability to changes the language within a call flow and add language "
 "attribute to users."
 msgstr ""
+"Thêm khả năng thay đổi ngôn ngữ trong luồng gọi và thêm thuộc tính ngôn ngữ "
+"cho người dùng."
 
 #: functions.inc.php:332
 msgid "Allows you to set the language for this DID."
-msgstr ""
+msgstr "Cho phép bạn cài đặt ngôn ngữ cho DID."
 
 #: languages.i18n.php:6 languages.i18n.php:12
 msgid "Applications"
-msgstr ""
+msgstr "Các ứng dụng"
 
 #: functions.inc.php:208 functions.inc.php:315
 msgid "Default"
-msgstr ""
+msgstr "Mặc định"
 
 #: Languages.class.php:74
 msgid "Delete"
-msgstr ""
+msgstr "Xóa"
 
 #: views/form.php:43
 msgid "Description"
-msgstr ""
+msgstr "Mô tả"
 
 #: views/form.php:110
 msgid "Destination"
-msgstr ""
+msgstr "Điểm đích"
 
 #: page.languages.php:11
 msgid "Edit Language Instance"
-msgstr ""
+msgstr "Chỉnh sửa đối tượng ngôn ngữ"
 
 #: views/form.php:13
 msgid "Edit: "
-msgstr ""
+msgstr "Chỉnh sửa: "
 
 #: functions.inc.php:202
 msgid "General"
-msgstr ""
+msgstr "Chung"
 
 #: assets/js/languages.js:2
 msgid "Invalid description specified"
-msgstr ""
+msgstr "Mô tả không hợp lệ được xác định"
 
 #: Languages.class.php:149 functions.inc.php:201 functions.inc.php:305
 #: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
-msgstr ""
+msgstr "Ngôn ngữ"
 
 #: functions.inc.php:390
 #, php-format
 msgid "Language Change: %s"
-msgstr ""
+msgstr "Thay đổi ngôn ngữ: %s"
 
 #: functions.inc.php:220 functions.inc.php:222 views/form.php:67
 msgid "Language Code"
-msgstr ""
+msgstr "Mã ngon ngữ"
 
 #: functions.inc.php:36
 #, php-format
 msgid "Language: %s"
-msgstr ""
+msgstr "Ngôn ngữ: %s"
 
 #: languages.i18n.php:4 languages.i18n.php:10 page.languages.php:5
 msgid "Languages"
-msgstr ""
+msgstr "Ngôn ngữ"
 
 #: page.languages.php:4
 msgid ""
@@ -108,40 +113,50 @@ msgid ""
 "of the call's channel will now be in French. This will result in French "
 "sounds being chosen if installed."
 msgstr ""
+"Ngôn ngữ cho phép bạn thay đổi ngôn ngữ của dòng cuộc gọi và sau đó tiếp tục "
+"đến điểm đích mong muốn. Ví dụ: bạn có thể có một tùy chọn IVR có nội dung \""
+"For French Press 5 now\" ( Nhấn 5 để chọn tiếng Pháp). Sau đó bạn sẽ tạo ra "
+"một đối tượng ngôn ngữ tiếng Pháp và chỉ ra điểm đích tại một IVR Pháp. Ngôn "
+"ngữ của kênh cuộc gọi giờ sẽ là tiếng Pháp. Điều này tạo nên các âm thanh "
+"tiếng Pháp được chọn nếu được cài đặt."
 
 #: views/bootnav.php:2
 msgid "List Languagess"
-msgstr ""
+msgstr "Danh sách ngôn ngữ"
 
 #: functions.inc.php:203
 msgid "Please enter a valid Language Code"
-msgstr ""
+msgstr "Vui lòng nhập một mã ngôn ngữ hợp lệ"
 
 #: Languages.class.php:69
 msgid "Reset"
-msgstr ""
+msgstr "Cài đặt lại"
 
 #: Languages.class.php:64
 msgid "Submit"
-msgstr ""
+msgstr "Gửi đi"
 
 #: views/form.php:98
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
 msgstr ""
+"Mã ngôn ngữ Asterisk  bạn muốn thay đổi. Ví dụ \"fr\" là Tiếng Pháp, \"De\" "
+"là tiếng Đức"
 
 #: views/form.php:55
 msgid ""
 "The descriptive name of this language instance. For example \"French Main IVR"
 "\""
-msgstr ""
+msgstr "Tên mô tả của đối tượng ngôn ngữ này. Ví dụ \"French Main IVR\""
 
 #: functions.inc.php:222
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed."
 msgstr ""
+"Điều này sẽ tạo ra tất cả các tin nhắn và các nhắc nhở thoại để sử dụng ngôn "
+"ngữ lựa chọn nếu được cài đặt."
 
 #: functions.inc.php:220
 msgid ""
@@ -149,11 +164,14 @@ msgid ""
 "if installed.  Languages can be added or removed in the Sound Languages "
 "module"
 msgstr ""
+"Điều này sẽ tạo ra tất cả các tin nhắn và các nhắc nhở thoại để sử dụng ngôn "
+"ngữ lựa chọn nếu được cài đặt. Các ngôn ngữ có thể được thêm hoặc xóa trong "
+"mô đun Âm thanh ngôn ngữ ( Sound Languages)"
 
 #: Languages.class.php:150
 msgid "Valid language string"
-msgstr ""
+msgstr "Dãy ngôn ngữ hợp lệ"
 
 #: views/form.php:122
 msgid "Where to send the caller after setting the language."
-msgstr ""
+msgstr "Sau khi cài đặt ngôn ngữ thì gửi người gọi đến đâu."
