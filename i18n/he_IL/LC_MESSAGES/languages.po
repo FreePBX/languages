@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-20 17:30-0400\n"
+"POT-Creation-Date: 2018-04-20 17:32-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgid ""
 "attribute to users."
 msgstr ""
 
-#: functions.inc.php:322
+#: functions.inc.php:274
 msgid "Allows you to set the language for this DID."
 msgstr ""
 
@@ -55,7 +55,7 @@ msgstr ""
 msgid "Applications"
 msgstr ""
 
-#: functions.inc.php:208 functions.inc.php:305
+#: functions.inc.php:160 functions.inc.php:257
 msgid "Default"
 msgstr ""
 
@@ -79,7 +79,7 @@ msgstr ""
 msgid "Edit: "
 msgstr ""
 
-#: functions.inc.php:202
+#: functions.inc.php:154
 msgid "General"
 msgstr ""
 
@@ -87,17 +87,17 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr ""
 
-#: Languages.class.php:169 functions.inc.php:201 functions.inc.php:295
+#: Languages.class.php:213 functions.inc.php:153 functions.inc.php:247
 #: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr ""
 
-#: functions.inc.php:380
+#: functions.inc.php:332
 #, php-format
 msgid "Language Change: %s"
 msgstr ""
 
-#: functions.inc.php:220 functions.inc.php:222 views/form.php:67
+#: functions.inc.php:172 functions.inc.php:174 views/form.php:67
 msgid "Language Code"
 msgstr ""
 
@@ -124,7 +124,7 @@ msgstr ""
 msgid "List Languagess"
 msgstr ""
 
-#: functions.inc.php:203
+#: functions.inc.php:155
 msgid "Please enter a valid Language Code"
 msgstr ""
 
@@ -148,20 +148,20 @@ msgid ""
 "\""
 msgstr ""
 
-#: functions.inc.php:222
+#: functions.inc.php:174
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed."
 msgstr ""
 
-#: functions.inc.php:220
+#: functions.inc.php:172
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed.  Languages can be added or removed in the Sound Languages "
 "module"
 msgstr ""
 
-#: Languages.class.php:170
+#: Languages.class.php:214
 msgid "Valid language string"
 msgstr ""
 

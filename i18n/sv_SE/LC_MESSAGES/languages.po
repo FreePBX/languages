@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX languages\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-20 17:30-0400\n"
+"POT-Creation-Date: 2018-04-20 17:32-0400\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -50,7 +50,7 @@ msgstr ""
 "Ger möjlighet att ändra språket inom ett samtalsflöde och sätter "
 "språkattribut för användaren"
 
-#: functions.inc.php:322
+#: functions.inc.php:274
 msgid "Allows you to set the language for this DID."
 msgstr "Ger dig möjlighet att sätta språket för detta direktnummer"
 
@@ -58,7 +58,7 @@ msgstr "Ger dig möjlighet att sätta språket för detta direktnummer"
 msgid "Applications"
 msgstr ""
 
-#: functions.inc.php:208 functions.inc.php:305
+#: functions.inc.php:160 functions.inc.php:257
 msgid "Default"
 msgstr ""
 
@@ -82,7 +82,7 @@ msgstr "Redigera språkinstans"
 msgid "Edit: "
 msgstr "Redigera:"
 
-#: functions.inc.php:202
+#: functions.inc.php:154
 msgid "General"
 msgstr ""
 
@@ -90,17 +90,17 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "Ogiltig beskrivning"
 
-#: Languages.class.php:169 functions.inc.php:201 functions.inc.php:295
+#: Languages.class.php:213 functions.inc.php:153 functions.inc.php:247
 #: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr "Språk"
 
-#: functions.inc.php:380
+#: functions.inc.php:332
 #, php-format
 msgid "Language Change: %s"
 msgstr "Språkbyte: %s"
 
-#: functions.inc.php:220 functions.inc.php:222 views/form.php:67
+#: functions.inc.php:172 functions.inc.php:174 views/form.php:67
 msgid "Language Code"
 msgstr "Språkkod"
 
@@ -131,7 +131,7 @@ msgstr ""
 msgid "List Languagess"
 msgstr ""
 
-#: functions.inc.php:203
+#: functions.inc.php:155
 msgid "Please enter a valid Language Code"
 msgstr "Skriv in en giltig språkkod"
 
@@ -159,7 +159,7 @@ msgstr ""
 "Skriv in en kortfattad beskrivning för denna instans. T.ex. \"Fransk meny i "
 "IVR\""
 
-#: functions.inc.php:222
+#: functions.inc.php:174
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed."
@@ -167,14 +167,14 @@ msgstr ""
 "Alla meddelanden och röster kommer att använda det valda språket om det är "
 "installerat."
 
-#: functions.inc.php:220
+#: functions.inc.php:172
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed.  Languages can be added or removed in the Sound Languages "
 "module"
 msgstr ""
 
-#: Languages.class.php:170
+#: Languages.class.php:214
 msgid "Valid language string"
 msgstr ""
 
