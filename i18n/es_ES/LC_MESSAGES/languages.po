@@ -3,14 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-08 23:43+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2016-12-11 02:01+0200\n"
+"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
+"Language-Team: Spanish "
+"<http://weblate.freepbx.org/projects/freepbx/languages/es_ES/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
-"Content-Transfer-Encoding: ENCODING\n"
-"X-Generator: Translate Toolkit 1.11.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/grid.php:25
 msgid "Actions"
@@ -30,7 +32,7 @@ msgstr "Le permite asignar el idioma a este DID."
 
 #: functions.inc.php:207 functions.inc.php:314
 msgid "Default"
-msgstr ""
+msgstr "Predeterminado"
 
 #: Languages.class.php:74
 msgid "Delete"
@@ -141,6 +143,9 @@ msgid ""
 "if installed.  Languages can be added or removed in the Sound Languages "
 "module"
 msgstr ""
+"Esto hará que todos los mensajes y mensajes de voz utilicen el idioma "
+"seleccionado si está instalado. Los idiomas se pueden agregar o quitar en el "
+"módulo de idiomas de sonido"
 
 #: views/form.php:122
 msgid "Where to send the caller after setting the language."
