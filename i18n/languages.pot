@@ -3,16 +3,17 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for languages
-# Copyright (C) 2008-2016 Sangoma, Inc.
+# Copyright (C) 2008-2018 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-04 17:46-0700\n"
+"POT-Creation-Date: 2018-04-20 17:30-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,17 +37,16 @@ msgid ""
 "attribute to users."
 msgstr ""
 
-#: functions.inc.php:332
+#: functions.inc.php:322
 msgid "Allows you to set the language for this DID."
 msgstr ""
 
 #: languages.i18n.php:6
-#: languages.i18n.php:12
 msgid "Applications"
 msgstr ""
 
 #: functions.inc.php:208
-#: functions.inc.php:315
+#: functions.inc.php:305
 msgid "Default"
 msgstr ""
 
@@ -78,15 +78,15 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr ""
 
-#: Languages.class.php:149
+#: Languages.class.php:169
 #: functions.inc.php:201
-#: functions.inc.php:305
+#: functions.inc.php:295
 #: views/bootnav.php:8
 #: views/grid.php:24
 msgid "Language"
 msgstr ""
 
-#: functions.inc.php:390
+#: functions.inc.php:380
 #, php-format
 msgid "Language Change: %s"
 msgstr ""
@@ -159,7 +159,7 @@ msgid ""
 "module"
 msgstr ""
 
-#: Languages.class.php:150
+#: Languages.class.php:170
 msgid "Valid language string"
 msgstr ""
 

@@ -20,11 +20,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-04 17:46-0700\n"
+"POT-Creation-Date: 2018-04-20 17:30-0400\n"
 "PO-Revision-Date: 2017-03-03 14:37+0200\n"
 "Last-Translator: hammer125 <auswertung@aon.at>\n"
-"Language-Team: German "
-"<http://weblate.freepbx.org/projects/freepbx/languages/de_DE/>\n"
+"Language-Team: German <http://weblate.freepbx.org/projects/freepbx/languages/"
+"de_DE/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,18 +49,18 @@ msgid ""
 "Adds the ability to changes the language within a call flow and add language "
 "attribute to users."
 msgstr ""
-"Fügt die Möglichkeit hinzu, die Sprache während einer Anrufverarbeitung ("
-"call flow) zu ändern und fügt den Benutzern ein Sprachenattribut hinzu."
+"Fügt die Möglichkeit hinzu, die Sprache während einer Anrufverarbeitung "
+"(call flow) zu ändern und fügt den Benutzern ein Sprachenattribut hinzu."
 
-#: functions.inc.php:332
+#: functions.inc.php:322
 msgid "Allows you to set the language for this DID."
 msgstr "Erlaubt Ihnen die Sprache für diese Durchwahl (DID) zu setzen."
 
-#: languages.i18n.php:6 languages.i18n.php:12
+#: languages.i18n.php:6
 msgid "Applications"
 msgstr "Anwendungen"
 
-#: functions.inc.php:208 functions.inc.php:315
+#: functions.inc.php:208 functions.inc.php:305
 msgid "Default"
 msgstr "Standard"
 
@@ -92,12 +92,12 @@ msgstr "Allgemein"
 msgid "Invalid description specified"
 msgstr "Ungültige Beschreibung angegeben"
 
-#: Languages.class.php:149 functions.inc.php:201 functions.inc.php:305
+#: Languages.class.php:169 functions.inc.php:201 functions.inc.php:295
 #: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr "Sprache"
 
-#: functions.inc.php:390
+#: functions.inc.php:380
 #, php-format
 msgid "Language Change: %s"
 msgstr "Sprachänderung: %s"
@@ -181,7 +181,7 @@ msgstr ""
 "nutzen, sofern diese installiert sind.  Sprachen können im Sound Sprachen "
 "Modul hinzugefügt oder gelöscht werden"
 
-#: Languages.class.php:150
+#: Languages.class.php:170
 msgid "Valid language string"
 msgstr "Gültiger Sprachstring"
 
