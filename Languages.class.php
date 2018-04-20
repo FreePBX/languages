@@ -169,6 +169,26 @@ class Languages implements \BMO {
 	    return load_view(__DIR__."/views/bootnav.php",array());
 	  }
 	}
+	public function getUserLanguage($xtn) {
+		$langcode = $this->FreePBX->astman->database_get("AMPUSER",$xtn."/language");
+		return $langcode;
+	}
+	public function getAllUserLanguages() {
+		$items = $this->FreePBX->astman->database_show('AMPUSER');
+		$final = array();
+		foreach($items as $key => $value) {
+			if(preg_match('/AMPUSER\/(\d+)\/language/',$key,$matches) && !empty($value)) {
+				$final[$matches[1]] = $value;
+			}
+		}
+		return $final;
+	}
+	public function delUserLanguage($xtn) {
+		return $astman->database_deltree("AMPUSER/$xtn/language");
+	}
+	public function updateUserLanguage($ext, $langcode) {
+		return $astman->database_put("AMPUSER",$ext."/language",$langcode);
+	}
 	//Bulk functions
 	public function getAllLanguages() {
 		$au = $this->FreePBX->astman->database_show('AMPUSER');
@@ -222,5 +242,37 @@ class Languages implements \BMO {
 				}
 			break;
 		}
+	}
+
+	public function doDialplanHook(&$ext, $engine, $priority) {
+		global $core_conf;
+
+		$users = $this->getAllUserLanguages();
+		$devices = $this->FreePBX->Core->getAllDevicesByType();
+		foreach($devices as $device) {
+			if($device['devicetype'] === "fixed" && isset($device['user']) && isset($users[$device['user']])) {
+				switch($device['tech']) {
+					case 'sip':
+						$core_conf->addSipAdditional($device['id'],'language',$users[$device['user']]);
+					break;
+					case 'iax2':
+						$core_conf->addIaxAdditional($device['id'],'language',$users[$device['user']]);
+					break;
+					case 'dahdi':
+						$core_conf->addDahdiAdditional($device['id'],'language',$users[$device['user']]);
+					break;
+					case 'pjsip':
+						$pjsip = $this->FreePBX->Core->getDriver("pjsip");
+						if(is_object($pjsip)) {
+							$pjsip->addEndpoint($device['id'], 'language', $users[$device['user']]);
+						}
+					break;
+				}
+			}
+		}
+	}
+
+	public static function myDialplanHooks() {
+		return true;
 	}
 }

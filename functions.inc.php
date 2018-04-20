@@ -198,25 +198,15 @@ function languages_configprocess() {
 }
 
 function languages_user_get($xtn) {
-	global $astman;
-
-	// Retrieve the language configuraiton from this user from ASTDB
-	$langcode = $astman->database_get("AMPUSER",$xtn."/language");
-
-	return $langcode;
+	return FreePBX::Languages()->getUserLanguage($xtn);
 }
 
 function languages_user_update($ext, $langcode) {
-	global $astman;
-	// Update the settings in ASTDB
-	$astman->database_put("AMPUSER",$ext."/language",$langcode);
+	return FreePBX::Languages()->updateUserLanguage($ext, $langcode);
 }
 
 function languages_user_del($ext) {
-	global $astman;
-
-	// Clean up the tree when the user is deleted
-	$astman->database_deltree("AMPUSER/$ext/language");
+	return FreePBX::Languages()->delUserLanguage($ext);
 }
 
 	//inbound route language settings

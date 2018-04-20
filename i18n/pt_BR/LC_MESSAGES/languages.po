@@ -20,17 +20,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-04 17:46-0700\n"
-"PO-Revision-Date: 2014-07-25 23:56+0200\n"
-"Last-Translator: Rafael <rafael@ibinetwork.com.br>\n"
-"Language-Team: Portuguese (Brazil) <http://git.freepbx.org/projects/freepbx/"
-"languages/pt_BR/>\n"
+"POT-Creation-Date: 2018-04-20 17:30-0400\n"
+"PO-Revision-Date: 2017-03-08 21:26+0200\n"
+"Last-Translator: Kingvoice <suporte@kingvoice.com.br>\n"
+"Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
+"freepbx/languages/pt_BR/>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 1.10-dev\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/grid.php:25
 msgid "Actions"
@@ -52,17 +52,17 @@ msgstr ""
 "Adiciona a capacidade de mudar o idioma durante um fluxo de chamada e "
 "adicionar atributo de idioma para usuários."
 
-#: functions.inc.php:332
+#: functions.inc.php:322
 msgid "Allows you to set the language for this DID."
 msgstr "Permite configurar o idioma para este DID."
 
-#: languages.i18n.php:6 languages.i18n.php:12
+#: languages.i18n.php:6
 msgid "Applications"
 msgstr "Aplicações"
 
-#: functions.inc.php:208 functions.inc.php:315
+#: functions.inc.php:208 functions.inc.php:305
 msgid "Default"
-msgstr ""
+msgstr "Padrão"
 
 #: Languages.class.php:74
 msgid "Delete"
@@ -86,18 +86,18 @@ msgstr "Editar: "
 
 #: functions.inc.php:202
 msgid "General"
-msgstr ""
+msgstr "Geral"
 
 #: assets/js/languages.js:2
 msgid "Invalid description specified"
 msgstr "Descrição especificada inválida"
 
-#: Languages.class.php:149 functions.inc.php:201 functions.inc.php:305
+#: Languages.class.php:169 functions.inc.php:201 functions.inc.php:295
 #: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr "Idioma"
 
-#: functions.inc.php:390
+#: functions.inc.php:380
 #, php-format
 msgid "Language Change: %s"
 msgstr "Mudar Idioma: %s"
@@ -177,10 +177,13 @@ msgid ""
 "if installed.  Languages can be added or removed in the Sound Languages "
 "module"
 msgstr ""
+"Isso fará com que todas as mensagens e mensagens de voz usem o idioma "
+"selecionado se instalado. Os idiomas podem ser adicionados ou removidos no "
+"módulo Idiomas de Sons"
 
-#: Languages.class.php:150
+#: Languages.class.php:170
 msgid "Valid language string"
-msgstr ""
+msgstr "Frase de linguagem válida"
 
 #: views/form.php:122
 msgid "Where to send the caller after setting the language."
