@@ -184,10 +184,10 @@ class Languages implements \BMO {
 		return $final;
 	}
 	public function delUserLanguage($xtn) {
-		return $astman->database_deltree("AMPUSER/$xtn/language");
+		return $this->FreePBX->astman->database_deltree("AMPUSER/$xtn/language");
 	}
 	public function updateUserLanguage($ext, $langcode) {
-		return $astman->database_put("AMPUSER",$ext."/language",$langcode);
+		return $this->FreePBX->astman->database_put("AMPUSER",$ext."/language",$langcode);
 	}
 	//Bulk functions
 	public function getAllLanguages() {
