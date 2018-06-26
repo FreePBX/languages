@@ -86,22 +86,27 @@ function languages_hookGet_config($engine) {
 /**  Get a list of all languages
  */
 function languages_list() {
+    FreePBX::Modules()->deprecatedFunction();
 	return FreePBX::Languages()->listLanguages();
 }
 
 function languages_get($language_id) {
+    FreePBX::Modules()->deprecatedFunction();
 	return FreePBX::Languages()->getLanguage($language_id);
 }
 
 function languages_add($description, $lang_code, $dest) {
+    FreePBX::Modules()->deprecatedFunction();
 	return FreePBX::Languages()->addLanguage($description, $lang_code, $dest);
 }
 
 function languages_delete($language_id) {
+    FreePBX::Modules()->deprecatedFunction();
 	return FreePBX::Languages()->delLanguage($language_id);
 }
 
 function languages_edit($language_id, $description, $lang_code, $dest) {
+    FreePBX::Modules()->deprecatedFunction();
 	return FreePBX::Languages()->editLanguage($language_id, $description, $lang_code, $dest);
 }
 
@@ -198,15 +203,18 @@ function languages_configprocess() {
 }
 
 function languages_user_get($xtn) {
+    FreePBX::Modules()->deprecatedFunction();
 	return FreePBX::Languages()->getUserLanguage($xtn);
 }
 
 function languages_user_update($ext, $langcode) {
+    FreePBX::Modules()->deprecatedFunction();
 	return FreePBX::Languages()->updateUserLanguage($ext, $langcode);
 }
 
 function languages_user_del($ext) {
-	return FreePBX::Languages()->delUserLanguage($ext);
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Languages()->delUserLanguage($ext);
 }
 
 	//inbound route language settings
@@ -282,25 +290,13 @@ function languages_hook_core($viewing_itemid, $target_menuid){
 }
 
 function languages_incoming_get($extension=null,$cidnum=null){
-	global $db;
-	if($extension || $cidnum || (isset($_REQUEST['extdisplay']) && $_REQUEST['extdisplay']=='/') || (isset($_REQUEST['display']) && $_REQUEST['display']=='did')){
-		$sql='SELECT language FROM language_incoming WHERE extension = ? AND cidnum = ?';
-		$lang=$db->getOne($sql, array($extension, $cidnum));
-	}else{
-		$sql='SELECT language_incoming.*,incoming.pricid FROM language_incoming, incoming WHERE language_incoming.cidnum=incoming.cidnum and language_incoming.extension=incoming.extension';
-		$lang=$db->getAll($sql, DB_FETCHMODE_ASSOC);
-	}
-	return $lang;
+    FreePBX::Modules()->deprecatedFunction();
+	return FreePBX::Languages()->getIncoming($extension, $cidnum);
 }
 
 function languages_incoming_update($language=null,$extension=null,$cidnum=null){
-	global $db;
-	$sql='DELETE FROM language_incoming WHERE extension = ? AND cidnum = ?';
-	$db->query($sql,array($extension,$cidnum));
-	if(isset($language) && $language!=''){//no need to keep a record if were not setting the language
-		$sql='INSERT INTO language_incoming (extension,cidnum,language) VALUES (?, ?, ?)';
-		$db->query($sql,array($extension,$cidnum,$language));
-	};
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Languages()->updateIncoming($language, $extension, $cidnum);
 }
 
 function languages_incoming_delete($extension=null,$cidnum=null){
@@ -337,6 +333,7 @@ function languages_check_destinations($dest=true) {
 }
 
 function languages_change_destination($old_dest, $new_dest) {
+    FreePBX::Modules()->deprecatedFunction();
 	return FreePBX::Languages()->changeDestination($old_dest, $new_dest);
 }
-?>
+

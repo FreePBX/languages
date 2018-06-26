@@ -3,15 +3,11 @@ namespace FreePBX\modules;
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2015 Sangoma Technologies.
 //
-class Languages implements \BMO {
-	public function __construct($freepbx = null) {
-		if ($freepbx == null) {
-			throw new Exception("Not given a FreePBX Object");
-		}
+use BMO;
+use FreePBX_Helpers;
+use PDO;
+class Languages extends FreePBX_Helpers implements BMO {
 
-		$this->FreePBX = $freepbx;
-		$this->db = $freepbx->Database;
-	}
 	public function doConfigPageInit($page) {
 		$request = $_REQUEST;
 		$type = isset($request['type']) ? $request['type'] : 'setup';
@@ -119,9 +115,9 @@ class Languages implements \BMO {
 	 */
 	public function listLanguages(){
 		$sql = "SELECT language_id, description, lang_code, dest FROM languages ORDER BY description ";
-		$stmt = $this->db->prepare($sql);
+		$stmt = $this->FreePBX->Database->prepare($sql);
 		$stmt->execute();
-		$results = $stmt->fetchall(\PDO::FETCH_ASSOC);
+		$results = $stmt->fetchall(PDO::FETCH_ASSOC);
 		return $results;
 	}
 
@@ -132,35 +128,35 @@ class Languages implements \BMO {
 	 */
 	public function getLanguage($language_id){
 		$sql = "SELECT language_id, description, lang_code, dest FROM languages WHERE language_id = :language_id";
-		$stmt = $this->db->prepare($sql);
+		$stmt = $this->FreePBX->Database->prepare($sql);
 		$stmt->execute(array(':language_id' => $language_id));
-		$row = $stmt->fetch(\PDO::FETCH_ASSOC);
+		$row = $stmt->fetch(PDO::FETCH_ASSOC);
 		return $row;
 	}
 
 	public function addLanguage($description, $lang_code, $dest){
 		$sql = "INSERT INTO languages (description, lang_code, dest) VALUES (:description, :lang_code, :dest)";
-		$stmt = $this->db->prepare($sql);
+		$stmt = $this->FreePBX->Database->prepare($sql);
 		$ret = $stmt->execute(array(':description' => $description, ':lang_code' => $lang_code, ':dest' => $dest ));
 		if($ret){
-			return $this->db->lastInsertId();
+			return $this->FreePBX->Database->lastInsertId();
 		}
 		return $ret;
 	}
 	public function delLanguage($language_id){
 		$sql = "DELETE FROM languages WHERE language_id = :language_id";
-		$stmt = $this->db->prepare($sql);
+		$stmt = $this->FreePBX->Database->prepare($sql);
 		return $stmt->execute(array(':language_id' => $language_id));
 	}
 	public function editLanguage($language_id, $description, $lang_code, $dest){
 		$sql = "UPDATE languages SET description = :description, lang_code = :lang_code, dest = :dest WHERE language_id = :language_id";
-		$stmt = $this->db->prepare($sql);
+		$stmt = $this->FreePBX->Database->prepare($sql);
 		return $stmt->execute(array(':description' => $description, ':lang_code' => $lang_code, ':dest' => $dest, ':language_id' => $language_id ));
 	}
 
 	public function changeDestination($old_dest, $new_dest){
 		$sql = 'UPDATE languages SET dest = :new_dest WHERE dest = :old_dest';
-		$stmt = $this->db->prepare($sql);
+		$stmt = $this->FreePBX->Database->prepare($sql);
 		return $stmt->execute(array(':old_dest' => $old_dest, ':new_dest' => $new_dest));
 	}
 
@@ -188,7 +184,28 @@ class Languages implements \BMO {
 	}
 	public function updateUserLanguage($ext, $langcode) {
 		return $this->FreePBX->astman->database_put("AMPUSER",$ext."/language",$langcode);
-	}
+    }
+    public function getIncoming($extension = null, $cidnum = null){
+        if ($extension || $cidnum || (isset($_REQUEST['extdisplay']) && '/' == $_REQUEST['extdisplay']) || (isset($_REQUEST['display']) && 'did' == $_REQUEST['display'])) {
+            $sql = 'SELECT language FROM language_incoming WHERE extension = :extension AND cidnum = :cidnum LIMIT 1';
+            $stmt = $this->FreePBX->Database->prepare($sql);
+            $stmt->execute([':cidnum' => $cidnum, ':extension' => $extension]);
+            return $stmt->fetch(PDO::FETCH_ASSOC);
+            $lang = $db->getOne($sql, array($extension, $cidnum));
+        }
+        return $this->FreePBX->Database->query('SELECT language_incoming.*,incoming.pricid FROM language_incoming, incoming WHERE language_incoming.cidnum=incoming.cidnum and language_incoming.extension=incoming.extension',PDO::FETCH_ASSOC);
+    }
+
+    public function updateIncoming($language=null,$extension=null,$cidnum=null){
+        $sql='DELETE FROM language_incoming WHERE extension = :extension AND cidnum = :cidnum';
+	    $this->FreePBX->Database->prepare($sql)->execute([':extension' => $extension, ':cidnum' => $cidnum]);
+	    if(isset($language) && $language!=''){//no need to keep a record if were not setting the language
+            $sql='INSERT INTO language_incoming (extension,cidnum,language) VALUES (:extension, :cidnum, :language)';
+            $this->FreePBX->Database->prepare($sql)->execute([':extension' => $extension, ':cidnum' => $cidnum, ':language' => $language]);
+        }
+        return $this;
+    }
+    
 	//Bulk functions
 	public function getAllLanguages() {
 		$au = $this->FreePBX->astman->database_show('AMPUSER');
