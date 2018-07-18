@@ -1,9 +1,9 @@
 <?php
-namespace FreePBX\modules\__MODULENAME__;
+namespace FreePBX\modules\Languages;
 use FreePBX\modules\Backup as Base;
 class Restore Extends Base\RestoreBase{
   public function runRestore($jobid){
-    $configs = $this->getConfigs();
+    $configs = reset($this->getConfigs());
     foreach ($configs['languages'] as $language) {
         $this->FreePBX->Languages->editLanguage($language['language_id'], $language['description'], $language['lang_code'], $language['dest']);
     }
