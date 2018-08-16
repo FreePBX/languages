@@ -1,7 +1,7 @@
 <?php
 namespace FreePBX\modules;
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
-//	Copyright 2015 Sangoma Technologies.
+//	Copyright 2015-2018 Sangoma Technologies.
 //
 use BMO;
 use FreePBX_Helpers;
@@ -44,12 +44,17 @@ class Languages extends FreePBX_Helpers implements BMO {
 	public function uninstall() {
 
 	}
-	public function backup(){
 
+	public function setDatabase($pdo){
+	$this->Database = $pdo;
+	return $this;
 	}
-	public function restore($backup){
+	
+	public function resetDatabase(){
+	$this->Database = $this->FreePBX->Database;
+	return $this;
+	}
 
-	}
 	public function getActionBar($request) {
 		if ('form' !== $request['view']) {
 			return [];
