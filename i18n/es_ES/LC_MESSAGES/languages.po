@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-20 17:32-0400\n"
+"POT-Creation-Date: 2018-08-20 13:51-0400\n"
 "PO-Revision-Date: 2016-12-11 02:01+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -26,25 +26,15 @@ msgstr "Añadir idioma"
 msgid "Add Language Instance"
 msgstr "Añadir instancia de idioma"
 
-#: languages.i18n.php:8
-msgid ""
-"Adds the ability to changes the language within a call flow and add language "
-"attribute to users."
-msgstr ""
-
-#: functions.inc.php:274
+#: functions.inc.php:282
 msgid "Allows you to set the language for this DID."
 msgstr "Le permite asignar el idioma a este DID."
 
-#: languages.i18n.php:6
-msgid "Applications"
-msgstr ""
-
-#: functions.inc.php:160 functions.inc.php:257
+#: functions.inc.php:165 functions.inc.php:265
 msgid "Default"
 msgstr "Predeterminado"
 
-#: Languages.class.php:74
+#: Languages.class.php:79
 msgid "Delete"
 msgstr "Eliminar"
 
@@ -64,7 +54,7 @@ msgstr "Editar instancia de idioma"
 msgid "Edit: "
 msgstr "Editar: "
 
-#: functions.inc.php:154
+#: functions.inc.php:159
 msgid "General"
 msgstr ""
 
@@ -72,17 +62,17 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "La descripción especificada no es válida"
 
-#: Languages.class.php:213 functions.inc.php:153 functions.inc.php:247
+#: Languages.class.php:221 functions.inc.php:158 functions.inc.php:255
 #: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr "Idioma"
 
-#: functions.inc.php:332
+#: functions.inc.php:328
 #, php-format
 msgid "Language Change: %s"
 msgstr "Cambio de idioma: %s"
 
-#: functions.inc.php:172 functions.inc.php:174 views/form.php:67
+#: functions.inc.php:177 functions.inc.php:179 views/form.php:67
 msgid "Language Code"
 msgstr "Código de idioma"
 
@@ -91,7 +81,7 @@ msgstr "Código de idioma"
 msgid "Language: %s"
 msgstr "Idioma: %s"
 
-#: languages.i18n.php:4 languages.i18n.php:10 page.languages.php:5
+#: page.languages.php:5
 msgid "Languages"
 msgstr "Idiomas"
 
@@ -115,15 +105,15 @@ msgstr ""
 msgid "List Languagess"
 msgstr "Lista de Idiomas"
 
-#: functions.inc.php:155
+#: functions.inc.php:160
 msgid "Please enter a valid Language Code"
 msgstr "Por favor, introduzca un código de idioma válido"
 
-#: Languages.class.php:69
+#: Languages.class.php:74
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: Languages.class.php:64
+#: Languages.class.php:69
 msgid "Submit"
 msgstr "Enviar"
 
@@ -143,7 +133,7 @@ msgstr ""
 "Un nombre descriptivo para esta instancia de idioma. Por ejemplo, \"IVR "
 "principal en francés\""
 
-#: functions.inc.php:174
+#: functions.inc.php:179
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed."
@@ -151,7 +141,7 @@ msgstr ""
 "Esto hará que todos los mensajes y las locuciones de voz usen el idioma "
 "seleccionado si está instalado."
 
-#: functions.inc.php:172
+#: functions.inc.php:177
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed.  Languages can be added or removed in the Sound Languages "
@@ -161,7 +151,7 @@ msgstr ""
 "seleccionado si está instalado. Los idiomas se pueden agregar o quitar en el "
 "módulo de idiomas de sonido"
 
-#: Languages.class.php:214
+#: Languages.class.php:222
 msgid "Valid language string"
 msgstr ""
 

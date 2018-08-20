@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-20 17:32-0400\n"
+"POT-Creation-Date: 2018-08-20 13:51-0400\n"
 "PO-Revision-Date: 2017-03-08 21:26+0200\n"
 "Last-Translator: Kingvoice <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -44,27 +44,15 @@ msgstr "Adicionar Idioma"
 msgid "Add Language Instance"
 msgstr "Adicionar Instância de Idioma"
 
-#: languages.i18n.php:8
-msgid ""
-"Adds the ability to changes the language within a call flow and add language "
-"attribute to users."
-msgstr ""
-"Adiciona a capacidade de mudar o idioma durante um fluxo de chamada e "
-"adicionar atributo de idioma para usuários."
-
-#: functions.inc.php:274
+#: functions.inc.php:282
 msgid "Allows you to set the language for this DID."
 msgstr "Permite configurar o idioma para este DID."
 
-#: languages.i18n.php:6
-msgid "Applications"
-msgstr "Aplicações"
-
-#: functions.inc.php:160 functions.inc.php:257
+#: functions.inc.php:165 functions.inc.php:265
 msgid "Default"
 msgstr "Padrão"
 
-#: Languages.class.php:74
+#: Languages.class.php:79
 msgid "Delete"
 msgstr "Apagar"
 
@@ -84,7 +72,7 @@ msgstr "Editar Instância de Idioma"
 msgid "Edit: "
 msgstr "Editar: "
 
-#: functions.inc.php:154
+#: functions.inc.php:159
 msgid "General"
 msgstr "Geral"
 
@@ -92,17 +80,17 @@ msgstr "Geral"
 msgid "Invalid description specified"
 msgstr "Descrição especificada inválida"
 
-#: Languages.class.php:213 functions.inc.php:153 functions.inc.php:247
+#: Languages.class.php:221 functions.inc.php:158 functions.inc.php:255
 #: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr "Idioma"
 
-#: functions.inc.php:332
+#: functions.inc.php:328
 #, php-format
 msgid "Language Change: %s"
 msgstr "Mudar Idioma: %s"
 
-#: functions.inc.php:172 functions.inc.php:174 views/form.php:67
+#: functions.inc.php:177 functions.inc.php:179 views/form.php:67
 msgid "Language Code"
 msgstr "Código do Idioma"
 
@@ -111,7 +99,7 @@ msgstr "Código do Idioma"
 msgid "Language: %s"
 msgstr "Idioma: %s"
 
-#: languages.i18n.php:4 languages.i18n.php:10 page.languages.php:5
+#: page.languages.php:5
 msgid "Languages"
 msgstr "Idiomas"
 
@@ -135,15 +123,15 @@ msgstr ""
 msgid "List Languagess"
 msgstr "Lista de Idiomas"
 
-#: functions.inc.php:155
+#: functions.inc.php:160
 msgid "Please enter a valid Language Code"
 msgstr "Por favor entre com um Código de Idioma válido"
 
-#: Languages.class.php:69
+#: Languages.class.php:74
 msgid "Reset"
 msgstr "Redefinir"
 
-#: Languages.class.php:64
+#: Languages.class.php:69
 msgid "Submit"
 msgstr "Enviar"
 
@@ -163,7 +151,7 @@ msgstr ""
 "O nome descritivo desta instância de idioma. Por exemplo \"URA Principal "
 "Francês\""
 
-#: functions.inc.php:174
+#: functions.inc.php:179
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed."
@@ -171,7 +159,7 @@ msgstr ""
 "Todas as mensagens e prompts de voz serão usado pelo idioma selecionado se "
 "instalado."
 
-#: functions.inc.php:172
+#: functions.inc.php:177
 msgid ""
 "This will cause all messages and voice prompts to use the selected language "
 "if installed.  Languages can be added or removed in the Sound Languages "
@@ -181,13 +169,23 @@ msgstr ""
 "selecionado se instalado. Os idiomas podem ser adicionados ou removidos no "
 "módulo Idiomas de Sons"
 
-#: Languages.class.php:214
+#: Languages.class.php:222
 msgid "Valid language string"
 msgstr "Frase de linguagem válida"
 
 #: views/form.php:122
 msgid "Where to send the caller after setting the language."
 msgstr "Para onde enviar o chamador após configurar o idioma."
+
+#~ msgid ""
+#~ "Adds the ability to changes the language within a call flow and add "
+#~ "language attribute to users."
+#~ msgstr ""
+#~ "Adiciona a capacidade de mudar o idioma durante um fluxo de chamada e "
+#~ "adicionar atributo de idioma para usuários."
+
+#~ msgid "Applications"
+#~ msgstr "Aplicações"
 
 #~ msgid "Submit Changes"
 #~ msgstr "Enviar Alterações"
