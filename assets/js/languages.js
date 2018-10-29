@@ -14,7 +14,7 @@ function checkLanguage(theForm) {
 		return false;
 
 	if($.inArray(tmp_name, description) != -1)
-		return warnInvalid($('input[name=description]'), tmp_name  + _(" already used, please use a different description."));
 
+		return warnInvalid($('input[name=description]'),  sprintf(_("%s already used, please use a different description."),tmp_name));
 	return true;
 }
