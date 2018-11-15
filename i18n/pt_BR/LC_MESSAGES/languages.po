@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-20 17:32-0400\n"
+"POT-Creation-Date: 2018-11-14 22:11-0500\n"
 "PO-Revision-Date: 2017-03-08 21:26+0200\n"
 "Last-Translator: Kingvoice <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -31,6 +31,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
+
+#: assets/js/languages.js:18
+#, perl-format
+msgid "%s already used, please use a different description."
+msgstr ""
 
 #: views/grid.php:25
 msgid "Actions"
@@ -68,11 +73,11 @@ msgstr "Padrão"
 msgid "Delete"
 msgstr "Apagar"
 
-#: views/form.php:43
+#: views/form.php:63
 msgid "Description"
 msgstr "Descrição"
 
-#: views/form.php:110
+#: views/form.php:130
 msgid "Destination"
 msgstr "Destino"
 
@@ -102,7 +107,7 @@ msgstr "Idioma"
 msgid "Language Change: %s"
 msgstr "Mudar Idioma: %s"
 
-#: functions.inc.php:172 functions.inc.php:174 views/form.php:67
+#: functions.inc.php:172 functions.inc.php:174 views/form.php:87
 msgid "Language Code"
 msgstr "Código do Idioma"
 
@@ -147,7 +152,7 @@ msgstr "Redefinir"
 msgid "Submit"
 msgstr "Enviar"
 
-#: views/form.php:98
+#: views/form.php:118
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
@@ -155,7 +160,7 @@ msgstr ""
 "O código de idioma do Asterisk para o qual você deseja mudar. Por exemplo "
 "\"fr\" para Francês, \"de\" para Alemão"
 
-#: views/form.php:55
+#: views/form.php:75
 msgid ""
 "The descriptive name of this language instance. For example \"French Main IVR"
 "\""
@@ -185,7 +190,7 @@ msgstr ""
 msgid "Valid language string"
 msgstr "Frase de linguagem válida"
 
-#: views/form.php:122
+#: views/form.php:142
 msgid "Where to send the caller after setting the language."
 msgstr "Para onde enviar o chamador após configurar o idioma."
 

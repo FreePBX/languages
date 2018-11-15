@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-20 17:32-0400\n"
+"POT-Creation-Date: 2018-11-14 22:11-0500\n"
 "PO-Revision-Date: 2009-01-31 12:37+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -18,6 +18,11 @@ msgstr ""
 "X-Poedit-Language: Chinese\n"
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
+
+#: assets/js/languages.js:18
+#, perl-format
+msgid "%s already used, please use a different description."
+msgstr ""
 
 #: views/grid.php:25
 msgid "Actions"
@@ -53,11 +58,11 @@ msgstr ""
 msgid "Delete"
 msgstr "删除"
 
-#: views/form.php:43
+#: views/form.php:63
 msgid "Description"
 msgstr "描述"
 
-#: views/form.php:110
+#: views/form.php:130
 msgid "Destination"
 msgstr "目的地"
 
@@ -87,7 +92,7 @@ msgstr "语言"
 msgid "Language Change: %s"
 msgstr "改变语言：%s"
 
-#: functions.inc.php:172 functions.inc.php:174 views/form.php:67
+#: functions.inc.php:172 functions.inc.php:174 views/form.php:87
 msgid "Language Code"
 msgstr "语言代码"
 
@@ -130,13 +135,13 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:98
+#: views/form.php:118
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
 msgstr "设定你希望切换到的Asterisk的语言代码。比如，法语是“fr”，德语是“de”"
 
-#: views/form.php:55
+#: views/form.php:75
 msgid ""
 "The descriptive name of this language instance. For example \"French Main IVR"
 "\""
@@ -159,7 +164,7 @@ msgstr ""
 msgid "Valid language string"
 msgstr ""
 
-#: views/form.php:122
+#: views/form.php:142
 msgid "Where to send the caller after setting the language."
 msgstr ""
 
