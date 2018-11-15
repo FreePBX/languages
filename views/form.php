@@ -26,6 +26,26 @@ if ($extdisplay) {
 
 ?>
 
+<?php
+$langList = FreePBX::Languages()->listLanguages();
+if($langList){
+        $langDesc = array();
+        foreach($langList as $tmp_langList){
+                if($extdisplay !=  $tmp_langList['language_id']){
+                        $langDesc[] = $tmp_langList['description'];
+                }
+        }
+}
+?>
+<script>
+var description = [];
+<?php
+if(!empty($langDesc)){
+	                echo "description = " . json_encode($langDesc) . ";";
+}
+?>
+</script>
+
 <?php echo $subhead ?>
 <?php echo $inusehtml ?>
 <br>
