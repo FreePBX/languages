@@ -3,7 +3,7 @@ namespace FreePBX\modules\Languages;
 use FreePBX\modules\Backup as Base;
 class Restore Extends Base\RestoreBase{
   public function runRestore($jobid){
-    $configs = reset($this->getConfigs());
+    $configs = $this->getConfigs();
     $this->processConfigs($configs);
   }
 
