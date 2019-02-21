@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-14 22:11-0500\n"
+"POT-Creation-Date: 2019-02-21 17:43-0500\n"
 "PO-Revision-Date: 2016-04-06 21:23+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
@@ -56,7 +56,7 @@ msgstr "درخواست ها"
 msgid "Default"
 msgstr "پیشفرض"
 
-#: Languages.class.php:79
+#: Languages.class.php:69
 msgid "Delete"
 msgstr "حذف"
 
@@ -84,7 +84,7 @@ msgstr "عمومی"
 msgid "Invalid description specified"
 msgstr "شرح مشخص شده نامعتبر است"
 
-#: Languages.class.php:221 functions.inc.php:158 functions.inc.php:255
+#: Languages.class.php:211 functions.inc.php:158 functions.inc.php:255
 #: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr "زبان"
@@ -130,11 +130,11 @@ msgstr "فهرست زبان ها"
 msgid "Please enter a valid Language Code"
 msgstr "لطفا کد زبان صحیح وارد کنید"
 
-#: Languages.class.php:74
+#: Languages.class.php:64
 msgid "Reset"
 msgstr "بازنشانی"
 
-#: Languages.class.php:69
+#: Languages.class.php:59
 msgid "Submit"
 msgstr "ثبت"
 
@@ -167,7 +167,7 @@ msgstr ""
 "باعث میشود تمام پیام ها و صداها از زبان انتخابی نصب شده استفاده کنند. زبان "
 "ها را در ماژول زبان صدا اضافه یا حذف کنید"
 
-#: Languages.class.php:222
+#: Languages.class.php:212
 msgid "Valid language string"
 msgstr "جمله معتبر زبان"
 

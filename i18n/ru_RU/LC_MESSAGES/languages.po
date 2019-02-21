@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-14 22:11-0500\n"
+"POT-Creation-Date: 2019-02-21 17:43-0500\n"
 "PO-Revision-Date: 2010-09-24 11:12+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
@@ -54,7 +54,7 @@ msgstr "Приложения"
 msgid "Default"
 msgstr ""
 
-#: Languages.class.php:79
+#: Languages.class.php:69
 msgid "Delete"
 msgstr "Удалить"
 
@@ -82,7 +82,7 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "Неверно выбрано описание"
 
-#: Languages.class.php:221 functions.inc.php:158 functions.inc.php:255
+#: Languages.class.php:211 functions.inc.php:158 functions.inc.php:255
 #: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr "Язык"
@@ -129,11 +129,11 @@ msgstr "Список языков"
 msgid "Please enter a valid Language Code"
 msgstr "Введите разрешённый код языка"
 
-#: Languages.class.php:74
+#: Languages.class.php:64
 msgid "Reset"
 msgstr "Сброс"
 
-#: Languages.class.php:69
+#: Languages.class.php:59
 msgid "Submit"
 msgstr "Сохранить"
 
@@ -166,7 +166,7 @@ msgid ""
 "module"
 msgstr ""
 
-#: Languages.class.php:222
+#: Languages.class.php:212
 msgid "Valid language string"
 msgstr ""
 

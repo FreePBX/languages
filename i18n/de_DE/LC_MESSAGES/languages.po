@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-14 22:11-0500\n"
+"POT-Creation-Date: 2019-02-21 17:43-0500\n"
 "PO-Revision-Date: 2017-03-03 14:37+0200\n"
 "Last-Translator: hammer125 <auswertung@aon.at>\n"
 "Language-Team: German <http://weblate.freepbx.org/projects/freepbx/languages/"
@@ -69,7 +69,7 @@ msgstr "Anwendungen"
 msgid "Default"
 msgstr "Standard"
 
-#: Languages.class.php:79
+#: Languages.class.php:69
 msgid "Delete"
 msgstr "Löschen"
 
@@ -97,7 +97,7 @@ msgstr "Allgemein"
 msgid "Invalid description specified"
 msgstr "Ungültige Beschreibung angegeben"
 
-#: Languages.class.php:221 functions.inc.php:158 functions.inc.php:255
+#: Languages.class.php:211 functions.inc.php:158 functions.inc.php:255
 #: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr "Sprache"
@@ -144,11 +144,11 @@ msgstr "Sprachen auflisten"
 msgid "Please enter a valid Language Code"
 msgstr "Bitte geben Sie einen gültiges Sprachk&uml;rzel ein"
 
-#: Languages.class.php:74
+#: Languages.class.php:64
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: Languages.class.php:69
+#: Languages.class.php:59
 msgid "Submit"
 msgstr "Bestätigen"
 
@@ -186,7 +186,7 @@ msgstr ""
 "nutzen, sofern diese installiert sind.  Sprachen können im Sound Sprachen "
 "Modul hinzugefügt oder gelöscht werden"
 
-#: Languages.class.php:222
+#: Languages.class.php:212
 msgid "Valid language string"
 msgstr "Gültiger Sprachstring"
 

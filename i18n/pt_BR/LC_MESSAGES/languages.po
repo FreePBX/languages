@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-14 22:11-0500\n"
+"POT-Creation-Date: 2019-02-21 17:43-0500\n"
 "PO-Revision-Date: 2017-03-08 21:26+0200\n"
 "Last-Translator: Kingvoice <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -69,7 +69,7 @@ msgstr "Aplicações"
 msgid "Default"
 msgstr "Padrão"
 
-#: Languages.class.php:79
+#: Languages.class.php:69
 msgid "Delete"
 msgstr "Apagar"
 
@@ -97,7 +97,7 @@ msgstr "Geral"
 msgid "Invalid description specified"
 msgstr "Descrição especificada inválida"
 
-#: Languages.class.php:221 functions.inc.php:158 functions.inc.php:255
+#: Languages.class.php:211 functions.inc.php:158 functions.inc.php:255
 #: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr "Idioma"
@@ -144,11 +144,11 @@ msgstr "Lista de Idiomas"
 msgid "Please enter a valid Language Code"
 msgstr "Por favor entre com um Código de Idioma válido"
 
-#: Languages.class.php:74
+#: Languages.class.php:64
 msgid "Reset"
 msgstr "Redefinir"
 
-#: Languages.class.php:69
+#: Languages.class.php:59
 msgid "Submit"
 msgstr "Enviar"
 
@@ -186,7 +186,7 @@ msgstr ""
 "selecionado se instalado. Os idiomas podem ser adicionados ou removidos no "
 "módulo Idiomas de Sons"
 
-#: Languages.class.php:222
+#: Languages.class.php:212
 msgid "Valid language string"
 msgstr "Frase de linguagem válida"
 

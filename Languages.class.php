@@ -45,16 +45,6 @@ class Languages extends FreePBX_Helpers implements BMO {
 
 	}
 
-	public function setDatabase($pdo){
-	$this->Database = $pdo;
-	return $this;
-	}
-	
-	public function resetDatabase(){
-	$this->Database = $this->FreePBX->Database;
-	return $this;
-	}
-
 	public function getActionBar($request) {
 		if ('form' !== $request['view']) {
 			return [];
@@ -196,7 +186,7 @@ class Languages extends FreePBX_Helpers implements BMO {
 		}
 		return $this;
 	}
-	
+
 	//Bulk functions
 	public function getAllLanguages() {
 		$au = $this->FreePBX->astman->database_show('AMPUSER');

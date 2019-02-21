@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX languages\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-14 22:11-0500\n"
+"POT-Creation-Date: 2019-02-21 17:43-0500\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -67,7 +67,7 @@ msgstr ""
 msgid "Default"
 msgstr ""
 
-#: Languages.class.php:79
+#: Languages.class.php:69
 msgid "Delete"
 msgstr "Ta bort"
 
@@ -95,7 +95,7 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "Ogiltig beskrivning"
 
-#: Languages.class.php:221 functions.inc.php:158 functions.inc.php:255
+#: Languages.class.php:211 functions.inc.php:158 functions.inc.php:255
 #: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr "Språk"
@@ -140,11 +140,11 @@ msgstr ""
 msgid "Please enter a valid Language Code"
 msgstr "Skriv in en giltig språkkod"
 
-#: Languages.class.php:74
+#: Languages.class.php:64
 msgid "Reset"
 msgstr ""
 
-#: Languages.class.php:69
+#: Languages.class.php:59
 msgid "Submit"
 msgstr ""
 
@@ -179,7 +179,7 @@ msgid ""
 "module"
 msgstr ""
 
-#: Languages.class.php:222
+#: Languages.class.php:212
 msgid "Valid language string"
 msgstr ""
 

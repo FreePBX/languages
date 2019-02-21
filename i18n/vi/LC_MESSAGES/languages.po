@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-14 22:11-0500\n"
+"POT-Creation-Date: 2019-02-21 17:43-0500\n"
 "PO-Revision-Date: 2017-07-08 10:57+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -58,7 +58,7 @@ msgstr "Các ứng dụng"
 msgid "Default"
 msgstr "Mặc định"
 
-#: Languages.class.php:79
+#: Languages.class.php:69
 msgid "Delete"
 msgstr "Xóa"
 
@@ -86,7 +86,7 @@ msgstr "Chung"
 msgid "Invalid description specified"
 msgstr "Mô tả không hợp lệ được xác định"
 
-#: Languages.class.php:221 functions.inc.php:158 functions.inc.php:255
+#: Languages.class.php:211 functions.inc.php:158 functions.inc.php:255
 #: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr "Ngôn ngữ"
@@ -133,11 +133,11 @@ msgstr "Danh sách ngôn ngữ"
 msgid "Please enter a valid Language Code"
 msgstr "Vui lòng nhập một mã ngôn ngữ hợp lệ"
 
-#: Languages.class.php:74
+#: Languages.class.php:64
 msgid "Reset"
 msgstr "Cài đặt lại"
 
-#: Languages.class.php:69
+#: Languages.class.php:59
 msgid "Submit"
 msgstr "Gửi đi"
 
@@ -173,7 +173,7 @@ msgstr ""
 "ngữ lựa chọn nếu được cài đặt. Các ngôn ngữ có thể được thêm hoặc xóa trong "
 "mô đun Âm thanh ngôn ngữ ( Sound Languages)"
 
-#: Languages.class.php:222
+#: Languages.class.php:212
 msgid "Valid language string"
 msgstr "Dãy ngôn ngữ hợp lệ"
 
