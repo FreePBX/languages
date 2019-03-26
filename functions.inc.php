@@ -34,7 +34,7 @@ function languages_getdestinfo($dest) {
 		} else {
 			$type = isset($active_modules['languages']['type'])?$active_modules['languages']['type']:'setup';
 			return array('description' => sprintf(_("Language: %s"),$thisexten['description']),
-			             'edit_url' => 'config.php?display=languages&type='.$type.'&extdisplay='.urlencode($exten),
+			             'edit_url' => 'config.php?display=languages&view=form&type='.$type.'&extdisplay='.urlencode($exten),
 								  );
 		}
 	} else {
