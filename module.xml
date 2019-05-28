@@ -2,7 +2,7 @@
 	<rawname>languages</rawname>
 	<repo>extended</repo>
 	<name>Languages</name>
-	<version>15.0.6</version>
+	<version>15.0.7</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -19,6 +19,7 @@
 		</languages>
 	</popovers>
 	<changelog>
+		*15.0.7* FREEPBX-20005 Not able to select language option in inbound routes. 
 		*15.0.6* Fixing FREEPBX-17867 
 		*15.0.5* fixing legacy restore 
 		*15.0.4* backup and restore 
