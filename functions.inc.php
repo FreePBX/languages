@@ -262,14 +262,14 @@ function languages_hook_core($viewing_itemid, $target_menuid){
 		if (FreePBX::Modules()->moduleHasMethod('Soundlang', 'getLanguages')) {
 			$languages = FreePBX::Soundlang()->getLanguages();
 			$html.= '<select class="form-control" id="language" name="language">';
-			$html.= '<option value=""' . ($language == "" ? "SELECTED" : "") . '>' . _("Default") . '</option>';
+			$html.= '<option value=""' . (empty($language) ? "SELECTED" : "") . '>' . _("Default") . '</option>';
 
 			foreach ($languages as $key => $val) {
-				$html.= '<option value="' . $key . '"' . ($language == $key ? "SELECTED" : "") . '>' . $val . '</option>';
+				$html.= '<option value="' . $key . '"' . ($language['language'] == $key ? "SELECTED" : "") . '>' . $val . '</option>';
 			}
 			$html.= '</select>';
 		} else {
-			$html.= '<input type="text" class="form-control" id="language" name="language" value="'.$language.'">';
+			$html.= '<input type="text" class="form-control" id="language" name="language" value="'.$language['language'].'">';
 		}
 		$html.= '
 								</div>
