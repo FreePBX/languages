@@ -11,14 +11,15 @@ class Restore Extends Base\RestoreBase{
 				$this->restoreLegacyDatabase($pdo);
 		}
 		public function processConfigs($configs){
+					
 				foreach ($configs['languages'] as $language) {
-						$this->FreePBX->Languages->editLanguage($language['language_id'], $language['description'], $language['lang_code'], $language['dest']);
+					$this->FreePBX->Languages->restoreLanguage($language['language_id'], $language['description'], $language['lang_code'], $language['dest']);
 				}
 				foreach ($configs['incoming'] as $incoming) {
-						$this->FreePBX->Languages->updateIncoming($incoming['language'], $incoming['extension'], $incoming['cidnum']);
+					$this->FreePBX->Languages->updateIncoming($incoming['language'], $incoming['extension'], $incoming['cidnum']);
 				}
 				foreach ($configs['users'] as $user => $lang) {
-						$this->FreePBX->Languages->updateUserLanguage($user, $lang);
+					$this->FreePBX->Languages->updateUserLanguage($user, $lang);
 				}
 		}
 }

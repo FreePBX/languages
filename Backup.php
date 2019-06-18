@@ -9,7 +9,7 @@ class Backup Extends Base\BackupBase{
         'users' => $this->FreePBX->Languages->getAllUserLanguages(),
     ];
 
+    $this->addDependency('core');
     $this->addConfigs($configs);
   }
-
 }

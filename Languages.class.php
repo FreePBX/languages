@@ -123,6 +123,17 @@ class Languages extends FreePBX_Helpers implements BMO {
 		}
 		return $ret;
 	}
+
+	public function restoreLanguage($language_id, $description, $lang_code, $dest){
+		$sql = "INSERT INTO languages (language_id, description, lang_code, dest) VALUES (:language_id, :description, :lang_code, :dest)";
+		$stmt = $this->FreePBX->Database->prepare($sql);
+		$ret = $stmt->execute(array(':language_id' => $language_id, ':description' => $description, ':lang_code' => $lang_code, ':dest' => $dest ));
+		if($ret){
+			return $this->FreePBX->Database->lastInsertId();
+		}
+		return $ret;
+	}
+
 	public function delLanguage($language_id){
 		$sql = "DELETE FROM languages WHERE language_id = :language_id";
 		$stmt = $this->FreePBX->Database->prepare($sql);
