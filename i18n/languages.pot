@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-28 15:25+0530\n"
+"POT-Creation-Date: 2019-06-18 11:23+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,7 +83,7 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr ""
 
-#: Languages.class.php:211
+#: Languages.class.php:222
 #: functions.inc.php:158
 #: functions.inc.php:255
 #: views/bootnav.php:8
@@ -164,7 +164,7 @@ msgid ""
 "module"
 msgstr ""
 
-#: Languages.class.php:212
+#: Languages.class.php:223
 msgid "Valid language string"
 msgstr ""
 

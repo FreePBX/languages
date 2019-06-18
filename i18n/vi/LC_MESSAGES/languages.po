@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 17:43-0500\n"
+"POT-Creation-Date: 2019-06-18 11:23+0530\n"
 "PO-Revision-Date: 2017-07-08 10:57+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -86,7 +86,7 @@ msgstr "Chung"
 msgid "Invalid description specified"
 msgstr "Mô tả không hợp lệ được xác định"
 
-#: Languages.class.php:211 functions.inc.php:158 functions.inc.php:255
+#: Languages.class.php:222 functions.inc.php:158 functions.inc.php:255
 #: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr "Ngôn ngữ"
@@ -173,7 +173,7 @@ msgstr ""
 "ngữ lựa chọn nếu được cài đặt. Các ngôn ngữ có thể được thêm hoặc xóa trong "
 "mô đun Âm thanh ngôn ngữ ( Sound Languages)"
 
-#: Languages.class.php:212
+#: Languages.class.php:223
 msgid "Valid language string"
 msgstr "Dãy ngôn ngữ hợp lệ"
 

@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 17:43-0500\n"
+"POT-Creation-Date: 2019-06-18 11:23+0530\n"
 "PO-Revision-Date: 2014-02-20 04:45+0200\n"
 "Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/languages/ja/>\n"
@@ -113,7 +113,7 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr "無効な説明が指定されました"
 
-#: Languages.class.php:211 functions.inc.php:158 functions.inc.php:255
+#: Languages.class.php:222 functions.inc.php:158 functions.inc.php:255
 #: views/bootnav.php:8 views/grid.php:24
 msgid "Language"
 msgstr "言語"
@@ -195,7 +195,7 @@ msgid ""
 "module"
 msgstr ""
 
-#: Languages.class.php:212
+#: Languages.class.php:223
 msgid "Valid language string"
 msgstr ""
 
