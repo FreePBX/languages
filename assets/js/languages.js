@@ -18,3 +18,13 @@ function checkLanguage(theForm) {
 		return warnInvalid($('input[name=description]'),  sprintf(_("%s already used, please use a different description."),tmp_name));
 	return true;
 }
+
+function linkFormatter(value, row, index){
+	return decodeHTML(value);
+}
+
+function decodeHTML(data) {
+	var textArea = document.createElement('textarea');
+	textArea.innerHTML = data;
+	return textArea.value;
+}
