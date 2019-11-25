@@ -2,7 +2,7 @@
 	<rawname>languages</rawname>
 	<repo>extended</repo>
 	<name>Languages</name>
-	<version>14.0.1.4</version>
+	<version>14.0.1.5</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -19,6 +19,7 @@
 		</languages>
 	</popovers>
 	<changelog>
+		*14.0.1.5* FREEI-922 Fix XSS Bootstrap Datatable Issues 
 		*14.0.1.4* Fixing FREEPBX-17867 
 		*14.0.1.3* FREEPBX-18338 Languages module allows to create duplicate entries with same Description. 
 		*14.0.1.2* FREEPBX-17352 Call Asterisk Manager correctly 
