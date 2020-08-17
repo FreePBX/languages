@@ -10,6 +10,7 @@
 	<description>
 		Adds the ability to changes the language within a call flow and add language attribute to users.
 	</description>
+	<more-info>https://wiki.freepbx.org/display/F2/Languages+Module</more-info>
 	<menuitems>
 		<languages needsenginedb="yes">Languages</languages>
 	</menuitems>
