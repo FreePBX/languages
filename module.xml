@@ -2,7 +2,7 @@
 	<rawname>languages</rawname>
 	<repo>extended</repo>
 	<name>Languages</name>
-	<version>13.0.6.5</version>
+	<version>13.0.6.6</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -20,6 +20,7 @@
 		</languages>
 	</popovers>
 	<changelog>
+		*13.0.6.6* Packaging of ver 13.0.6.6
 		*13.0.6.5* FREEI-922 Fix XSS Bootstrap Datatable Issues 
 		*13.0.6.4* Fixing FREEPBX-17867 
 		*13.0.6.3* FREEPBX-18338 Languages module allows to create duplicate entries with same Description. 
