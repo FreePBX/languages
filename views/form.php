@@ -57,8 +57,8 @@ if(!empty($langDesc)){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="description"><?php echo _("Description") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="description"></i>
@@ -81,8 +81,8 @@ if(!empty($langDesc)){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="lang_code"><?php echo _("Language Code") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="lang_code"></i>
@@ -124,8 +124,8 @@ if(!empty($langDesc)){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="goto0"><?php echo _("Destination") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="goto0"></i>
