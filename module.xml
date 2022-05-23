@@ -2,7 +2,7 @@
 	<rawname>languages</rawname>
 	<repo>extended</repo>
 	<name>Languages</name>
-	<version>16.0.2</version>
+	<version>17.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -20,8 +20,7 @@
 		</languages>
 	</popovers>
 	<changelog>
-		*16.0.2* FREEI-4793 
-		*16.0.1* release 16
+		*17.0.1* release 17
 	</changelog>
 	<hooks>
 		<bulkhandler class="Bulkhandler" namespace="FreePBX\modules">
@@ -44,9 +43,9 @@
 		</table>
 	</database>
 	<depends>
-		<version>16.0</version>
+		<version>17.0</version>
 	</depends>
 	<supported>
-		<version>16.0</version>
+		<version>17.0</version>
 	</supported>
 </module>
