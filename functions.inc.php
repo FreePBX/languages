@@ -61,7 +61,7 @@ function languages_hookGet_config($engine) {
 	switch($engine) {
 		case "asterisk":
 			$priority = 'report';
-			$ext->splice('sub-user-callerid', 's', $priority,new ext_execif('$["${DB(AMPUSER/${AMPUSER}/language)}" != ""]', 'Set', 'CHANNEL(language)=${DB(AMPUSER/${AMPUSER}/language)}'));
+			$ext->splice('macro-user-callerid', 's', $priority,new ext_execif('$["${DB(AMPUSER/${AMPUSER}/language)}" != ""]', 'Set', 'CHANNEL(language)=${DB(AMPUSER/${AMPUSER}/language)}'));
 
 
 			$routes=languages_incoming_get();
