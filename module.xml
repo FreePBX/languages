@@ -2,7 +2,7 @@
 	<rawname>languages</rawname>
 	<repo>extended</repo>
 	<name>Languages</name>
-	<version>16.0.3</version>
+	<version>16.0.4</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -20,6 +20,7 @@
 		</languages>
 	</popovers>
 	<changelog>
+		*16.0.4* FREEI-4928 Fixed typo issue 
 		*16.0.3* Reverting Bootstrap and dependent libs fixes 
 		*16.0.2* FREEI-4793 
 		*16.0.1* release 16

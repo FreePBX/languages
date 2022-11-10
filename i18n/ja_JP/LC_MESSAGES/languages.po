@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-18 11:23+0530\n"
+"POT-Creation-Date: 2022-11-10 05:11+0000\n"
 "PO-Revision-Date: 2014-02-20 04:45+0200\n"
 "Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/languages/ja/>\n"
@@ -152,7 +152,7 @@ msgstr ""
 "ランス語の音声がインストールされている場合にはフランス語音声が選択されます。"
 
 #: views/bootnav.php:2
-msgid "List Languagess"
+msgid "List Languages"
 msgstr ""
 
 #: functions.inc.php:160
