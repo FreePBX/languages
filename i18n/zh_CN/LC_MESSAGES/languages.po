@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-18 11:23+0530\n"
+"POT-Creation-Date: 2022-11-10 05:16+0000\n"
 "PO-Revision-Date: 2009-01-31 12:37+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -120,7 +120,7 @@ msgstr ""
 "安装了中文声音的话）。"
 
 #: views/bootnav.php:2
-msgid "List Languagess"
+msgid "List Languages"
 msgstr ""
 
 #: functions.inc.php:160

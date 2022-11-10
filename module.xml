@@ -2,7 +2,7 @@
 	<rawname>languages</rawname>
 	<repo>extended</repo>
 	<name>Languages</name>
-	<version>15.0.12</version>
+	<version>15.0.13</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -20,6 +20,7 @@
 		</languages>
 	</popovers>
 	<changelog>
+		*15.0.13* FREEI-4928 Fixed typo issue 
 		*15.0.12* Packaging of ver 15.0.12
 		*15.0.11* Packaging of ver 15.0.11
 		*15.0.10* FREEI-922 Fix XSS Bootstrap Datatable Issues 

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-18 11:23+0530\n"
+"POT-Creation-Date: 2022-11-10 05:16+0000\n"
 "PO-Revision-Date: 2017-03-03 14:37+0200\n"
 "Last-Translator: hammer125 <auswertung@aon.at>\n"
 "Language-Team: German <http://weblate.freepbx.org/projects/freepbx/languages/"
@@ -137,8 +137,8 @@ msgstr ""
 "die Ansagen würden in französisch ausgewählt, sofern diese installiert sind."
 
 #: views/bootnav.php:2
-msgid "List Languagess"
-msgstr "Sprachen auflisten"
+msgid "List Languages"
+msgstr ""
 
 #: functions.inc.php:160
 msgid "Please enter a valid Language Code"
@@ -195,6 +195,9 @@ msgid "Where to send the caller after setting the language."
 msgstr ""
 "Das Ziel wohin der Anrufer nach der Einstellung der Sprache weitergeleitet "
 "werden soll."
+
+#~ msgid "List Languagess"
+#~ msgstr "Sprachen auflisten"
 
 #~ msgid "Submit Changes"
 #~ msgstr "&Auml;nderungen speichern"

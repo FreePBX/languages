@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-18 11:23+0530\n"
+"POT-Creation-Date: 2022-11-10 05:16+0000\n"
 "PO-Revision-Date: 2017-03-08 21:26+0200\n"
 "Last-Translator: Kingvoice <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -137,8 +137,8 @@ msgstr ""
 "escolhidos caso instalados."
 
 #: views/bootnav.php:2
-msgid "List Languagess"
-msgstr "Lista de Idiomas"
+msgid "List Languages"
+msgstr ""
 
 #: functions.inc.php:160
 msgid "Please enter a valid Language Code"
@@ -193,6 +193,9 @@ msgstr "Frase de linguagem válida"
 #: views/form.php:142
 msgid "Where to send the caller after setting the language."
 msgstr "Para onde enviar o chamador após configurar o idioma."
+
+#~ msgid "List Languagess"
+#~ msgstr "Lista de Idiomas"
 
 #~ msgid "Submit Changes"
 #~ msgstr "Enviar Alterações"
