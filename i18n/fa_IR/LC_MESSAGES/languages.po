@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-18 11:23+0530\n"
+"POT-Creation-Date: 2022-11-10 05:11+0000\n"
 "PO-Revision-Date: 2016-04-06 21:23+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
@@ -123,8 +123,8 @@ msgstr ""
 "انتخاب شده باشد."
 
 #: views/bootnav.php:2
-msgid "List Languagess"
-msgstr "فهرست زبان ها"
+msgid "List Languages"
+msgstr ""
 
 #: functions.inc.php:160
 msgid "Please enter a valid Language Code"
@@ -174,3 +174,6 @@ msgstr "جمله معتبر زبان"
 #: views/form.php:142
 msgid "Where to send the caller after setting the language."
 msgstr "پس از تنطیم زبان تماس گیرنده به کجا وصل شود."
+
+#~ msgid "List Languagess"
+#~ msgstr "فهرست زبان ها"

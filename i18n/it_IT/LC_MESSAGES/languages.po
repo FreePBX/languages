@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-18 11:23+0530\n"
+"POT-Creation-Date: 2022-11-10 05:11+0000\n"
 "PO-Revision-Date: 2008-11-06 14:51+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -120,7 +120,7 @@ msgstr ""
 "in francese se sono installati nel sistema."
 
 #: views/bootnav.php:2
-msgid "List Languagess"
+msgid "List Languages"
 msgstr ""
 
 #: functions.inc.php:160
