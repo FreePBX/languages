@@ -265,7 +265,7 @@ function languages_hook_core($viewing_itemid, $target_menuid){
 			$html.= '<option value=""' . (empty($language) ? "SELECTED" : "") . '>' . _("Default") . '</option>';
 
 			foreach ($languages as $key => $val) {
-				$html.= '<option value="' . $key . '"' . ($language['language'] == $key ? "SELECTED" : "") . '>' . $val . '</option>';
+				$html.= '<option value="' . $key . '"' . ((!empty($language) && $language['language'] == $key) ? "SELECTED" : "") . '>' . $val . '</option>';
 			}
 			$html.= '</select>';
 		} else {
