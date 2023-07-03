@@ -25,7 +25,7 @@ function languages_getdest($exten) {
 function languages_getdestinfo($dest) {
 	global $active_modules;
 
-	if (substr(trim($dest),0,14) == 'app-languages,') {
+	if (substr(_trim($dest),0,14) == 'app-languages,') {
 		$exten = explode(',',$dest);
 		$exten = $exten[1];
 		$thisexten = languages_get($exten);
