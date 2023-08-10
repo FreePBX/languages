@@ -40,6 +40,11 @@ if($langList){
 <script>
 var description = [];
 <?php
+$deleteurl??='';
+$subhead??='';
+$inusehtml??='';
+$description??='';
+$dest??='';
 if(!empty($langDesc)){
 	                echo "description = " . json_encode($langDesc) . ";";
 }
@@ -49,6 +54,7 @@ if(!empty($langDesc)){
 <?php echo $subhead ?>
 <?php echo $inusehtml ?>
 <br>
+
 <form name="editLanguage" action="config.php?display=languages" class="fpbx-submit" method="post" onsubmit="return checkLanguage(editLanguage);" data-fpbx-delete="<?php echo $deleteurl?>">
 	<input type="hidden" name="extdisplay" value="<?php echo $extdisplay; ?>">
 	<input type="hidden" name="language_id" value="<?php echo $extdisplay; ?>">
