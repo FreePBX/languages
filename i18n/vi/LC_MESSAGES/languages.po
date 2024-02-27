@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 05:11+0000\n"
+"POT-Creation-Date: 2024-02-27 04:36-0500\n"
 "PO-Revision-Date: 2017-07-08 10:57+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -62,11 +62,11 @@ msgstr "Mặc định"
 msgid "Delete"
 msgstr "Xóa"
 
-#: views/form.php:63
+#: views/form.php:69
 msgid "Description"
 msgstr "Mô tả"
 
-#: views/form.php:130
+#: views/form.php:136
 msgid "Destination"
 msgstr "Điểm đích"
 
@@ -96,7 +96,7 @@ msgstr "Ngôn ngữ"
 msgid "Language Change: %s"
 msgstr "Thay đổi ngôn ngữ: %s"
 
-#: functions.inc.php:177 functions.inc.php:179 views/form.php:87
+#: functions.inc.php:177 functions.inc.php:179 views/form.php:93
 msgid "Language Code"
 msgstr "Mã ngon ngữ"
 
@@ -141,7 +141,7 @@ msgstr "Cài đặt lại"
 msgid "Submit"
 msgstr "Gửi đi"
 
-#: views/form.php:118
+#: views/form.php:124
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
@@ -149,10 +149,10 @@ msgstr ""
 "Mã ngôn ngữ Asterisk  bạn muốn thay đổi. Ví dụ \"fr\" là Tiếng Pháp, \"De\" "
 "là tiếng Đức"
 
-#: views/form.php:75
+#: views/form.php:81
 msgid ""
-"The descriptive name of this language instance. For example \"French Main IVR"
-"\""
+"The descriptive name of this language instance. For example \"French Main "
+"IVR\""
 msgstr "Tên mô tả của đối tượng ngôn ngữ này. Ví dụ \"French Main IVR\""
 
 #: functions.inc.php:179
@@ -177,7 +177,7 @@ msgstr ""
 msgid "Valid language string"
 msgstr "Dãy ngôn ngữ hợp lệ"
 
-#: views/form.php:142
+#: views/form.php:148
 msgid "Where to send the caller after setting the language."
 msgstr "Sau khi cài đặt ngôn ngữ thì gửi người gọi đến đâu."
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 05:11+0000\n"
+"POT-Creation-Date: 2024-02-27 04:36-0500\n"
 "PO-Revision-Date: 2016-02-04 23:04+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/languages/"
@@ -60,11 +60,11 @@ msgstr "Par défaut"
 msgid "Delete"
 msgstr "Supprimer"
 
-#: views/form.php:63
+#: views/form.php:69
 msgid "Description"
 msgstr "Description"
 
-#: views/form.php:130
+#: views/form.php:136
 msgid "Destination"
 msgstr "Destination"
 
@@ -94,7 +94,7 @@ msgstr "Langue"
 msgid "Language Change: %s"
 msgstr "Changement de langue : %s"
 
-#: functions.inc.php:177 functions.inc.php:179 views/form.php:87
+#: functions.inc.php:177 functions.inc.php:179 views/form.php:93
 msgid "Language Code"
 msgstr "Code de langue"
 
@@ -133,7 +133,7 @@ msgstr "Réinitialiser"
 msgid "Submit"
 msgstr "Soumettre"
 
-#: views/form.php:118
+#: views/form.php:124
 msgid ""
 "The Asterisk language code you want to change to. For example \"fr\" for "
 "French, \"de\" for German"
@@ -141,10 +141,10 @@ msgstr ""
 "Le code de langue Asterisk que vous désirez utiliser. Par exemple \"fr\" "
 "pour le Français, \"de\" pour l'Allemand"
 
-#: views/form.php:75
+#: views/form.php:81
 msgid ""
-"The descriptive name of this language instance. For example \"French Main IVR"
-"\""
+"The descriptive name of this language instance. For example \"French Main "
+"IVR\""
 msgstr ""
 
 #: functions.inc.php:179
@@ -164,6 +164,6 @@ msgstr ""
 msgid "Valid language string"
 msgstr ""
 
-#: views/form.php:142
+#: views/form.php:148
 msgid "Where to send the caller after setting the language."
 msgstr ""
