@@ -7,7 +7,7 @@ $request = $_REQUEST;
 $view = isset($request['view'])?$request['view']:'';
 switch ($view) {
 	case 'form':
-		if($request['extdisplay']){
+		if(!empty($request['extdisplay'])){
 			$heading = _("Edit Language Instance");
 		}else{
 			$heading = _("Add Language Instance");
