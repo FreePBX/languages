@@ -2,10 +2,21 @@
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2015 Sangoma Technologies.
 //
-extract($request);
+$extdisplay = $request['extdisplay'] ?? '';
+$description = '';
+$lang_code = '';
+$dest = '';
 if ($extdisplay) {
 	// load
 	$row = FreePBX::Languages()->getLanguage($extdisplay);
+	if (!is_array($row)) {
+		$row = [
+			'description' => '',
+			'lang_code' => '',
+			'dest' => '',
+			'language_id' => $extdisplay,
+		];
+	}
 	$description = $row['description'];
 	$lang_code   = $row['lang_code'];
 	$dest        = $row['dest'];
@@ -44,6 +55,7 @@ $deleteurl??='';
 $subhead??='';
 $inusehtml??='';
 $description??='';
+$lang_code??='';
 $dest??='';
 if(!empty($langDesc)){
 	                echo "description = " . json_encode($langDesc) . ";";

@@ -7,6 +7,7 @@ use BMO;
 use FreePBX_Helpers;
 use PDO;
 class Languages extends FreePBX_Helpers implements BMO {
+	public \FreePBX $FreePBX;
 
 	public function doConfigPageInit($page) {
 		$request = $_REQUEST;
@@ -20,7 +21,7 @@ class Languages extends FreePBX_Helpers implements BMO {
 		$dest = isset($request['dest']) ? $request['dest'] :  '';
 		$view = isset($request['view']) ? $request['view'] : '';
 		if (isset($request['goto0']) && $request['goto0']) {
-			$dest = $request[ $request['goto0'].'0' ];
+			$dest = $request[$request['goto0'].'0'] ?? $dest;
 		}
 
 		switch ($action) {
@@ -46,11 +47,11 @@ class Languages extends FreePBX_Helpers implements BMO {
 	}
 
 	public function getActionBar($request) {
-		if ('form' !== $request['view']) {
+		if ('form' !== ($request['view'] ?? '')) {
 			return [];
 		}
 
-		switch ($request['display']) {
+		switch ($request['display'] ?? '') {
 			case 'languages':
 				$buttons = array(
 						'submit' => array(
@@ -69,7 +70,7 @@ class Languages extends FreePBX_Helpers implements BMO {
 							'value' => _("Delete")
 						),
 					);
-				if($request['extdisplay'] == ''){
+				if(($request['extdisplay'] ?? '') == ''){
 					unset($buttons['delete']);
 				}
 				return $buttons;
@@ -84,7 +85,7 @@ class Languages extends FreePBX_Helpers implements BMO {
 		return false;
 	}
 	public function ajaxHandler(){
-		if($_REQUEST['command'] === 'getJSON' && $_REQUEST['jdata'] === 'grid'){
+		if(($_REQUEST['command'] ?? '') === 'getJSON' && ($_REQUEST['jdata'] ?? '') === 'grid'){
 			return array_values($this->listLanguages());
 		}
 		return false;
@@ -182,7 +183,6 @@ class Languages extends FreePBX_Helpers implements BMO {
 			$stmt = $this->FreePBX->Database->prepare($sql);
 			$stmt->execute([':cidnum' => $cidnum, ':extension' => $extension]);
 			return $stmt->fetch(PDO::FETCH_ASSOC);
-			$lang = $db->getOne($sql, array($extension, $cidnum));
 		}
 		return $this->FreePBX->Database->query('SELECT language_incoming.*,incoming.pricid FROM language_incoming, incoming WHERE language_incoming.cidnum=incoming.cidnum and language_incoming.extension=incoming.extension')
 		->fetchAll(PDO::FETCH_ASSOC);
@@ -204,7 +204,7 @@ class Languages extends FreePBX_Helpers implements BMO {
 		$ret = array();
 		foreach($au as $k => $v){
 			$temp = explode('/',$k);
-			if($temp[3] == 'language'){
+			if(isset($temp[3], $temp[2]) && $temp[3] == 'language'){
 				$ret[$temp[2]] = $v;
 			}
 		}

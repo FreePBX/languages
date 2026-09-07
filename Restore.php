@@ -12,13 +12,13 @@ class Restore Extends Base\RestoreBase{
 		}
 		public function processConfigs($configs){
 					
-				foreach ($configs['languages'] as $language) {
+				foreach (($configs['languages'] ?? []) as $language) {
 					$this->FreePBX->Languages->restoreLanguage($language['language_id'], $language['description'], $language['lang_code'], $language['dest']);
 				}
-				foreach ($configs['incoming'] as $incoming) {
+				foreach (($configs['incoming'] ?? []) as $incoming) {
 					$this->FreePBX->Languages->updateIncoming($incoming['language'], $incoming['extension'], $incoming['cidnum']);
 				}
-				foreach ($configs['users'] as $user => $lang) {
+				foreach (($configs['users'] ?? []) as $user => $lang) {
 					$this->FreePBX->Languages->updateUserLanguage($user, $lang);
 				}
 		}

@@ -269,7 +269,7 @@ function languages_hook_core($viewing_itemid, $target_menuid){
 			}
 			$html.= '</select>';
 		} else {
-			$html.= '<input type="text" class="form-control" id="language" name="language" value="'.$language['language'].'">';
+			$html.= '<input type="text" class="form-control" id="language" name="language" value="'.($language['language'] ?? '').'">';
 		}
 		$html.= '
 								</div>
